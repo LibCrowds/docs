@@ -37,6 +37,7 @@ pages:
       - Tags: 'admin/collection/tags.md'
       - Project Templates: 'admin/collection/templates.md'
       - Terminology: 'admin/collection/terminology.md'
+      - Volumes: 'admin/collection/volumes.md'
       - Delete: 'admin/collection/delete.md'
     - Projects:
       - New Project: 'admin/project/new.md'

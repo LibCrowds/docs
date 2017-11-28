@@ -14,6 +14,6 @@ To get started, you might find some of these links useful:
 - Want to create a project?
 Check out the [New Project](/admin/project/new.md) section.
 - Need to modify a collection microsite?
-Start at [Open Collection](/admin/collection/open.md) section.
+Start at the [Open Collection](/admin/collection/open.md) section.
 - Installing an instance of LibCrowds?
-See [Development](development.md) and [Configuration](configuration/index.md).
+See the [Setup](/setup/index.md) section(configuration/index.md).

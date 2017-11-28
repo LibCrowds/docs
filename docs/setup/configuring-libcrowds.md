@@ -1,5 +1,5 @@
-After [configuring PYBOSSA](/configuration/pybossa.md), you can get LibCrowds up
-and running by making a copy of the settings template:
+After [configuring PYBOSSA](/setup/configuring-pybossa.md), you can get
+LibCrowds up and running by making a copy of the settings template:
 
 ```bash
 cp local.config.js.tmpl local.config.js

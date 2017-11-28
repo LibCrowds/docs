@@ -213,4 +213,5 @@ navigate directly to restricted pages (such as the various administration
 dashboards).
 
 You will also need to add `SESSION_COOKIE_DOMAIN = mydomain.com` to your
-PYBOSSA settings file, see [Configuring PYBOSSA](configuration/pybossa.md).
+PYBOSSA settings file,
+see [Configuring PYBOSSA](/setup/configuring-pybossa.md).
