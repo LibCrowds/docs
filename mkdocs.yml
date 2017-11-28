@@ -11,3 +11,5 @@ extra:
       link: 'https://twitter.com/LibCrowds'
 markdown_extensions:
   - admonition
+  - toc:
+      permalink: true
