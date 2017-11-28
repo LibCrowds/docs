@@ -17,7 +17,7 @@ You will also need to install an instance of
 
 ## Configuration
 
-See the [Configuration](configuration/README.md) section for full details of how
+See the [Configuration](/configuration/index.md) section for full details of how
 to setup LibCrowds and PYBOSSA.
 
 ## Building

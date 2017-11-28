@@ -11,9 +11,9 @@ related projects can be configured, each with their own set of themed pages.
 
 To get started, you might find some of these links useful:
 
-- Want to create or manage project?
-Check out the [Project Admin](admin/project/README.md) section.
+- Want to create a project?
+Check out the [New Project](/admin/project/new.md) section.
 - Need to modify a collection microsite?
-See the [Collection Admin](admin/collection/README.md) section.
+Start at [Open Collection](/admin/collection/open.md) section.
 - Installing an instance of LibCrowds?
-See [Development](development.md) and [Configuration](configuration/README.md).
+See [Development](development.md) and [Configuration](configuration/index.md).
