@@ -11,6 +11,7 @@ extra:
       link: 'https://twitter.com/LibCrowds'
 markdown_extensions:
   - admonition
+  - codehilite
   - toc:
       permalink: true
   - pymdownx.betterem:
@@ -18,8 +19,12 @@ markdown_extensions:
   - pymdownx.details
 pages:
   - Introduction: 'index.md'
-  - FAQ: 'glossary.md'
-  - Glossary: 'glossary.md'
+  - Setup:
+    - Getting Started: 'setup/index.md'
+    - Configuring PYBOSSA: 'setup/configuring-pybossa.md'
+    - Configuring LibCrowds: 'setup/configuring-libcrowds.md'
+    - Deployment: 'setup/deployment.md'
+    - Testing: 'setup/testing.md'
   - Administration:
     - Collection Microsites:
       - New Collection: 'admin/collection/new.md'
@@ -47,3 +52,5 @@ pages:
       - Announcements: 'admin/site/announcements.md'
       - Background Jobs: 'admin/site/jobs.md'
       - User Management: 'admin/site/users.md'
+  - FAQ: 'glossary.md'
+  - Glossary: 'glossary.md'

@@ -1,9 +1,7 @@
-## Configuring PYBOSSA
-
 LibCrowds relies on a PYBOSSA backend with a settings file that contains the
 following:
 
-``` python
+```python
 # To allow requests from the frontend (modify origins according to your environment)
 CORS_RESOURCES = {
   r"/*": {

@@ -1,5 +1,3 @@
-## Configurating LibCrowds
-
 After [configuring PYBOSSA](/configuration/pybossa.md), you can get LibCrowds up
 and running by making a copy of the settings template:
 
