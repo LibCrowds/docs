@@ -11,4 +11,3 @@ extra:
       link: 'https://twitter.com/LibCrowds'
 markdown_extensions:
   - admonition
-  - meta
