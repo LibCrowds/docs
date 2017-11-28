@@ -1,4 +1,4 @@
-# Users
+# User Management
 
 This is the section for managing all user related data. The toolbar at the top
 of the table provides options to search by name, or filter by various other

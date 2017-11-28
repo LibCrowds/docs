@@ -1,4 +1,4 @@
-# Settings
+# Core Settings
 
 This is where the core settings for the microsite are configured, each of which
 are explained below.

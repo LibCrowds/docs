@@ -1,4 +1,4 @@
-# Background Tasks
+# Background Jobs
 
 The platform runs a range of sceduled tasks in the background for things such
 as email delivery, updating statistics and building data files. The interface
