@@ -7,8 +7,9 @@ assumes that you are starting with a fresh Ubuntu server.
 
 ## Install Node.js and npm
 
-LibCrowds requires [Node.js](https://nodejs.org) >= 8.0.0 to run. First update
-and upgrade the package index:
+LibCrowds requires [Node.js](https://nodejs.org) >= 8.0.0 to run.
+
+Update and upgrade the package index:
 
 ```bash
 sudo apt-get update
@@ -54,7 +55,7 @@ mkdir /var/www
 git clone https://github.com/LibCrowds/libcrowds /var/www/libcrowds
 ```
 
-Enter the cloned directory:
+Enter the directory:
 
 ```bash
 cd /var/www/libcrowds
@@ -119,8 +120,6 @@ server {
   listen 80 default_server;
   listen [::]:80 default_server;
 
-  server_name _;
-
   client_body_buffer_size 10K;
   client_header_buffer_size 1k;
   client_max_body_size 10m;
@@ -170,7 +169,7 @@ sudo apt-get install supervisor
 Edit a new Supervisor program configuration:
 
 ```bash
-vim /etc/supervisor/conf.d/libcrowds
+vim /etc/supervisor/conf.d/libcrowds.conf
 ```
 
 Copy in the following and save the file:
@@ -178,10 +177,14 @@ Copy in the following and save the file:
 ```conf
 [program:libcrowds]
 directory=/var/www/libcrowds
-command=npm start
+command=npm run start
 autostart=true
 autorestart=true
-stderr_logfile=/var/log/libcrowds/error.log
+log_stdout=true
+log_stderr=true
+logfile=/var/log/libcrowds.log
+logfile_maxbytes=10MB
+logfile_backups=2
 ```
 
 Restart supervisor:
