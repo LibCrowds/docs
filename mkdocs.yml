@@ -1,0 +1,10 @@
+site_name: 'LibCrowds Documentation'
+theme:
+  name: 'material'
+repo_name: 'LibCrowds/libcrowds'
+repo_url: 'https://github.com/LibCrowds/libcrowds'
+social:
+  - type: 'github'
+    link: 'https://github.com/LibCrowds'
+  - type: 'twitter'
+    link: 'https://twitter.com/LibCrowds'
