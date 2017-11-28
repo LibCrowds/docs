@@ -4,7 +4,7 @@ The help content for a project will be displayed when each user enters for
 the first time. The content will usually be generated during project
 creation but can be edited at any time via this section.
 
-![Admin project help image](/assets/admin-project-help.png)
+![Admin project help image](/assets/img/admin-project-help.png)
 
 ## Updating
 

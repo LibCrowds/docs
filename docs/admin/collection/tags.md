@@ -4,13 +4,13 @@ Tags are used to help users more easily location the types of project that
 they're interested in. The available tags for all projects within a collection
 are managed via this section.
 
-![Collection tags admin image](/assets/admin-collection-tags.png?raw=true)
+![Collection tags admin image](/assets/img/admin-collection-tags.png?raw=true)
 
 For each tag type created a new filter will be added to
 the  collection's main projects page page (shown on the left in the screenshot
 below).
 
-![Collection projects page image](/assets/collection-projects.png?raw=true)
+![Collection projects page image](/assets/img/collection-projects.png?raw=true)
 
 ## Creating
 
@@ -19,7 +19,7 @@ the modal that appears enter a name for the tag type (e.g. Location), choose a
 colour and set an initial list of tags (e.g. London, Plymouth etc.), then
 click 'OK'.
 
-![Collection tags admin new image](/assets/admin-collection-tags-new.png?raw=true)
+![Collection tags admin new image](/assets/img/admin-collection-tags-new.png?raw=true)
 
 ## Updating
 
