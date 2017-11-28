@@ -11,8 +11,8 @@ creation but can be edited at any time via this section.
 Use the Markdown editor to edit the help content and click the 'Update' button
 to save.
 
-{% hint style='info' %}
-Visit the [Project Templates](/admin/collection/templates.md) section to find
-out how to update the help text for any future projects generated from
-templates.
-{% endhint %}
+!!! tip
+    Visit the [Project Templates](/admin/collection/templates.md) section to
+    find out how to update the help text for any future projects generated from
+    templates.
+

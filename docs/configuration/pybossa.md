@@ -54,6 +54,5 @@ DISABLE_TASK_PRESENTER = True
 SESSION_COOKIE_DOMAIN = 'mydomain.com'
 ```
 
-{% hint style='danger' %}
-These settings are all required for the application to run correctly.
-{% endhint %}
+!!! warning
+    These settings are all required for the application to run correctly.

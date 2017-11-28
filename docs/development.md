@@ -33,10 +33,10 @@ npm start
 npm run dev
 ```
 
-{% hint style='danger' %}
-For cookies to be read properly you must access the website at
-http://127.0.0.1:8080, rather than http://localhost:8080.
-{% endhint %}
+!!! warning
+    You must access the website at http://127.0.0.1:8080, rather than
+    http://localhost:8080, otherwise it will not be possible to track the user
+    session cookie.
 
 ## Testing
 
@@ -69,8 +69,8 @@ possible to fully render certain pages on the server, so you will see some
 strange behaviour to do with users appearing to not be signed in when the
 application first loads.
 
-{% hint style='info' %}
-For this to work you will also need to add
-`SESSION_COOKIE_DOMAIN = mydomain.com` to your PYBOSSA settings file
-(see [Configuring PYBOSSA](configuration/pybossa.md)).
-{% endhint %}
+!!! warning
+    For this to work you will also need to add
+    `SESSION_COOKIE_DOMAIN = mydomain.com` to your PYBOSSA settings file,
+    see [Configuring PYBOSSA](configuration/pybossa.md).
+

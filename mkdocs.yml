@@ -8,3 +8,5 @@ social:
     link: 'https://github.com/LibCrowds'
   - type: 'twitter'
     link: 'https://twitter.com/LibCrowds'
+markdown_extensions:
+  - admonition
