@@ -17,6 +17,9 @@ markdown_extensions:
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.details
+google_analytics:
+  - 'UA-59584422-5'
+  - 'auto'
 pages:
   - Introduction: 'index.md'
   - Setup:
