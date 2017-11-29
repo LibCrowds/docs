@@ -20,10 +20,10 @@ The view component via which users contribute to a project's tasks, for
 example, the Z39.50 presenter.
 
 ## Task Redundancy
-The number of task runs required before a task is considered complete.
+The number of contributions required before a task is considered complete.
 
-## Task Run
-A single answer for a task.
+## Contribution
+A single answer for a task. An alias for task run in the PYBOSSA model.
 
 ## Z39.50
 An ancient communications protocol still widely used in library environements.
