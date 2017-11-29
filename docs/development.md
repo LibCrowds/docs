@@ -32,8 +32,3 @@ npm start
 # serve for development with hot reload at 127.0.0.1:8080
 npm run dev
 ```
-
-!!! warning
-    You must access the website at http://127.0.0.1:8080, rather than
-    http://localhost:8080, otherwise it will not be possible to track the user
-    session cookie.

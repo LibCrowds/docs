@@ -1,15 +1,15 @@
-After [configuring PYBOSSA](/setup/configuring-pybossa.md), you can get
-LibCrowds up and running by making a copy of the settings template:
+This page details all of the core LibCrowds settings.
+
+To copy the settings template:
 
 ```bash
 cp local.config.js.tmpl local.config.js
 ```
 
-All of the available settings are described below.
-
 ### Required Settings
 
-The following are required for the application to run correctly.
+The following are all set using defaults in the configuration template and are
+required for the application to run correctly.
 
 | Setting       | Description                                                  |
 |---------------|--------------------------------------------------------------|
@@ -22,7 +22,8 @@ The following are required for the application to run correctly.
 
 ### Optional Settings
 
-The following can be added to enable additional functionality.
+The following can be added to the configuration file to enable additional
+functionality.
 
 ### analytics
 

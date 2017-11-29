@@ -1,9 +1,31 @@
-This page gives some guidance on how to deploy an instance of LibCrowds and
-assumes that you are starting with a fresh Ubuntu server.
+This guide explains how to deploy an instance of LibCrowds using NGINX and
+supervisor. It assumes that you are starting with a fresh Ubuntu server.
 
-!!! info
-    For details of how to deploy the PYBOSSA backend see the
-    [PYBOSSA documentation](http://docs.pybossa.com).
+For details of how to deploy the PYBOSSA backend see the
+[PYBOSSA documentation](http://docs.pybossa.com). You should also ensure that
+your PYBOSSA instance is configured according to the
+[Configuring PYBOSSA](/setup/configuring-pybossa.md) guide.
+
+## Domains
+
+Before we begin, it is important to not that both LibCrowds and PYBOSSA should
+be served from the same domain. This is because LibCrowds uses SSR, so the
+PYBOSSA session cookie needs to be shared with the LibCrowds server (rather
+than the client) and this will only work properly if both applications are
+served from the same domain. Subdomains are fine, so you can still run your
+applications on different servers.
+
+If you don't do this, the application will still run but, as it will not be
+possible to fully render certain pages on the server, you will see some
+strange behaviour with users appearing to not be signed in when the
+application first loads. You might also notice errors when attempting to
+navigate directly to restricted pages (such as the various administration
+dashboards).
+
+You will also need to add `SESSION_COOKIE_DOMAIN = mydomain.com` according
+to the [Configuring PYBOSSA](/setup/configuring-pybossa.md) guide.
+
+With that in mind, let's setup a LibCrowds server.
 
 ## Install Node.js and npm
 
@@ -84,7 +106,7 @@ npm run build
 !!! tip
     If the installation or build process is getting killed before finishing
     it is possible that your don't have enough memory on the server and you
-    may want to consider upgrading or adding some swap space.
+    may want to consider upgrading the server or adding some swap space.
 
 ## Setting up NGINX
 
@@ -194,24 +216,11 @@ sudo service supervisor stop
 sudo service supervisor start
 ```
 
-Your LibCrowds server should now be running at http://your.domain.com.
+Your LibCrowds server should now be running at
+[http://your.domain.com](http://your.domain.com).
 
+See [Configuring LibCrowds](/setup/libcrowds.md) for details of all core
+LibCrowds settings.
 
-## Different Domains
-
-It is important that the PYBOSSA instance is served from the same domain as
-the LibCrowds instance. This is because the PYBOSSA session cookie needs to
-be shared with the LibCrowds server and this will only work properly if both
-applications are served from the same domain. Subdomains are fine, so you can
-still run your applications on different servers.
-
-If you don't do this, the application will still run but, as it will not be
-possible to fully render certain pages on the server, you will see some
-strange behaviour with users appearing to not be signed in when the
-application first loads. You might also notice errors when attempting to
-navigate directly to restricted pages (such as the various administration
-dashboards).
-
-You will also need to add `SESSION_COOKIE_DOMAIN = mydomain.com` to your
-PYBOSSA settings file,
-see [Configuring PYBOSSA](/setup/configuring-pybossa.md).
+Or, find out how to setup your first
+[Collection Microsite](/collections/getting-started.md).

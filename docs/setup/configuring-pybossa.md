@@ -1,8 +1,13 @@
-LibCrowds relies on a PYBOSSA backend with a settings file that contains the
-following:
+As LibCrowds relies on a PYBOSSA backend you will need to add the following to
+PYBOSSA's `settings_local.py` file:
+
+!!! tip
+    See the [PYBOSSA documentation](http://docs.pybossa.com) for details of all
+    other available settings.
 
 ```python
-# To allow requests from the frontend (modify origins according to your environment)
+# Allow requests from LibCrowds
+# (modify the origins according to your environment)
 CORS_RESOURCES = {
   r"/*": {
     "origins": [
@@ -54,3 +59,16 @@ SESSION_COOKIE_DOMAIN = 'mydomain.com'
 
 !!! warning
     These settings are all required for the application to run correctly.
+
+If you're following on from the [Installation](/setup/installation.md) guide,
+you should now be able to open up
+[http://127.0.0.1:8080](http://127.0.0.1:8080) and see your fully operational
+LibCrowds instance.
+
+To explore the and modify the LibCrowds settings, see
+[Configuring LibCrowds](/setup/configuring-libcrowds.md).
+
+!!! info
+    You must access the website at http://127.0.0.1:8080, rather than
+    http://localhost:8080, otherwise it will not be possible to track the user
+    session cookie.
