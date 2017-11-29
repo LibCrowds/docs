@@ -219,8 +219,8 @@ sudo service supervisor start
 Your LibCrowds server should now be running at
 [http://your.domain.com](http://your.domain.com).
 
-See [Configuring LibCrowds](/setup/libcrowds.md) for details of all core
-LibCrowds settings.
+See [Configuring LibCrowds](/setup/configuring-libcrowds.md) for details of all
+core LibCrowds settings.
 
 Or, find out how to setup your first
 [Collection Microsite](/collections/getting-started.md).
