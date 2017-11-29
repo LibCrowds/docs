@@ -12,7 +12,7 @@ Use the Markdown editor to edit the help content and click the 'Update' button
 to save.
 
 !!! tip
-    Visit the [Project Templates](/admin/collection/templates.md) section to
+    Visit the [Project Templates](/collections/templates.md) section to
     find out how to update the help text for any future projects generated from
     templates.
 

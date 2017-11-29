@@ -27,5 +27,5 @@ Tag types can be edited or removed by locating them in the table and clicking
 the 'Edit' or 'Remove' buttons, respectively.
 
 !!! tip
-    See the [Project Admin Tags](/admin/project/tags.md) section for details of
+    See the [Project Admin Tags](/projects/tags.md) section for details of
     how to add tags to each project.
