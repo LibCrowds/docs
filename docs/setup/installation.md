@@ -55,6 +55,22 @@ python run.py
 PYBOSSA (with the default theme) should now be available at
 [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
+??? tip "Installing behind a web proxy"
+    If you're installing from behind a web proxy then you will probably run
+    into issues when attempting to start Vagrant, in which case you can try
+    running these commands from the `pybossa` directory:
+
+    ```bash
+    # set environment variables using the command for your OS (Windows example shown)
+    set HTTP_PROXY=http://username:password@proxy_server:proxy_port
+    set HTTPS_PROXY=https://username:password@proxy_server:proxy_port
+    set VAGRANT_HTTP_PROXY=http://username:password@proxy_server:proxy_port
+    set VAGRANT_HTTPS_PROXY=https://username:password@proxy_server:proxy_port
+
+    # install the vagrant-proxyconf plugin
+    vagrant plugin install vagrant-proxyconf
+    ```
+
 ## Download and run LibCrowds
 
 The same process is followed to setup the LibCrowds development environment:
@@ -76,6 +92,22 @@ Run the LibCrowds server:
 vagrant ssh
 npm run dev
 ```
+
+??? tip "Installing behind a web proxy"
+    If you're installing from behind a web proxy then you will probably run
+    into issues when attempting to start Vagrant, in which case you can try
+    running these commands from the `libcrowds` directory:
+
+    ```bash
+    # set environment variables using the command for your OS (Windows example shown)
+    set HTTP_PROXY=http://username:password@proxy_server:proxy_port
+    set HTTPS_PROXY=https://username:password@proxy_server:proxy_port
+    set VAGRANT_HTTP_PROXY=http://username:password@proxy_server:proxy_port
+    set VAGRANT_HTTPS_PROXY=https://username:password@proxy_server:proxy_port
+
+    # install the vagrant-proxyconf plugin
+    vagrant plugin install vagrant-proxyconf
+    ```
 
 LibCrowds should now be running using the default settings at
 [http://127.0.0.1:8080](http://127.0.0.1:8080).

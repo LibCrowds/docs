@@ -17,6 +17,7 @@ markdown_extensions:
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.details
+  - pymdownx.superfences
 google_analytics:
   - 'UA-59584422-5'
   - 'auto'
