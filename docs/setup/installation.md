@@ -62,8 +62,6 @@ PYBOSSA (with the default theme) should now be available at
 
     ```bash
     # set environment variables using the command for your OS (Windows example shown)
-    set HTTP_PROXY=http://username:password@proxy_server:proxy_port
-    set HTTPS_PROXY=https://username:password@proxy_server:proxy_port
     set VAGRANT_HTTP_PROXY=http://username:password@proxy_server:proxy_port
     set VAGRANT_HTTPS_PROXY=https://username:password@proxy_server:proxy_port
 
@@ -100,8 +98,6 @@ npm run dev
 
     ```bash
     # set environment variables using the command for your OS (Windows example shown)
-    set HTTP_PROXY=http://username:password@proxy_server:proxy_port
-    set HTTPS_PROXY=https://username:password@proxy_server:proxy_port
     set VAGRANT_HTTP_PROXY=http://username:password@proxy_server:proxy_port
     set VAGRANT_HTTPS_PROXY=https://username:password@proxy_server:proxy_port
 
