@@ -1,9 +1,10 @@
 # LibCrowds Documentation
 
-``` bash
-virtualenv env
-source env/bin/activate
+> Documentation for the LibCrowds platform.
 
+See [**docs.libcrowds.com**](https://docs.libcrowds.com)
+
+``` bash
 # install requirements
 pip install -r requirements.txt
 
