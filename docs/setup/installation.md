@@ -74,7 +74,7 @@ Run the LibCrowds server:
 
 ```bash
 vagrant ssh
-python run.py
+npm run dev
 ```
 
 LibCrowds should now be running using the default settings at
