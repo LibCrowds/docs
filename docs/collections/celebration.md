@@ -1,8 +1,16 @@
-# Celebration
-
 When a project is completed, or a user has contributed to all available tasks
 for that project, animated confetti will fall and a celebration message will
 be displayed.
+
+??? question "How do I open this page?"
+
+    Admin rights are required to access this page. If you have admin rights:
+
+    1. Sign in to your LibCrowds account.
+    2. Click your username at the right of the naviation bar.
+    3. Select **Collection Admin** from the dropdown menu.
+    4. Locate the collection in the table and click **Open**.
+    5. Select **Celebration** from dashboard menu on the left-hand side.
 
 ![An animation showing the project completion celebration message](/assets/img/project-celebration.gif)
 

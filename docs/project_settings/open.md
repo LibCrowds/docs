@@ -1,5 +1,3 @@
-## Open Project
-
 To select the project that you wish to manage locate it in the table and click
 the 'Open' button. A set of additional options will then appear in the
 navigation menu.

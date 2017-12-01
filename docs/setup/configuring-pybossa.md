@@ -30,7 +30,6 @@ CATEGORY_INFO_PUBLIC_FIELDS = [
   'license',
   'published',
   'content',
-  'terminology',
   'background'
 ]
 
