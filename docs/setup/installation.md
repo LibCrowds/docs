@@ -1,10 +1,6 @@
 The following guide explains how to download and install and instance of
 LibCrowds locally, for testing or development.
 
-!!! info
-    If you are looking for guidance on how to create or configure projects see
-    the [Projects](/projects/getting-started.md) section.
-
 ## Introduction
 
 LibCrowds is fundamentally a [Vue.js](https://vuejs.org/) Server-Side Rendered

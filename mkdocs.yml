@@ -30,7 +30,7 @@ pages:
     - Deployment: 'setup/deployment.md'
     - Testing: 'setup/testing.md'
   - Creating Projects:
-    - Getting Started: 'creating_projects/getting_started.md'
+    - Getting Started: 'creating_projects/getting-started.md'
     - Z39.50: 'creating_projects/z3950.md'
     - IIIF Annotation: 'creating_projects/iiif.md'
   - Project Settings:
@@ -59,7 +59,6 @@ pages:
       - Task Presenter: 'collections/presenter.md'
       - Tags: 'collections/tags.md'
       - Project Templates: 'collections/templates.md'
-      - Terminology: 'collections/terminology.md'
       - Volumes: 'collections/volumes.md'
       - Delete: 'collections/delete.md'
   - Results Analysis:

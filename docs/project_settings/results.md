@@ -5,6 +5,9 @@ analysis for particular sets of tasks.
 
 ??? question "How do I open this page?"
 
+    Admin or editor rights are required to access this page. If you have admin
+    or editor rights:
+
     1. Sign in to your LibCrowds account.
     2. Click your username at the right of the naviation bar.
     3. Select **Project Admin** from the dropdown menu.
