@@ -4,7 +4,7 @@ When a project is completed, or a user has contributed to all available tasks
 for that project, animated confetti will fall and a celebration message will
 be displayed.
 
-![Project celebration animation](/assets/img/project-celebration.gif)
+![An animation showing the project completion celebration message](/assets/img/project-celebration.gif)
 
 ## Updating
 

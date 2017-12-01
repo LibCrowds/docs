@@ -31,8 +31,8 @@ pages:
     - Testing: 'setup/testing.md'
   - Creating Projects:
     - Getting Started: 'creating_projects/getting_started.md'
-    - Z39.50 Projects: 'creating_projects/z3950.md'
-    - IIIF Projects: 'creating_projects/iiif.md'
+    - Z39.50: 'creating_projects/z3950.md'
+    - IIIF Annotation: 'creating_projects/iiif.md'
   - Project Settings:
     - Open Project: 'project_settings/open.md'
     - Core Settings: 'project_settings/settings.md'
@@ -64,6 +64,6 @@ pages:
   - Results Analysis:
     - Introduction: 'analysis/introduction.md'
     - Z39.50: 'analysis/z3950.md'
-    - IIIF: 'analysis/iiif.md'
+    - IIIF Annotation: 'analysis/iiif.md'
   - FAQ: 'FAQ.md'
   - Glossary: 'glossary.md'
