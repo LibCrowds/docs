@@ -136,3 +136,16 @@ the union, and if the result is greater than 0.5 we merge the two regions.
       ]
     }
     ```
+
+### 3. Check for transcriptions
+
+If transcription annotations are found (i.e. the IIIF Annotation project that
+generated the results was a transcription project) then we apply some
+normalisation rules depending on type of field that was being transcribed
+and compare.
+
+| tag     | Normalisation Rules                                               |
+|---------|-------------------------------------------------------------------|
+| date    | Convert any strings to a date type                                |
+| title   | Convert to title case and normalise white space                   |
+| genre   | Convert to title case and normalise white space                   |
