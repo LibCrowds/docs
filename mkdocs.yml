@@ -41,6 +41,7 @@ pages:
     - Collection: 'project_settings/collection.md'
     - Help: 'project_settings/help.md'
     - Volumes: 'project_settings/volumes.md'
+    - Results: 'project_settings/results.md'
   - Admin:
     - Site Admin:
       - Dashboard: 'site/dashboard.md'
