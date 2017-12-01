@@ -58,8 +58,8 @@ to the final result.
 
 So, if three users marked up the same title, with slightly different regions,
 then these three regions should be detected as similar and clustered into one
-marked up region. The area for that clustered region is an average of all
-three sets of original coordinates.
+marked up region. The area for that clustered region is the smallest region
+that contains all three sets of original coordinates.
 
 Similarity is determined using the
 [Jaccard index](https://en.wikipedia.org/wiki/Jaccard_index), with a result
