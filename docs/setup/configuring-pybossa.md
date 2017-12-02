@@ -30,7 +30,9 @@ CATEGORY_INFO_PUBLIC_FIELDS = [
   'license',
   'published',
   'content',
-  'background'
+  'background',
+  'volumes',
+  'templates'
 ]
 
 # Additional user fields
