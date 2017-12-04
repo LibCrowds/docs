@@ -31,8 +31,9 @@ pages:
     - Testing: 'setup/testing.md'
   - Creating Projects:
     - Getting Started: 'creating_projects/getting-started.md'
-    - Z39.50: 'creating_projects/z3950.md'
-    - IIIF Annotation: 'creating_projects/iiif.md'
+    - New Projects: 'creating_projects/new.md'
+    - Templates: 'creating_projects/templates.md'
+    - Volumes: 'creating_projects/volumes.md'
   - Project Settings:
     - Open Project: 'project_settings/open.md'
     - Core Settings: 'project_settings/settings.md'
