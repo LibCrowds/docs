@@ -8,9 +8,7 @@ for a collection microsite.
 
     1. Sign in to your LibCrowds account.
     2. Click your username at the right of the naviation bar.
-    3. Select **Collection Admin** from the dropdown menu.
-    4. Locate the collection in the table and click **Open**.
-    5. Select **Celebration** from dashboard menu on the left-hand side.
+    3. Select **Project Admin** from the dropdown menu.
 
 ??? question "How do I request administrator or editor rights?"
 
