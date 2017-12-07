@@ -59,6 +59,10 @@ DISABLE_TASK_PRESENTER = True
 
 # Allow the session cookie to be shared with any subdomain of mydomain.com
 SESSION_COOKIE_DOMAIN = 'mydomain.com'
+
+# Flickr credentials (required for importing Z39.50 tasks)
+FLICKR_API_KEY = 'your-key'
+FLICKR_SHARED_SECRET = 'your-secret'
 ```
 
 !!! warning
