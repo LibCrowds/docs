@@ -13,4 +13,4 @@ the owner has explicitly given them editing rights.
     the email icon in the footer of each page.
 
 To find out how to create a project see the
-[Project Creation](/projects/new.md) guide.
+[New Project](/projects/new.md) guide.

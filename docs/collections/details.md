@@ -9,7 +9,7 @@ are explained below.
     2. Click your username at the right of the naviation bar.
     3. Select **Collection Admin** from the dropdown menu.
     4. Locate the collection in the table and click **Open**.
-    5. Select **Settings** from dashboard menu on the left-hand side.
+    5. Select **Details** from dashboard menu on the left-hand side.
 
 | Setting            | Description
 |--------------------|------------------------------------------------------------------------------------------------|
