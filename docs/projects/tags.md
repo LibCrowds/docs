@@ -1,6 +1,6 @@
 Tags are used to help users more easily location the types of project within a
-collection that they're interested in. You can choose one tag for each tag type.
-Contact an administrator if you need a tag that is not available.
+collection that they're interested in. They appear on the project cards
+and in the Sorting Options box on the main projects page.
 
 ??? question "How do I open this page?"
 
@@ -13,5 +13,12 @@ Contact an administrator if you need a tag that is not available.
     4. Locate the project in the table and click **Open**.
     5. Select **Tags** from dashboard menu on the left-hand side.
 
-After choosing your tags and clicking 'Update' they will be added to project
-cards, tables and sorting options.
+![A screenshot of the admin project tags page](/assets/img/admin-project-tags.png?raw=true)
+
+## Updating the tags
+
+You can choose one tag for each tag type. If you need a tag that is not
+currently available please contact an administrator (you can use the email
+link at the bottom of each page).
+
+After choosing your tags, click the **Update** button.
