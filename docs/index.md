@@ -12,8 +12,8 @@ related projects can be configured, each with their own set of themed pages.
 To get started, you might find some of these links useful:
 
 - Want to create a project?
-Check out the [Creating Projects](/creating_projects/getting-started.md) section.
+Check out the [Creating Projects](/projects/new.md) section.
 - Need to modify a collection microsite?
-See the [Collections](/collections/getting-started.md) section.
+See the [Collections](/collections/introduction.md) section.
 - Installing an instance of LibCrowds?
 See the [Setup](/setup/installation.md) section.

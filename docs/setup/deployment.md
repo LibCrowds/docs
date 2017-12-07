@@ -223,4 +223,4 @@ See [Configuring LibCrowds](/setup/configuring-libcrowds.md) for details of all
 core LibCrowds settings.
 
 Or, find out how to setup your first
-[Collection Microsite](/collections/getting-started.md).
+[Collection Microsite](/collections/introduction.md).
