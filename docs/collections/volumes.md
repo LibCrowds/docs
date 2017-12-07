@@ -1,7 +1,7 @@
-Volumes provide a way of further grouping projects within a collection
-microsite and recording a list of sources from which projects can later be
-generated. The list of volumes provides a way of checking which projects have
-been completed for a particular volume and those that still need to be created.
+Each volume is tracked as a name against a URI that will later provide the
+resources for a project, or multiple projects. Keeping a list of all volumes
+that will be used to generate the projects for a collection microsite helps
+with later project generation and the aggregation of results.
 
 ??? question "How do I open this page?"
 
@@ -13,18 +13,16 @@ been completed for a particular volume and those that still need to be created.
     4. Locate the collection in the table and click **Open**.
     5. Select **Volumes** from dashboard menu on the left-hand side.
 
-The details recorded for each volume are `name` and `source`, with the source
-being a URL pointing to the input for the project, for example, a IIIF
-manifest ID.
+![A screenshot of the collection volumes admin page](/assets/img/admin-collection-volumes.png?raw=true)
 
-As these lists of volumes may become quite long, they are uploaded to the
-platform as a CSV file. The CSV file should contain two columns, with the
-names in the first column and the associated sources in the second. The CSV
-file should not contain any heading row.
+## Updating the list of volumes
 
-To upload a new list of volumes click the 'Upload CSV' button at the top right
-of the table.
+The list of volumes can be updated in bulk, via CSV. To open the CSV upload
+form, click the **Upload CSV** button at the top of the page.
 
-!!! warning
-    Uploading a CSV file will overwrite the current list of volumes for the
-    collection.
+The CSV upload form will expain which columns are required in the CSV file.
+For example, IIIF Annotation projects take an IIIF manifest URI as their input,
+so the CSV file uploaded for these projects should contain a name in the first
+column and a manifest URI in the second.
+
+When you're ready, select your CSV file and click **Submit**.
