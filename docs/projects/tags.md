@@ -1,6 +1,5 @@
 Tags are used to help users more easily location the types of project within a
-collection that they're interested in. They appear on the project cards
-and in the Sorting Options box on the main projects page.
+collection that they're interested in.
 
 ??? question "How do I open this page?"
 
@@ -14,6 +13,13 @@ and in the Sorting Options box on the main projects page.
     5. Select **Tags** from dashboard menu on the left-hand side.
 
 ![A screenshot of the admin project tags page](/assets/img/admin-project-tags.png?raw=true)
+*A screenshot of the admin project tags page*
+
+Selected tags will appear on the project cards and in the Sorting Options box
+on the main projects page.
+
+![A screenshot of the main collection projects page](/assets/img/collection-projects.png?raw=true)
+*A screenshot of the main collection projects page*
 
 ## Updating the tags
 
