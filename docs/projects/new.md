@@ -4,7 +4,8 @@ rights.
 
 ??? question "How do I open this page?"
 
-    Admin rights are required to access this page. If you have admin rights:
+    Administrator or editor rights are required to access this page. If you
+    have the correct rights:
 
     1. Sign in to your LibCrowds account.
     2. Click your username at the right of the naviation bar.
@@ -67,7 +68,7 @@ the **Select** button.
 
 ### 4. Choose the project's tags
 
-Set some tags to help the project be more easily located and click the
+Select some tags to help the project be more easily located, then click the
 **Next** button.
 
 ??? tip "Adding tags"

@@ -4,8 +4,8 @@ requirements, the webhook URL and a button to publish the project.
 
 ??? question "How do I open this page?"
 
-    Admin or editor rights are required to access this page. If you have admin
-    or editor rights:
+    Administrator or editor rights are required to access this page. If you
+    have the correct rights:
 
     1. Sign in to your LibCrowds account.
     2. Click your username at the right of the naviation bar.
