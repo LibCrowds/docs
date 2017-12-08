@@ -18,12 +18,54 @@ with later project generation and the aggregation of results.
 
 ## Updating the list of volumes
 
-The list of volumes can be updated in bulk, via CSV. To open the CSV upload
-form, click the **Upload CSV** button at the top of the page.
+The list of volumes can be updated in bulk, via CSV by clicking the
+**Upload CSV** button at the top of the page.
 
-The CSV upload form will expain which columns are required in the CSV file.
-For example, IIIF Annotation projects take an IIIF manifest URI as their input,
-so the CSV file uploaded for these projects should contain a name in the first
-column and a manifest URI in the second.
+The form that is displayed will expain which columns are required in the
+CSV file for the task presenter type that is currently set for the collection.
 
-When you're ready, select your CSV file and click **Submit**.
+??? tip "Updating a collection's task presenter"
+    See the [Collection Details](/collection/details.md) guide to find out
+    how to change the collection's task presenter.
+
+To upload a new list of volumes select your CSV file and click **Submit**.
+
+Following is an explanation of the details required for each type of task
+presenter.
+
+### IIIF Annotation projects
+
+IIIF manifests provide the input for IIIF annotation projects. These manifests
+contain the metadata required to display content served via the IIIF APIs,
+such as a set of images.
+
+A manifest URI should look like this:
+
+```
+# pattern
+{scheme}://{host}/{prefix}/{identifier}/manifest
+
+# example
+http://api.bl.uk/metadata/iiif/ark:/81055/vdc_100022588857.0x000002/manifest.json
+```
+
+Each row in the CSV file should therefore contain a name in the first column
+and a IIIF manifest URI in the second.
+
+### Z39.50 projects
+
+The images for Z39.50 projects are loaded from
+[Flickr](https://www.flickr.com), which provides 1TB of image storage for free.
+
+A Flickr album URI should look like this:
+
+```
+# pattern
+{scheme}://www.flickr.com/photos/{user_id}/albums/{album_id}
+
+# example
+{scheme}://www.flickr.com/photos/132066275@N04/albums/72157653533516031
+```
+
+Each row in the CSV file should therefore contain a name in the first column
+and a Flickr album URI in the second.
