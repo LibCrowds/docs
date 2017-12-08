@@ -13,12 +13,14 @@ are managed via this section.
     5. Select **Tags** from dashboard menu on the left-hand side.
 
 ![A screenshot of the collection tags admin page](/assets/img/admin-collection-tags.png?raw=true)
+<br><small>*A screenshot of the collection tags admin page*</small>
 
 For each tag type created a new filter will be added to
-the  collection's main projects page page (shown on the left in the screenshot
+the collection's main projects page page (shown on the left in the screenshot
 below).
 
-![A screenshot of the main collection projects page](/assets/img/collection-projects.png?raw=true)
+![A screenshot of a collection microsite's main projects page](/assets/img/collection-projects.png?raw=true)
+<br><small>*A screenshot of a collection microsite's main projects page*</small>
 
 ## Creating
 
@@ -28,6 +30,7 @@ colour and set an initial list of tags (e.g. London, Plymouth etc.), then
 click 'OK'.
 
 ![A screenshot of the new tag type modal](/assets/img/admin-collection-tags-new.png?raw=true)
+<br><small>*A screenshot of the new tag type modal*</small>
 
 ## Updating
 

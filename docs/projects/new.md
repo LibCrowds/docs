@@ -17,6 +17,7 @@ rights.
     the email icon in the footer of each page.
 
 ![A screenshot of the collection volumes admin page](/assets/img/admin-project-new.png?raw=true)
+<br><small>*A screenshot of the collection volumes admin page*</small>
 
 Projects are generated from templates that are maintained by LibCrowds
 administrators. This is partly for quality control and partly so that it's

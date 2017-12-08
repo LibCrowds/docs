@@ -14,6 +14,7 @@ with later project generation and the aggregation of results.
     5. Select **Volumes** from dashboard menu on the left-hand side.
 
 ![A screenshot of the collection volumes admin page](/assets/img/admin-collection-volumes.png?raw=true)
+<br><small>*A screenshot of the collection volumes admin page*</small>
 
 ## Updating the list of volumes
 

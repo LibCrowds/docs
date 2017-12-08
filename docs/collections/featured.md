@@ -12,6 +12,7 @@ of the collection microsite to which they belong.
     5. Select **Featured Projects** from dashboard menu on the left-hand side.
 
 ![A screenshot of a featured project on a collection microsite homepage](/assets/img/admin-collection-featured.jpg?raw=true)
+<br><small>*A screenshot of a featured project on a collection microsite homepage*</small>
 
 To feature a project, locate it in the table and click the 'Add to Featured' button.
 

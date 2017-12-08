@@ -14,6 +14,7 @@ creation but can be edited at any time via this section.
     5. Select **Help** from dashboard menu on the left-hand side.
 
 ![A screenshot of a project's help modal](/assets/img/admin-project-help.png)
+<br><small>*A screenshot of a project's help modal*</small>
 
 ## Updating
 

@@ -12,7 +12,8 @@ such as on the main projects page of a collection microsite.
     4. Locate the project in the table and click **Open**.
     5. Select **Thumbnail** from dashboard menu on the left-hand side.
 
-![A screenshot of the admin project thumbnail page](/assets/img/admin-project-thumbnail.png?raw=true)
+![A screenshot of the project thumbnail admin page](/assets/img/admin-project-thumbnail.png?raw=true)
+<br><small>*A screenshot of the project thumbnail admin page*</small>
 
 ## Updating the thumbnail
 

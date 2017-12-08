@@ -12,7 +12,8 @@ be displayed.
     4. Locate the collection in the table and click **Open**.
     5. Select **Celebration** from dashboard menu on the left-hand side.
 
-![An animation showing the project completion celebration message](/assets/img/project-celebration.gif)
+![An animation showing a project completion celebration message](/assets/img/project-celebration.gif?raw=true)
+<br><small>*An animation showing a project completion celebration message*</small>
 
 ## Updating
 

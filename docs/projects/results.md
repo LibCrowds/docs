@@ -15,6 +15,7 @@ analysis for particular sets of tasks.
     5. Select **Results** from dashboard menu on the left-hand side.
 
 ![A screenshot of the project results admin page](/assets/img/admin-project-results.png?raw=true)
+<br><small>*A screenshot of the project results admin page*</small>
 
 ## Updating Results
 

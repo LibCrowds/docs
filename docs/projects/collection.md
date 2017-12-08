@@ -13,7 +13,8 @@ this will rarely be necessary).
     4. Locate the project in the table and click **Open**.
     5. Select **Collection** from dashboard menu on the left-hand side.
 
-![A screenshot of the admin project collection page](/assets/img/admin-project-collection.png?raw=true)
+![A screenshot of the project collection admin page](/assets/img/admin-project-collection.png?raw=true)
+<br><small>*A screenshot of the project collection admin page*</small>
 
 ## Updating the collection
 

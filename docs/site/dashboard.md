@@ -13,12 +13,13 @@ past week. The statistics displayed here include:
     2. Click your username at the right of the naviation bar.
     3. Select **Site Admin** from the dropdown menu.
 
-![A screenshot of the site admin dashboard](/assets/img/admin-site-dashboard.png?raw=true)
+![A screenshot of the site admin dashboard page](/assets/img/admin-site-dashboard.png?raw=true)
+<br><small>*A screenshot of the site admin dashboard page*</small>
 
 ## Updating
 
-Statistics are updated every 24 hours, but if you want to see the most recent
-data you can click the 'Refresh' button.
+Statistics are updated every 24 hours. However, if you want to see the most
+recent data you can click the **Refresh** button.
 
 ## Alerts
 

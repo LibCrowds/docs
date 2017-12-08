@@ -13,7 +13,8 @@ requirements, the webhook URL and a button to publish the project.
     4. Locate the project in the table and click **Open**.
     5. Select **Details** from dashboard menu on the left-hand side.
 
-![A screenshot of the admin project details page](/assets/img/admin-project-details.png?raw=true)
+![A screenshot of the project details admin page](/assets/img/admin-project-details.png?raw=true)
+<br><small>*A screenshot of the project details admin page*</small>
 
 ## Updating the project metadata
 
