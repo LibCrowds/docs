@@ -33,13 +33,51 @@ design the required templates.
 
 ## Creating a project
 
-The instructions on-screen will guide you through the creation process. In
-short, the steps are as follows:
+The instructions on-screen will guide you through the creation process. The
+steps are as follows:
 
-1. Choose a colleciton microsite
-2. Choose a template
-3. Choose a volume
-4. Confirm
+### 1. Choose a colleciton microsite
+
+Locate the collection microsite that the project should appear on and click
+the **Select** button.
+
+### 2. Choose a template
+
+Locate the template that the project should be generated from and click
+the **Select** button.
+
+??? tip "Adding templates"
+
+    The available templates for a collection can be set by administrators (see
+    the [Collection Project Templates](/collections/templates.md) guide). If
+    you don't have administrator rights you can get in touch by clicking the
+    email icon in the page footer.
+
+### 3. Choose a volume
+
+Locate the volume that the project should be generated from and click
+the **Select** button.
+
+??? tip "Adding volumes"
+
+    The available volumes for a collection can be set by administrators (see
+    the [Collection Volumes](/collections/volumes.md) guide). If you
+    don't have administrator rights you can get in touch by clicking the email
+    icon in the page footer.
+
+### 4. Choose the project's tags
+
+Set some tags to help the project be more easily located and click the
+**Next** button.
+
+??? tip "Adding tags"
+
+    The available tags for a collection can be set by administrators (see
+    the [Collection Tags](/collections/tags.md) guide). If you don't
+    have administrator rights you can get in touch by clicking the email icon
+    in the page footer.
+
+### 5. Confirm
 
 When the **Create** button is clicked the project will be generated. If the
 project is to contain a large amount of tasks you will recieve an email when
