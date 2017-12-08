@@ -9,6 +9,8 @@ extra:
       link: 'https://github.com/LibCrowds'
     - type: 'twitter'
       link: 'https://twitter.com/LibCrowds'
+    - type: 'envelope'
+      link: 'mailto:digitalresearch@bl.uk'
 markdown_extensions:
   - admonition
   - codehilite
