@@ -34,13 +34,25 @@ design the required templates.
 
 ## Creating a project
 
-The instructions on-screen will guide you through the creation process. The
-steps are as follows:
+Open the new projects page by signing into your LibCrowds account, clicking
+your username on the navigation bar at the top right of the screen and
+selecting **Project Admin**, then **New Project**.
+
+The instructions on the new projects page will guide you through the creation
+process. The steps are outlined as follows:
 
 ### 1. Choose a colleciton microsite
 
 Locate the collection microsite that the project should appear on and click
 the **Select** button.
+
+??? tip "Adding collections"
+
+    Collections are created by administrators (see the
+    [New Collection](/collections/new.md) guide). If
+    you don't have administrator rights and you think a new collection is
+    required you can get in touch by clicking the email icon in the footer
+    of any page.
 
 ### 2. Choose a template
 
@@ -51,8 +63,9 @@ the **Select** button.
 
     The available templates for a collection can be set by administrators (see
     the [Collection Project Templates](/collections/templates.md) guide). If
-    you don't have administrator rights you can get in touch by clicking the
-    email icon in the page footer.
+    you don't have administrator rights and you would like to request an update
+    to the available templates you can get in touch by clicking the email icon
+    in the footer of any page.
 
 ### 3. Choose a volume
 
@@ -63,8 +76,9 @@ the **Select** button.
 
     The available volumes for a collection can be set by administrators (see
     the [Collection Volumes](/collections/volumes.md) guide). If you
-    don't have administrator rights you can get in touch by clicking the email
-    icon in the page footer.
+    don't have administrator rights and you would like to request a new volume
+    you can get in touch by clicking the email icon in the footer
+    of any page.
 
 ### 4. Choose the project's tags
 
@@ -75,8 +89,8 @@ Select some tags to help the project be more easily located, then click the
 
     The available tags for a collection can be set by administrators (see
     the [Collection Tags](/collections/tags.md) guide). If you don't
-    have administrator rights you can get in touch by clicking the email icon
-    in the page footer.
+    have administrator rights and you would like to request an new tag you can
+    get in touch by clicking the email icon in the page footer.
 
 ### 5. Confirm
 
