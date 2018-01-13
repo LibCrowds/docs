@@ -34,13 +34,13 @@ CATEGORY_INFO_PUBLIC_FIELDS = [
   'published',
   'celebration',
   'volumes',
-  'templates',
   'tags'
 ]
 
 # Additional user fields
 USER_INFO_PUBLIC_FIELDS = [
-  'announcements'
+  'announcements',
+  'templates'
 ]
 
 # Additional project fields
