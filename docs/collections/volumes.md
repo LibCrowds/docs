@@ -1,7 +1,9 @@
-Each volume is tracked as a name against a URI that will later provide the
-resources for a project, or multiple projects. Keeping a list of all volumes
-that will be used to generate the projects for a collection microsite helps
-with later project generation and the aggregation of results.
+Volumes provide the input sources used to build new projects (e.g. a
+IIIF manifest URI). They are also used to group related projects
+within a collection, helping with further functionality such as the
+aggregation of results data.
+
+The available volumes for a collection are managed via this section.
 
 ??? info "Administrator rights required"
 
@@ -18,31 +20,29 @@ with later project generation and the aggregation of results.
     4. Locate the collection in the table and click **Open**.
     5. Select **Volumes** from dashboard menu on the left-hand side.
 
-![A screenshot of the collection volumes admin page](/assets/img/admin-collection-volumes.png?raw=true)
-<br><small>*A screenshot of the collection volumes admin page*</small>
+![A screenshot of a collection's volumes admin page](/assets/img/admin-collection-volumes.png?raw=true)
+<br><small>*A screenshot of a collection's volumes admin page*</small>
 
-## Updating the list of volumes
+## Adding a volume
 
-The list of volumes can be updated in bulk, via CSV by clicking the
-**Upload CSV** button at the top of the page.
+To add a new volume click the **New** button at the top of the volumes table.
+This will display the form shown in the screenshot below.
 
-The form that is displayed will expain which columns are required in the
-CSV file for the task presenter type that is currently set for the collection.
+![A screenshot of the new volume page](/assets/img/admin-collection-volumes-new.png?raw=true)
+<br><small>*A screenshot of the new volume page*</small>
 
-??? tip "Updating a collection's task presenter"
-    See the [Collection Details](/collection/details.md) guide to find out
-    how to change the collection's task presenter.
+Volumes are added using a name and an input source, both of which must be
+unique (i.e. they don't already exist in the volumes listed for the
+collection).
 
-To upload a new list of volumes select your CSV file and click **Submit**.
+The format of the input source depends on the type of task presenter chosen
+for the collection.
 
-Following is an explanation of the details required for each type of task
-presenter.
+#### IIIF Annotation
 
-### IIIF Annotation projects
-
-IIIF manifests provide the input for IIIF annotation projects. These manifests
-contain the metadata required to display content served via the IIIF APIs,
-such as a set of images.
+For collections using the IIIF Annotation task presenter, the input source
+should be a IIIF manifest. These manifests contain the metadata required to
+display content served via the IIIF APIs.
 
 A manifest URI should look like this:
 
@@ -54,13 +54,10 @@ A manifest URI should look like this:
 http://api.bl.uk/metadata/iiif/ark:/81055/vdc_100022588857.0x000002/manifest.json
 ```
 
-Each row in the CSV file should therefore contain a name in the first column
-and a IIIF manifest URI in the second.
+#### Z39.50
 
-### Z39.50 projects
-
-The images for Z39.50 projects are loaded from
-[Flickr](https://www.flickr.com), which provides 1TB of image storage for free.
+For collections using the Z39.50 task presenter, the input source should be
+the URI of a Flickr album.
 
 A Flickr album URI should look like this:
 
@@ -72,5 +69,30 @@ A Flickr album URI should look like this:
 {scheme}://www.flickr.com/photos/132066275@N04/albums/72157653533516031
 ```
 
-Each row in the CSV file should therefore contain a name in the first column
-and a Flickr album URI in the second.
+## Updating a volume
+
+To update a volume, locate it in the table and click **Update**
+
+![A screenshot of the update volume page](/assets/img/admin-collection-volumes-update.png?raw=true)
+<br><small>*A screenshot of the update volume page*</small>
+
+A form displaying two tabs will be displayed, one to update the name and
+source and one to add a thumbnail image.
+
+The thumbnail image will be used for all projects subsequently generated
+using the volume.
+
+For more details about the name and source see the
+[Adding a volume](/collections/volumes#adding-a-volume) section above.
+
+
+## Deleting a volume
+
+In the rare case that you want to remove a volume, locate it in the table
+and click **Delete**.
+
+Note that deleting a volume will affect the aggregation of results for any
+projects that have already been built using that volume.
+
+!!! warning
+    Deletion is final, there is no undo.
