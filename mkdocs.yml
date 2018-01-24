@@ -40,7 +40,7 @@ pages:
       - Tags: 'projects/tags.md'
       - Collection: 'projects/collection.md'
       - Help: 'projects/help.md'
-      - Volumes: 'projects/volumes.md'
+      - Volume: 'projects/volume.md'
       - Results: 'projects/results.md'
   - Collections:
     - Introduction: 'collections/introduction.md'
