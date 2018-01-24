@@ -4,18 +4,11 @@ rights.
 
 ??? question "How do I open this page?"
 
-    Administrator or editor rights are required to access this page. If you
-    have the correct rights:
-
     1. Sign in to your LibCrowds account.
     2. Click your username at the right of the naviation bar.
     3. Select **Project Admin** from the dropdown menu.
     3. Select **New Project** from the dashboard menu on the left-hand side.
 
-??? question "How do I request administrator or editor rights?"
-
-    To request administrator or editor rights please get in touch by clicking
-    the email icon in the footer of each page.
 
 ![A screenshot of the collection volumes admin page](/assets/img/admin-project-new.png?raw=true)
 <br><small>*A screenshot of the collection volumes admin page*</small>

@@ -5,6 +5,11 @@ past week. The statistics displayed here include:
 - New tasks and contributions;
 - Projects created, published and updated.
 
+??? info "Administrator rights required"
+
+    To request administrator rights please get in touch by clicking the email
+    icon in the footer of this page.
+
 ??? question "How do I open this page?"
 
     Admin rights are required to access this page. If you have admin rights:

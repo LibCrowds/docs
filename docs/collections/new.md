@@ -3,6 +3,11 @@ Collection microsites comprise a set of themed pages based around a
 particular set of projects. They can be created by registered users with
 administrator rights.
 
+??? info "Administrator rights required"
+
+    To request administrator rights please get in touch by clicking the email
+    icon in the footer of this page.
+
 ??? question "How do I open this page?"
 
     Admin rights are required to access this page. If you have admin rights:
@@ -11,11 +16,6 @@ administrator rights.
     2. Click your username at the right of the naviation bar.
     3. Select **Collection Admin** from the dropdown menu.
     5. Select **New Collection** from dashboard menu on the left-hand side.
-
-??? question "How do I request administrator rights?"
-
-    To request administrator rights please get in touch by clicking
-    the email icon in the footer of each page.
 
 ![A screenshot of the new collection admin page](/assets/img/admin-collection-new.png?raw=true)
 <br><small>*A screenshot of the new collection admin page*</small>

@@ -2,6 +2,11 @@ A set of markdown editors are provided here for modifying content for the About,
 Projects and Data pages. Changes are made in real-time, although you may have
 to refresh your browser to see them.
 
+??? info "Administrator rights required"
+
+    To request administrator rights please get in touch by clicking the email
+    icon in the footer of this page.
+
 ??? question "How do I open this page?"
 
     Admin rights are required to access this page. If you have admin rights:

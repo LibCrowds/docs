@@ -1,6 +1,11 @@
 To draw attention to particular projects you can feature them on the homepage
 of the collection microsite to which they belong.
 
+??? info "Administrator rights required"
+
+    To request administrator rights please get in touch by clicking the email
+    icon in the footer of this page.
+
 ??? question "How do I open this page?"
 
     Admin rights are required to access this page. If you have admin rights:

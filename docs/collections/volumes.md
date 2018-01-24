@@ -3,6 +3,11 @@ resources for a project, or multiple projects. Keeping a list of all volumes
 that will be used to generate the projects for a collection microsite helps
 with later project generation and the aggregation of results.
 
+??? info "Administrator rights required"
+
+    To request administrator rights please get in touch by clicking the email
+    icon in the footer of this page.
+
 ??? question "How do I open this page?"
 
     Admin rights are required to access this page. If you have admin rights:

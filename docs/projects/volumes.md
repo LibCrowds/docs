@@ -1,12 +1,15 @@
-Volumes are used to group projects within a collection and the volume that a
+Volumes are used to group projects within a collection. The volume that a
 project belongs to will usually be set at project creation. However, if it is
 later decided that a project's volume should be changed this can be done by
 locating it in the table and clicking 'Select'.
 
-??? question "How do I open this page?"
+??? info "Admin rights are required to access this page"
 
-    Administrator or editor rights are required to access this page. If you
-    have the correct rights:
+    Administrator rights are required to access this page. If you have admin
+    rights:
+
+
+??? question "How do I open this page?"
 
     1. Sign in to your LibCrowds account.
     2. Click your username at the right of the naviation bar.

@@ -1,9 +1,9 @@
 # FAQ
 
-??? question "How do I request admin or editor rights?"
+??? question "How do I request administrator rights?"
 
-    To request admin or editor rights please send us an email by clicking
-    the email link in the footer of any page.
+    To request administrator rights please get in touch by clicking the email
+    icon in the footer of this page.
 
 ??? question "How can I cite LibCrowds?"
 

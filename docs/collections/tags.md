@@ -2,6 +2,11 @@ Tags are used to help users more easily location the types of project that
 they're interested in. The available tags for all projects within a collection
 are managed via this section.
 
+??? info "Administrator rights required"
+
+    To request administrator rights please get in touch by clicking the email
+    icon in the footer of this page.
+
 ??? question "How do I open this page?"
 
     Admin rights are required to access this page. If you have admin rights:

@@ -1,7 +1,12 @@
-The platform runs a range of sceduled tasks in the background for things such
-as email delivery, updating statistics and building data files. The interface
-provided here can be useful for diagnosing issues if any of these things don't
-appear to be working correctly (check the failed tasks list).
+The LibCrowds platform runs a range of scheduled tasks in the background to
+handle things such as email delivery, updating statistics and building data
+files. The interface provided here can be useful for diagnosing any issues
+with these tasks (check the failed tasks list).
+
+??? info "Administrator rights required"
+
+    To request administrator rights please get in touch by clicking the email
+    icon in the footer of this page.
 
 ??? question "How do I open this page?"
 

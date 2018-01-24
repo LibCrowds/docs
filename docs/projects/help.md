@@ -4,9 +4,6 @@ creation but can be edited at any time via this section.
 
 ??? question "How do I open this page?"
 
-    Administrator or editor rights are required to access this page. If you
-    have the correct rights:
-
     1. Sign in to your LibCrowds account.
     2. Click your username at the right of the naviation bar.
     3. Select **Project Admin** from the dropdown menu.
