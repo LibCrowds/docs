@@ -1,5 +1,5 @@
 This is where the core settings for collection microsite's are configured. The
-available settings are explained in moew detail below.
+available settings are explained in more detail below.
 
 ??? info "Administrator rights required"
 
