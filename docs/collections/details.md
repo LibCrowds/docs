@@ -1,5 +1,5 @@
-This is where the core settings for the microsite are configured, each of which
-are explained below.
+This is where the core settings for collection microsite's are configured. The
+available settings are explained in moew detail below.
 
 ??? info "Administrator rights required"
 
@@ -16,11 +16,16 @@ are explained below.
     4. Locate the collection in the table and click **Open**.
     5. Select **Details** from dashboard menu on the left-hand side.
 
+![A screenshot of a collection microsite's details admin page](/assets/img/admin-collection-details.png?raw=true)
+<br><small>*A screenshot of a collection microsite's details admin page*</small>
+
+## Available settings
+
 | Setting            | Description
 |--------------------|------------------------------------------------------------------------------------------------|
 | Published          | Once published, a microsite is added to the platform homepage and is accessible to all users.  |
 | Name               | Applies branding throughout the collection microsite.                                          |
-| Short name         | Used as an identifier and to form the microsite endpoint (e.g. /collection/short_name).      |
+| Short name         | Used as an identifier and to form the microsite endpoint (e.g. /collection/short_name).        |
 | Tagline            | Appears over the hero image on the microsite's homepage and forms a part of it's title.        |
 | Description        | Appears on the microsite's homepage and forms its meta description.                            |
 | Background Image   | The URL for an image used to provide a consistent theme for all of the microsite's core pages. |
