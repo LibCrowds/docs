@@ -13,13 +13,6 @@ rights.
 ![A screenshot of the collection volumes admin page](/assets/img/admin-project-new.png?raw=true)
 <br><small>*A screenshot of the collection volumes admin page*</small>
 
-Projects are generated from templates that are maintained by LibCrowds
-administrators. This is partly for quality control and partly so that it's
-easier for future projects to be generated and organised. Similarly, you will
-be asked to choose the volume that contains the input for the project
-(e.g. the images). These volumes are also maintained by LibCrowds
-administrators.
-
 If you can't find a suitable template or volume for the type of project that
 you would like to create please get in touch by clicking the email icon in
 the page footer. We can then help you to locate the items you're after, or

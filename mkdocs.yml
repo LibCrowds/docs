@@ -42,6 +42,8 @@ pages:
       - Help: 'projects/help.md'
       - Volume: 'projects/volume.md'
       - Results: 'projects/results.md'
+  - Templates:
+    - Introduction: 'templates/introduction.md'
   - Collection Admin:
     - Introduction: 'collections/introduction.md'
     - New Collection: 'collections/new.md'
