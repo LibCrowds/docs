@@ -44,6 +44,7 @@ pages:
       - Results: 'projects/results.md'
   - Templates:
     - Introduction: 'templates/introduction.md'
+    - New Template: 'templates/new.md'
   - Collection Admin:
     - Introduction: 'collections/introduction.md'
     - New Collection: 'collections/new.md'
@@ -54,7 +55,6 @@ pages:
       - Featured Projects: 'collections/featured.md'
       - Task Presenter: 'collections/presenter.md'
       - Tags: 'collections/tags.md'
-      - Project Templates: 'collections/templates.md'
       - Volumes: 'collections/volumes.md'
       - Delete: 'collections/delete.md'
   - Site Admin:
