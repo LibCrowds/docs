@@ -47,11 +47,8 @@ the **Select** button.
 
 ??? tip "Adding templates"
 
-    The available templates for a collection can be set by administrators (see
-    the [Collection Project Templates](/collections/templates.md) guide). If
-    you don't have administrator rights and you would like to request an update
-    to the available templates you can get in touch by clicking the email icon
-    in the footer of any page.
+    See the [Project Templates](/templates/introduction) for more information
+    about how to create new templates.
 
 ### 3. Choose a volume
 
