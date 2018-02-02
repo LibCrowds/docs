@@ -48,6 +48,9 @@ PROJECT_INFO_PUBLIC_FIELDS = [
   'tags'
 ]
 
+# The user ID used to make automated announcements
+ANNOUNCEMENT_USER_ID = 1
+
 # Avoid 404 errors when accessing URLs with or without a trailing slash
 STRICT_SLASHES = False
 
