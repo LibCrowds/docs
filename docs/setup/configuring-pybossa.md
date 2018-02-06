@@ -77,7 +77,8 @@ FLICKR_SHARED_SECRET = 'your-secret'
 # Extra tasks to run when the application is started or restarted
 EXTRA_STARTUP_TASKS = {
     'check_for_missing_templates': True,
-    'populate_empty_results': True
+    'populate_empty_results': True,
+    'remove_bad_volumes': True
 }
 ```
 
