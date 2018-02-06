@@ -8,7 +8,7 @@ your PYBOSSA instance is configured according to the
 
 ## Domains
 
-Before we begin, it is important to not that both LibCrowds and PYBOSSA should
+Before we begin, it is important to note that both LibCrowds and PYBOSSA should
 be served from the same domain. This is because LibCrowds uses SSR, so the
 PYBOSSA session cookie needs to be shared with the LibCrowds server (rather
 than the client) and this will only work properly if both applications are

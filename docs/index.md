@@ -16,4 +16,4 @@ Check out the [New Project](/projects/new.md) guide.
 - Need to modify a collection microsite?
 See the [Collections](/collections/introduction.md) section.
 - Installing an instance of LibCrowds?
-See the [Setup](/setup/installation.md) section.
+See the [Setup](/setup/introduction.md) section.

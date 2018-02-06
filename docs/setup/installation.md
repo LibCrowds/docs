@@ -1,13 +1,7 @@
 The following guide explains how to download and install and instance of
-LibCrowds locally, for testing or development.
-
-## Introduction
-
-LibCrowds is fundamentally a [Vue.js](https://vuejs.org/) Server-Side Rendered
-(SSR) UI that incorporates various custom plugins and communicates with a
-[PYBOSSA](https://github.com/Scifabric/pybossa) backend.
-Therefore, we need to install, configure and run both an instance of LibCrowds
-and an instance of PYBOSSA.
+LibCrowds locally, for testing or development. If you are interested in
+deploying LibCrowds to a live server, see the
+[Deployment](/setup/deployment.md) guide.
 
 ## Install VirtualBox, Vagrant and git
 

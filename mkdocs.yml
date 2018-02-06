@@ -26,6 +26,7 @@ google_analytics:
 pages:
   - Introduction: 'index.md'
   - Setup:
+    - Introduction: 'setup/introduction.md'
     - Installation: 'setup/installation.md'
     - Configuring PYBOSSA: 'setup/configuring-pybossa.md'
     - Configuring LibCrowds: 'setup/configuring-libcrowds.md'

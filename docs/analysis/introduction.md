@@ -5,5 +5,5 @@ that type of task...
     Results analysis relies on the
     [pybossa-lc](https://github.com/LibCrowds/pybossa-lc) plugin being
     installed. If you're running your own instance of LibCrowds, see the
-    [Setup](/setup/installation.md) guide.
+    [Setup](/setup/introduction.md) guide.
 
