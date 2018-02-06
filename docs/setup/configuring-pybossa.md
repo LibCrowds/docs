@@ -67,8 +67,11 @@ SESSION_COOKIE_DOMAIN = 'mydomain.com'
 FLICKR_API_KEY = 'your-key'
 FLICKR_SHARED_SECRET = 'your-secret'
 
-# Analyse any empty results when the application starts or restarts
-POPULATE_EMPTY_RESULTS_ON_STARTUP = True
+# Extra tasks to run when the application is started or restarted
+EXTRA_STARTUP_TASKS = {
+    'check_for_missing_templates': False,
+    'populate_empty_results': False
+}
 ```
 
 !!! warning
