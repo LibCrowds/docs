@@ -8,9 +8,10 @@ do this):
 - [pybossa-z3950](https://github.com/alexandermendes/pybossa-z3950)
 - [pybossa-lc](https://github.com/LibCrowds/pybossa-lc)
 
-## Settings
+## Required settings
 
-Add these settins to following PYBOSSA's `settings_local.py` file:
+The following settings are all required for the application to run correctly.
+They should be added to PYBOSSA's `settings_local.py` file:
 
 ```python
 # Allow requests from LibCrowds
@@ -73,21 +74,30 @@ SESSION_COOKIE_DOMAIN = 'mydomain.com'
 # Flickr credentials (required for importing Z39.50 tasks)
 FLICKR_API_KEY = 'your-key'
 FLICKR_SHARED_SECRET = 'your-secret'
-
-# Extra tasks to run when the application is started or restarted
-EXTRA_STARTUP_TASKS = {
-    'check_for_missing_templates': True,
-    'populate_empty_results': True,
-    'remove_bad_volumes': True
-}
 ```
-
-!!! warning
-    These settings are all required for the application to run correctly.
 
 !!! tip
     See the [PYBOSSA documentation](http://docs.pybossa.com) for details of all
     other available settings.
+
+## Optional settings
+
+The settings below can be added to PYBOSSA's `settings_local.py` file to help
+with various administration tasks such as reanalysing all results or
+checking for empty templates.
+
+```python
+# The user ID used to make automated announcements
+ANNOUNCEMENT_USER_ID = 1
+
+# Extra tasks to run when the application is started or restarted
+EXTRA_STARTUP_TASKS = {
+    'reanalyse_all_results': False,
+    'populate_empty_results': True,
+    'check_for_missing_templates': True,
+    'remove_bad_volumes': True
+}
+```
 
 If you're following on from the [Installation](/setup/introduction.md) guide,
 you should now be able to open up
