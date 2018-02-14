@@ -67,5 +67,6 @@ pages:
     - Introduction: 'analysis/introduction.md'
     - Z39.50: 'analysis/z3950.md'
     - IIIF Annotation: 'analysis/iiif.md'
+  - Data: 'data.md'
   - FAQ: 'FAQ.md'
   - Glossary: 'glossary.md'
