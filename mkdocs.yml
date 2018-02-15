@@ -45,6 +45,7 @@ pages:
       - Results: 'projects/results.md'
   - Templates:
     - Introduction: 'templates/introduction.md'
+    - Analysis Rules: 'templates/analysis.md'
     - New Template: 'templates/new.md'
   - Collection Admin:
     - Introduction: 'collections/introduction.md'
@@ -63,10 +64,7 @@ pages:
     - Announcements: 'site/announcements.md'
     - Background Jobs: 'site/jobs.md'
     - User Management: 'site/users.md'
-  - Results Analysis:
-    - Introduction: 'analysis/introduction.md'
-    - Z39.50: 'analysis/z3950.md'
-    - IIIF Annotation: 'analysis/iiif.md'
+  - Results Analysis: 'analysis.md'
   - Data: 'data.md'
   - FAQ: 'FAQ.md'
   - Glossary: 'glossary.md'
