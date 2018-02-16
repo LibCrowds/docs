@@ -53,7 +53,9 @@ USER_INFO_PUBLIC_FIELDS = [
 
 # Additional project fields
 PROJECT_INFO_PUBLIC_FIELDS = [
-  'tags'
+  'tags',
+  'template_id',
+  'volume_id'
 ]
 
 # The user ID used to make automated announcements
