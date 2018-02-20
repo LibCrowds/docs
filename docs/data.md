@@ -1,3 +1,11 @@
+All data produced via the platform related to tasks and user contributions is
+made available for download via the Data page of each collection microsite.
+
+Data can be downloaded at the project, volume, or collection levels. The
+format of the data made available at each level varies.
+
+## Web Annotations
+
 Once each task is completed and all contributions have been analysed the final
 result for each task is stored in the results table as a list of Web
 Annotations wrapped with some additional information related to the task.
