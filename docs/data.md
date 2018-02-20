@@ -1,117 +1,65 @@
-All data produced via the platform related to tasks and user contributions is
-made available for download via the Data page of each collection microsite.
+All task-related data stored on the LibCrowds platform is made available in a
+variety of ways, each of which will be suitable for different audiences.
 
-Data can be downloaded at the project, volume, or collection levels. The
-format of the data made available at each level varies.
+In most cases, the final result data is likely to be the most useful. This is
+the data produced once a task has been completed and all contributions
+analysed. In its raw form, a final result is stored as Web Annotatation wrapped
+with information about the task that produced it.
+
+This section provides details about the structure of these final results and
+how they can be consumed.
 
 ## Web Annotations
 
-Once each task is completed and all contributions have been analysed the final
-result for each task is stored in the results table as a list of Web
-Annotations wrapped with some additional information related to the task.
+Web Annotations became a W3C standard on the 23rd February, 2017.
 
-## Exports
+> The Web Annotation Data Model specification describes a structured model and
+format to enable annotations to be shared and reused across different hardware
+and software platforms. Common use cases can be modeled in a manner that is
+simple and convenient, while at the same time enabling more complex
+requirements, including linking arbitrary content to a particular data point
+or to segments of timed multimedia resources.
 
-The final results data can be exported at project, volume or collection level.
+-- <cite>Web Annotation Data Model</cite>
 
-TODO: Update this page
+The LibCrowds platform currently produces annotations with three motivations:
+tagging, describing and commenting.
 
-??? summary "Example result fragment"
+### Tagging
 
-    Here is an example of a comment annotation added to the `annotations` key
-    of the final result.
+Tagging annotations are used to associate a tag with a specific target. For
+example, this type of annotation would be used in a IIIF Annotation project
+designed to mark up all of the titles on a page.
 
-    ```json
-    {
-      "annotations": [
-        {
-          "body":{
-            "type":"TextualBody",
-            "purpose":"commenting",
-            "value":"I like turtles.",
-            "format":"text/plain"
-          },
-          "motivation":"commenting",
-          "target":"https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100022589092.0x0001a3",
-          "created":"2017-11-17T15:28:15.088Z",
-          "modified":"2017-11-17T15:28:16.255Z",
-          "generated":"2017-11-17T15:28:15.088Z",
-          "@context":"http://www.w3.org/ns/anno.jsonld",
-          "type":"Annotation",
-          "id":"4b4ffe2a-b1a4-456f-8bf8-2c02660a3fe5"
-        }
-        ...
-      ]
-    }
-    ```
+??? summary "Example tagging annotation"
 
-??? summary "Example result fragment"
+### Describing
 
-    Here is an example of two selections added to the `annotations`
-    key of the final result.
+Describing annotations are used for user-submitted transcriptions. For example,
+this type of annotation would be used in a IIIF Annotation project designed to
+transcribe all of the titles on a page.
 
-    ```json
-    {
-      "annotations": [
-        {
-          "body":[
-            {
-              "type":"TextualBody",
-              "purpose":"tagging",
-              "value":"title"
-            },
-            {
-              "source":"http://purl.org/dc/terms/title",
-              "type":"SpecificResource",
-              "purpose":"classifying"
-            }
-          ],
-          "motivation":"tagging",
-          "target":{
-            "source":"https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100022589092.0x000255",
-            "selector":{
-              "conformsTo":"http://www.w3.org/TR/media-frags/",
-              "type":"FragmentSelector",
-              "value":"?xywh=123,333,1462,214"
-            }
-          },
-          "created":"2017-09-16T18:13:31.690Z",
-          "modified":"2017-11-17T10:03:40.753139",
-          "generated":"2017-09-16T18:13:31.690Z",
-          "@context":"http://www.w3.org/ns/anno.jsonld",
-          "type":"Annotation",
-          "id":"6b55e881-2d8a-4fa7-b983-8428d63df54e"
-        },
-        {
-          "body":[
-            {
-              "type":"TextualBody",
-              "purpose":"tagging",
-              "value":"title"
-            },
-            {
-              "source":"http://purl.org/dc/terms/title",
-              "type":"SpecificResource",
-              "purpose":"classifying"
-            }
-          ],
-          "motivation":"tagging",
-          "target":{
-            "source":"https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100022589092.0x000255",
-            "selector":{
-              "conformsTo":"http://www.w3.org/TR/media-frags/",
-              "type":"FragmentSelector",
-              "value":"?xywh=138,1097,1481,222"
-            }
-          },
-          "created":"2017-09-16T18:13:37.282Z",
-          "modified":"2017-11-17T10:03:40.753250",
-          "generated":"2017-09-16T18:13:37.282Z",
-          "@context":"http://www.w3.org/ns/anno.jsonld",
-          "type":"Annotation",
-          "id":"ffaa8ac9-1352-4fc9-a78e-4c7f9e9881ba"
-        }
-      ...
-      ]
-    }
-    ```
+??? summary "Example describing annotation"
+
+### Commenting
+
+Commenting annotations are used to store comments about a target. For example,
+this type of annotation would be used to store any user-input provided via the
+notes field of a IIIF Annotation project.
+
+??? summary "Example commenting annotation"
+
+## Downloads
+
+Data can be downloaded via the Data page of each collection microsite in JSON
+and CSV formats. Downloads are available at the project, volume, and
+collection levels.
+
+### Project
+
+### Volume
+
+At the volume level, final results for all projects associated with each volume
+are collated.
+
+### Collection
