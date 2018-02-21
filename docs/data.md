@@ -69,9 +69,9 @@ Describing annotations are used for user-submitted transcriptions. For example,
 this type of annotation would be used in a IIIF Annotation project designed to
 transcribe all of the titles on a page.
 
-??? summary "Example describing annotation"
+!!! summary "Example describing annotation"
 
-  ```json
+    ```json
     {
       "@context": "http://www.w3.org/ns/anno.jsonld",
       "id": "https://www.libcrowds.com/data/annotations/7640ddcd-6e48-4a9c-a360-3383032593b6",
@@ -103,7 +103,7 @@ transcribe all of the titles on a page.
         "selector": {
           "conformsTo": "http://www.w3.org/TR/media-frags/",
           "type": "FragmentSelector",
-          "value": "?xywh=7.0,1191.0,1962.0,359.0"
+          "value": "?xywh=7,1191,1962,359"
         }
       }
     }
