@@ -31,7 +31,37 @@ Tagging annotations are used to associate a tag with a specific target. For
 example, this type of annotation would be used in a IIIF Annotation project
 designed to mark up all of the titles on a page.
 
-??? summary "Example tagging annotation"
+!!! summary "Example tagging annotation"
+
+    ```json
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "https://www.libcrowds.com/data/annotations/ce67281d-5b2a-4bdc-ba33-cb46525d0625",
+      "type": "Annotation",
+      "motivation": "tagging",
+      "created": "2017-08-31T04:25:28.178Z",
+      "generated": "2017-08-31T04:25:28.178Z",
+      "generator": {
+        "id": "https://www.libcrowds.com",
+        "type": "Software",
+        "name": "LibCrowds",
+        "homepage": "https://www.libcrowds.com"
+      },
+      "body": {
+        "type": "TextualBody",
+        "purpose": "tagging",
+        "value": "title"
+      },
+      "target": {
+        "source": "https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100022589158.0x00007f",
+        "selector": {
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "type": "FragmentSelector",
+          "value": "?xywh=245,1172,1789,270"
+        }
+      }
+    }
+    ```
 
 ### Describing
 
@@ -41,13 +71,75 @@ transcribe all of the titles on a page.
 
 ??? summary "Example describing annotation"
 
+  ```json
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "https://www.libcrowds.com/data/annotations/7640ddcd-6e48-4a9c-a360-3383032593b6",
+      "type": "Annotation",
+      "motivation": "describing",
+      "created": "018-02-08T22:15:07.152Z",
+      "generated": "018-02-08T22:15:07.152Z",
+      "generator": {
+        "id": "https://www.libcrowds.com",
+        "type": "Software",
+        "name": "LibCrowds",
+        "homepage": "https://www.libcrowds.com"
+      },
+      "body": [
+        {
+          "type": "TextualBody",
+          "purpose": "tagging",
+          "value": "title"
+        }
+        {
+          "type": "TextualBody",
+          "purpose": "describing",
+          "value": "King Lear",
+          "format": "text/plain"
+        }
+      ],
+      "target": {
+        "source": "https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100022589096.0x0002b7",
+        "selector": {
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "type": "FragmentSelector",
+          "value": "?xywh=7.0,1191.0,1962.0,359.0"
+        }
+      }
+    }
+    ```
+
 ### Commenting
 
 Commenting annotations are used to store comments about a target. For example,
 this type of annotation would be used to store any user-input provided via the
 notes field of a IIIF Annotation project.
 
-??? summary "Example commenting annotation"
+!!! summary "Example commenting annotation"
+
+    ```json
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "https://www.libcrowds.com/data/annotations/97b63351-c1a4-456e-8871-b299aa684639",
+      "type": "Annotation",
+      "motivation": "commenting",
+      "created": "2017-09-05T11:07:32.273Z",
+      "generated": "2017-09-05T11:07:32.273Z",
+      "generator": {
+        "id": "https://www.libcrowds.com",
+        "type": "Software",
+        "name": "LibCrowds",
+        "homepage": "https://www.libcrowds.com"
+      },
+      "body": {
+        "type": "TextualBody",
+        "purpose": "commenting",
+        "value": "Not a playbill",
+        "format": "text/plain"
+      },
+      "target": "https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100022589158.0x000094"
+    }
+    ```
 
 ## Downloads
 
