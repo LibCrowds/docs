@@ -20,9 +20,27 @@ the [Data section](/data.md).
 
 Each project template provides custom normalisation options that are applied
 during the results analysis process. These options include case-conversion,
-trimming of punctuation and formatting dates consistently. For guidance about
-the available normalisation rules see the
+trimming of punctuation and formatting dates consistently. Details of the
+available normalisation rules are given in the
 [Templates Analysis Rules](/templates/analysis.md) guide.
+
+## Task redundancy
+
+The analysis process is first triggered when the minimum number of required
+contributions for a task is reached.
+
+For tagging tasks is the point at which the tags are clustered together and
+those clusters used to create a final result.
+
+For all other tasks this minimum refers to the number of contributions that
+must match (following normalisation) before an answer will be stored as a final
+result. If the minimum is not met then the number of answers required for a
+task will be increased until the maximum is reached, after which no answer
+will be stored.
+
+Guidance on how to set the minimum and maximum contributions for a set
+of projects is given in the [Templates Core Details](/templates/details.md)
+guide.
 
 ## Example scenarios
 
