@@ -140,3 +140,11 @@ with `twitter:site` meta tag.
 ```js
 config.twitter = 'mytwitterhandle'
 ```
+
+### disableProjectBuilder
+
+Disable project building functions for non-admin users.
+
+```js
+config.disableProjectBuilder = true
+```
