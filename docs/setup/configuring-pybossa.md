@@ -95,7 +95,6 @@ ANNOUNCEMENT_USER_ID = 1
 # Extra tasks to run when the application is started or restarted
 EXTRA_STARTUP_TASKS = {
     'reanalyse_all_results': False,
-    'populate_empty_results': True,
     'check_for_missing_templates': True,
     'remove_bad_volumes': True
 }
