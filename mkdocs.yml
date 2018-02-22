@@ -66,6 +66,9 @@ pages:
     - Background Jobs: 'site/jobs.md'
     - User Management: 'site/users.md'
   - Results Analysis: 'analysis.md'
-  - Data: 'data.md'
+  - Data:
+    - Introduction: 'data/introduction.md'
+    - Web Annotations: 'data/annotations.md'
+    - Downloads: 'data/downloads.md'
   - FAQ: 'FAQ.md'
   - Glossary: 'glossary.md'
