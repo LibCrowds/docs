@@ -68,7 +68,7 @@ pages:
   - Results Analysis: 'analysis.md'
   - Data:
     - Introduction: 'data/introduction.md'
-    - Web Annotations: 'data/annotations.md'
+    - Data Model: 'data/model.md'
     - Downloads: 'data/downloads.md'
   - FAQ: 'FAQ.md'
   - Glossary: 'glossary.md'

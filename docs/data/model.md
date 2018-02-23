@@ -1,6 +1,7 @@
-Web Annotations became a W3C standard on the 23rd February, 2017. The
-[Web Annotation Data Model](https://www.w3.org/TR/annotation-model/) provides
-the following abstract:
+The final results for all LibCrowds projects are generated to comply with the
+[Web Annotation Data Model](https://www.w3.org/TR/annotation-model/).Web
+Annotations became a W3C standard on the 23rd February, 2017. The
+standard provides the following abstract:
 
 > Annotations are typically used to convey information about a resource or
 associations between resources. Simple examples include a comment or tag on
@@ -17,11 +18,14 @@ or to segments of timed multimedia resources.
 consumption of annotations based on the conceptual model that accommodates
 these use cases, and the vocabulary of terms that represents it.
 
-By generating our final results in a structure that complies with
-this standard we aim to make the crowdsourced data generated via the platform
-more easily reusable online.
+By using this structure for our final results we aim to make the crowdsourced
+data generated via the platform more easily reusable online and provide a way
+for researchers to answer specific questions via programmatic means.
 
 ## Types of annotation
+
+Web Annotations use [JSON-LD](https://www.w3.org/TR/json-ld/), a
+JSON-based format to serialize Linked Data.
 
 Each annotation contains a motivation, which provides an indication of why
 it was created. The LibCrowds platform currently produces annotations with
@@ -143,7 +147,7 @@ notes field of a IIIF Annotation project.
     }
     ```
 
-## Full data model
+## Full model
 
 The following tables detail how the LibCrowds platform implements Web
 Annotations.
