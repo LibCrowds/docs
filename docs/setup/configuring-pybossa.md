@@ -76,6 +76,9 @@ SESSION_COOKIE_DOMAIN = 'mydomain.com'
 # Flickr credentials (required for importing Z39.50 tasks)
 FLICKR_API_KEY = 'your-key'
 FLICKR_SHARED_SECRET = 'your-secret'
+
+# The brand is used in emails that are sent from the server-side
+BRAND = 'LibCrowds'
 ```
 
 !!! tip
