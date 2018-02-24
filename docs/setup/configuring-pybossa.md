@@ -80,6 +80,15 @@ FLICKR_SHARED_SECRET = 'your-secret'
 # The following settings are used in emails sent from the server-side
 CONTACT_EMAIL = 'info@libcrowds.com'
 BRAND = 'LibCrowds'
+
+# Database details for Z39.50 projects
+Z3950_DATABASES = {
+    'loc': {
+        'host': 'z3950.loc.gov',
+        'db': 'Voyager',
+        'port': '7090'
+    }
+}
 ```
 
 !!! tip
