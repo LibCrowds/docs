@@ -77,7 +77,8 @@ SESSION_COOKIE_DOMAIN = 'mydomain.com'
 FLICKR_API_KEY = 'your-key'
 FLICKR_SHARED_SECRET = 'your-secret'
 
-# The brand is used in emails that are sent from the server-side
+# The following settings are used in emails sent from the server-side
+CONTACT_EMAIL = 'info@libcrowds.com'
 BRAND = 'LibCrowds'
 ```
 
