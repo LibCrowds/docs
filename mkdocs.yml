@@ -40,14 +40,15 @@ pages:
       - Thumbnail: 'projects/thumbnail.md'
       - Tags: 'projects/tags.md'
       - Collection: 'projects/collection.md'
-      - Help: 'projects/help.md'
       - Volume: 'projects/volume.md'
       - Results: 'projects/results.md'
   - Templates:
     - Introduction: 'templates/introduction.md'
-    - Core Details: 'templates/details.md'
-    - Analysis Rules: 'templates/analysis.md'
     - New Template: 'templates/new.md'
+    - Settings:
+      - Core Details: 'templates/details.md'
+      - Analysis Rules: 'templates/analysis.md'
+      - Tutorial: 'templates/tutorial.md'
   - Collection Admin:
     - Introduction: 'collections/introduction.md'
     - New Collection: 'collections/new.md'

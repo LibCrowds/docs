@@ -1,6 +1,5 @@
-The help content for a project will be displayed when each user enters for
-the first time. The content will usually be generated during project
-creation but can be edited at any time via this section.
+Tutorials are displayed when a project is first loaded to give volunteers
+some additional guidance about how to contribute.
 
 ??? question "How do I open this page?"
 
