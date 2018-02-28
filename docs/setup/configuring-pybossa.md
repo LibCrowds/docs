@@ -42,7 +42,8 @@ CATEGORY_INFO_PUBLIC_FIELDS = [
   'published',
   'celebration',
   'volumes',
-  'tags'
+  'tags',
+  'templates
 ]
 
 # Additional user fields
