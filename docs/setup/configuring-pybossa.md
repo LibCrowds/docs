@@ -1,13 +1,5 @@
 LibCrowds relies on a PYBOSSA backend that needs to be configured as follows.
 
-## Plugins
-
-Install the following plugins (the documentation for each explains how to
-do this):
-
-- [pybossa-z3950](https://github.com/alexandermendes/pybossa-z3950)
-- [pybossa-lc](https://github.com/LibCrowds/pybossa-lc)
-
 ## Required settings
 
 The following settings are all required for the application to run correctly.
@@ -99,8 +91,14 @@ Z3950_DATABASES = {
 ## Optional settings
 
 The settings below can be added to PYBOSSA's `settings_local.py` file to help
-with various administration tasks such as reanalysing all results or
-checking for empty templates.
+with various administration tasks, such as checking for invalid templates, or
+triggering analysis of all empty results.
+
+These settings are optional as they will modify the database and there are
+instances when that is undesirable, such as when migrating to a new version
+of the application. However, unless you have a specific reason for excluding
+them, it is recommended that they are also added to PYBOSSA's
+`settings_local.py` file.
 
 ```python
 # The user ID used to make automated announcements
@@ -108,22 +106,18 @@ ANNOUNCEMENT_USER_ID = 1
 
 # Extra tasks to run when the application is started or restarted
 EXTRA_STARTUP_TASKS = {
-    'reanalyse_all_results': False,
-    'check_for_missing_templates': True,
+    'check_for_invalid_templates': True,
+    'populate_empty_results': True,
+    'reanalyse_all_results': True,
     'remove_bad_volumes': True
 }
 ```
 
-If you're following on from the [Installation](/setup/introduction.md) guide,
-you should now be able to open up
-[http://127.0.0.1:8080](http://127.0.0.1:8080) and see your fully operational
-LibCrowds instance.
+If you're following on from the [Local Installation](/setup/introduction.md)
+or [Deployment](/setup/deployment.md) guides,
+you should now have a fully operational LibCrowds instance.
 
-To explore the and modify the LibCrowds settings, see
+---
+
+To explore the core LibCrowds settings, see
 [Configuring LibCrowds](/setup/configuring-libcrowds.md).
-
-!!! info
-    You must access the website at http://127.0.0.1:8080, rather than
-    http://localhost:8080, otherwise it will not be possible to track the user
-    session cookie.
-

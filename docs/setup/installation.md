@@ -1,18 +1,18 @@
-The following guide explains how to download and install and instance of
+This section explains how to download and install and instance of
 LibCrowds locally, for testing or development. If you are interested in
 deploying LibCrowds to a live server, see the
 [Deployment](/setup/deployment.md) guide.
 
 ## Install VirtualBox, Vagrant and git
 
-The easiest way to get instances of LibCrowds and PYBOSSA up and running
-is by using [VirtualBox](https://www.virtualbox.org/) and
+The easiest way to get started is by using
+[VirtualBox](https://www.virtualbox.org/) and
 [Vagrant](https://www.vagrantup.com/).
 
 We will also need to install git, which is the version control system via which
 both LibCrowds and PYBOSSA are distributed.
 
-Follow the following links to download and run the appropriate installers for
+Follow the links below to download and run the appropriate installers for
 your operating system.
 
 1. [git](https://git-scm.com/downloads)
@@ -42,10 +42,10 @@ vagrant ssh
 python run.py
 ```
 
-PYBOSSA (with the default theme) should now be available at
+PYBOSSA should now be running (with the default theme) at
 [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
-??? tip "Installing behind a web proxy"
+??? tip "Tip: Installing behind a web proxy"
     If you're installing from behind a web proxy then you will probably run
     into issues when attempting to start Vagrant, in which case you can try
     running these commands from the `pybossa` directory:
@@ -95,11 +95,18 @@ npm run dev
     vagrant plugin install vagrant-proxyconf
     ```
 
-LibCrowds should now be running using the default settings at
+LibCrowds should now be running, using the default settings, at
 [http://127.0.0.1:8080](http://127.0.0.1:8080).
 
-However, if you open it up now you are likely to see an error message as the
-two servers have not yet been configured to communicate properly with each
-other.
+!!! info
+    You must access the website at http://127.0.0.1:8080, rather than
+    http://localhost:8080, otherwise it will not be possible to track the user
+    session cookie.
 
-The next step is [Configuring PYBOSSA](/setup/configuring-pybossa.md).
+However, if you attempt to open the site now you are likely to see an error
+message as the two servers have not yet been configured to communicate properly
+with each other, nor have we installed the required plugins.
+
+---
+
+The next step is to install the required [Plugins](/setup/plugins.md).

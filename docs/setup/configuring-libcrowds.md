@@ -1,26 +1,66 @@
-This page details all of the core LibCrowds settings.
-
-To copy the settings template:
+This page details all of the core LibCrowds settings. To edit them you can
+begin by copying the settings template:
 
 ```bash
+cd /path/to/libcrowds
 cp local.config.js.tmpl local.config.js
 ```
 
-### Required Settings
+## Required Settings
 
-The following are all set using defaults in the configuration template and are
-required for the application to run correctly.
+The following settings are all required for the application to run correctly.
+They are given defaults in the settings template but should be edited
+accordingly.
 
-| Setting       | Description                                                  |
-|---------------|--------------------------------------------------------------|
-| company       | The company responsible for the platform.                    |
-| brand         | The name of the platform.                                    |
-| tagline       | An inspiring tagline.                                        |
-| description   | An SEO optimised description of the platform.                |
-| pybossaHost   | The host for all PYBOSSA API calls.                          |
-| libcrowdsHost | The host where this application will be deployed             |
+### brand
 
-### Optional Settings
+The name of the platform.
+
+```js
+config.brand = 'My Brand'
+```
+
+### company
+
+The company responsible for the platform.
+
+```js
+config.company = 'My Company'
+```
+
+### description
+
+An SEO optimised description of the platform.
+
+```js
+config.description: 'My SEO optimised meta description'
+```
+
+### libcrowdsHost
+
+The host where this application will be deployed
+
+```js
+config.libcrowdsHost: 'http://127.0.0.1:8080'
+```
+
+### pybossaHost
+
+The host for all PYBOSSA API calls.
+
+```js
+config.pybossaHost: 'http://127.0.0.1:5000'
+```
+
+### tagline
+
+Some inspiring tagline.
+
+```js
+config.tagline: 'My inspiring tagline'
+```
+
+## Optional Settings
 
 The following can be added to the configuration file to enable additional
 functionality.
