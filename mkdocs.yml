@@ -35,7 +35,7 @@ pages:
     - Testing: 'setup/testing.md'
   - Projects:
     - Introduction: 'projects/introduction.md'
-    - New: 'projects/new.md'
+    - New Project: 'projects/new.md'
     - Core Details: 'projects/details.md'
     - Thumbnail: 'projects/thumbnail.md'
     - Tags: 'projects/tags.md'
@@ -44,13 +44,13 @@ pages:
     - Results: 'projects/results.md'
   - Templates:
     - Introduction: 'templates/introduction.md'
-    - New: 'templates/new.md'
+    - New Template: 'templates/new.md'
     - Core Details: 'templates/details.md'
     - Analysis Rules: 'templates/analysis.md'
     - Tutorial: 'templates/tutorial.md'
   - Collection Admin:
     - Introduction: 'collections/introduction.md'
-    - New: 'collections/new.md'
+    - New Collection: 'collections/new.md'
     - Core Details: 'collections/details.md'
     - Page Content: 'collections/content.md'
     - Celebration: 'collections/celebration.md'
