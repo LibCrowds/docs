@@ -111,6 +111,9 @@ EXTRA_STARTUP_TASKS = {
     'reanalyse_all_results': True,
     'remove_bad_volumes': True
 }
+
+# Email all comment annotations to administrators
+EMAIL_COMMENT_ANNOTATIONS = True
 ```
 
 If you're following on from the [Local Installation](/setup/introduction.md)
