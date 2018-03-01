@@ -1,7 +1,7 @@
 This is where the core settings for collection microsite's are configured. The
 available settings are explained in more detail below.
 
-??? info "Administrator rights required"
+??? warning "Administrator rights required"
 
     To request administrator rights please get in touch by clicking the email
     icon in the footer of this page.
@@ -11,10 +11,10 @@ available settings are explained in more detail below.
     Admin rights are required to access this page. If you have admin rights:
 
     1. Sign in to your LibCrowds account.
-    2. Click your username at the right of the naviation bar.
-    3. Select **Collection Admin** from the dropdown menu.
+    2. Click the **Menu** button at the top of any page.
+    3. Select **Open Collection**.
     4. Locate the collection in the table and click **Open**.
-    5. Select **Details** from dashboard menu on the left-hand side.
+    5. Select **Core Details** from main menu.
 
 ![A screenshot of a collection microsite's details admin page](/assets/img/admin-collection-details.png?raw=true)
 <br><small>*A screenshot of a collection microsite's details admin page*</small>

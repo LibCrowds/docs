@@ -1,7 +1,7 @@
 The following task presenter settings can be applied globally to all projects
 within the collection.
 
-??? info "Administrator rights required"
+??? warning "Administrator rights required"
 
     To request administrator rights please get in touch by clicking the email
     icon in the footer of this page.
@@ -11,10 +11,10 @@ within the collection.
     Admin rights are required to access this page. If you have admin rights:
 
     1. Sign in to your LibCrowds account.
-    2. Click your username at the right of the naviation bar.
-    3. Select **Collection Admin** from the dropdown menu.
+    2. Click the **Menu** button at the top of any page.
+    3. Select **Open Collection**.
     4. Locate the collection in the table and click **Open**.
-    5. Select **Task Presenter** from dashboard menu on the left-hand side.
+    5. Select **Task Presenter** from main menu.
 
 | Setting       | Description                                                 |
 |---------------|-------------------------------------------------------------|

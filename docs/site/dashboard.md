@@ -5,7 +5,7 @@ past week. The statistics displayed here include:
 - New tasks and contributions;
 - Projects created, published and updated.
 
-??? info "Administrator rights required"
+??? warning "Administrator rights required"
 
     To request administrator rights please get in touch by clicking the email
     icon in the footer of this page.
@@ -15,8 +15,7 @@ past week. The statistics displayed here include:
     Admin rights are required to access this page. If you have admin rights:
 
     1. Sign in to your LibCrowds account.
-    2. Click your username at the right of the naviation bar.
-    3. Select **Site Admin** from the dropdown menu.
+    2. Select **Dashboard** from the dropdown menu.
 
 ![A screenshot of the site admin dashboard page](/assets/img/admin-site-dashboard.png?raw=true)
 <br><small>*A screenshot of the site admin dashboard page*</small>
