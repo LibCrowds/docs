@@ -11,6 +11,8 @@ extra:
       link: 'https://twitter.com/LibCrowds'
     - type: 'envelope'
       link: 'mailto:digitalresearch@bl.uk'
+extra_css:
+  - assets/style/extra.css
 markdown_extensions:
   - admonition
   - codehilite
