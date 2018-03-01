@@ -9,11 +9,11 @@ collection that they're interested in.
     4. Locate the project in the table and click **Open**.
     5. Select **Tags** from main menu.
 
-![A screenshot of the project tags admin page](/assets/img/admin-project-tags.png?raw=true)
-<br><small>*A screenshot of the project tags admin page*</small>
+![A screenshot of a project's tags admin page](/assets/img/project/tags.png?raw=true)
+<br><small>*A screenshot of a project's tags admin page*</small>
 
-Selected tags will appear on the project cards and in the Sorting Options box
-on the main projects page.
+Projects can be filtered using these tags via the Sorting Options box on the
+collection microsite's main projects page.
 
 ![A screenshot of a collection microsite projects page](/assets/img/collection-projects.png?raw=true)
 <br><small>*A screenshot of a collection microsite projects page*</small>

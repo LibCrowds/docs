@@ -1,6 +1,7 @@
 Core details for the project can be updated via this page. This includes the
-the name, shortname and description of the project, as well as security
-requirements, the webhook URL and a button to publish the project.
+the name, shortname and description of the project. All of these settings will
+be generated during project creation and should not normally need to be
+changed.
 
 ??? question "How do I open this page?"
 
@@ -8,34 +9,20 @@ requirements, the webhook URL and a button to publish the project.
     2. Click the **Menu** button at the top of any page.
     3. Select **Open Project**.
     4. Locate the project in the table and click **Open**.
-    5. Select **Details** from main menu.
+    5. Select **Core Details** from main menu.
 
-![A screenshot of the project details admin page](/assets/img/admin-project-details.png?raw=true)
+![A screenshot of the project details admin page](/assets/img/project/details.png?raw=true)
 <br><small>*A screenshot of the project details admin page*</small>
 
 ## Updating the project metadata
 
-The project name and description will appear on the project card as presented
-to all users via the collection microsite. Modify these by updating the
-form fields and clicking the **Update** button
-
-## Updating the webhook URL
-
-Each time a task is completed a payload is sent to the URL specified here, so
-that additional actions such as results analysis can be triggered.
-
-During project creation this URL will be set automatically to an endpoint
-setup to analyse results for the project's task presenter.
-
-!!! warning
-    You should not usually need to edit this URL and the option is provided
-    here mostly for troubleshooting purposes. Changing the URL to an endpoint
-    other than one that has been setup for LibCrowds core analysis will
-    probably break the automated results analysis.
+The project name and description will appear on the project card shown on
+the collection microsite's main projects page. Modify the settings by updating
+the form fields and clicking the **Update** button.
 
 ## Restricting access
 
 By default, all users (registered and anonymous) will be able to contribute to
-the project. However, you can password protect the project or restrict it
-to registered users by editing the password field and toggles on this form
+the project. However, you can password protect the project, or restrict it
+to registered users, by editing the password field and toggles on this form
 and clicking **Update**.
