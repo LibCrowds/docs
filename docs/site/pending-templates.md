@@ -19,7 +19,8 @@ reject.
 
 ## Viewing the changes
 
-To view the proposed changes, click the **Show Details** button.
+Click the **Show Details** button to view proposed changes, which will be
+highlighted in green.
 
 ## Approving
 
