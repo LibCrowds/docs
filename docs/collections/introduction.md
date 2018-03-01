@@ -8,10 +8,7 @@ section explains how to create and configure a collection microsite.
 Collection microsites can be created and configured by users with administrator
 rights.
 
-??? warning "Administrator rights required"
+---
 
-    To request administrator rights please get in touch by clicking the email
-    icon in the footer of this page.
-
-For documentation on how to create a collection microsite, see the
+To find out how to create a collection microsite, see the
 [New Collection](/collections/new.md) guide.

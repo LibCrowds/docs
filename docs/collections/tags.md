@@ -17,7 +17,7 @@ are managed via this section.
     4. Locate the collection in the table and click **Open**.
     5. Select **Tags** from main menu.
 
-![A screenshot of the collection tags admin page](/assets/img/admin-collection-tags.png?raw=true)
+![A screenshot of the collection tags admin page](/assets/img/collection/tags.png?raw=true)
 <br><small>*A screenshot of the collection tags admin page*</small>
 
 For each tag type created a new filter will be added to
@@ -27,7 +27,7 @@ below).
 ![A screenshot of a collection microsite's main projects page](/assets/img/collection-projects.png?raw=true)
 <br><small>*A screenshot of a collection microsite's main projects page*</small>
 
-## Creating
+## Creating a tag
 
 To add a new tag click the 'Add a tag type' button at the top of the page. In
 the modal that appears enter a name for the tag type (e.g. Location), choose a
@@ -37,7 +37,7 @@ click 'OK'.
 ![A screenshot of the new tag type modal](/assets/img/admin-collection-tags-new.png?raw=true)
 <br><small>*A screenshot of the new tag type modal*</small>
 
-## Updating
+## Updating a tag
 
 Tag types can be edited or removed by locating them in the table and clicking
 the 'Edit' or 'Remove' buttons, respectively.

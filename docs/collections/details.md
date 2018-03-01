@@ -1,5 +1,4 @@
-This is where the core settings for collection microsite's are configured. The
-available settings are explained in more detail below.
+This is where the core settings for collection microsite's are configured.
 
 ??? warning "Administrator rights required"
 
@@ -16,7 +15,7 @@ available settings are explained in more detail below.
     4. Locate the collection in the table and click **Open**.
     5. Select **Core Details** from main menu.
 
-![A screenshot of a collection microsite's details admin page](/assets/img/admin-collection-details.png?raw=true)
+![A screenshot of a collection microsite's details admin page](/assets/img/collection/details.png?raw=true)
 <br><small>*A screenshot of a collection microsite's details admin page*</small>
 
 ## Available settings

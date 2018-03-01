@@ -14,7 +14,7 @@ The final results for all LibCrowds projects are stored as lists of annotations
 serialised according to the [Web Annotation](https://www.w3.org/annotation/)
 data model. Web Annotations are a W3C standard used to make data more easily
 reusable online. For information about the data and how it can be reused see
-the [Data section](/data.md).
+the [Data section](/data/introduction.md).
 
 ## Normalisation
 

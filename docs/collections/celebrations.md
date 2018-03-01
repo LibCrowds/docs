@@ -1,6 +1,7 @@
 When a project is completed, or a user has contributed to all available tasks
 for that project, animated confetti will fall and a celebration message will
-be displayed.
+be displayed. These celebration messages can be edited via this page, using
+Markdown.
 
 ??? warning "Administrator rights required"
 
@@ -17,24 +18,38 @@ be displayed.
     4. Locate the collection in the table and click **Open**.
     5. Select **Celebrations** from main menu.
 
+![A screenshot of a collection microsite's celebrations admin page](/assets/img/collection/celebrations.png?raw=true)
+<br><small>*A screenshot of a collection microsite's celebrations admin page*</small>
+
+When a celebration message is shown the user will also be redirected back to
+collection microsite's main projects page.
+
 ![An animation showing a project completion celebration message](/assets/img/project-celebration.gif?raw=true)
 <br><small>*An animation showing a project completion celebration message*</small>
 
-## Updating
+## Updating the confetti type
 
-Edit the Markdown fields to customise the celebration messages. There are two
-types of message:
+You can choose the shape of the confetti that you want to fall by selecting
+an option from the **Confetti type** dropdown and clicking **Update**.
 
-- **User completion:** Displayed when a user has completed all available tasks
-  but the project still requires more contributions.
-- **Project completion:** Displayed when a project is 100% complete. Note that
-  this does not necessarily mean that the user has contributed to the project.
-  The message will also be displayed if a user later attempts to access the URL
-  of a completed project.
+## Updating the user completion celebration
 
-You can also choose the type of confetti that you want to fall.
+This is displayed when a user has completed all available tasks but the
+project still requires more contributions.
+
+Edit the **User Completion** Markdown field and click **Update**.
+
+## Updating the project completion celebration
+
+This is displayed when a project is 100% complete.
+
+Note that this does not necessarily mean that the user has contributed to the
+project. The message will also be displayed if a user later attempts to access
+the URL of a completed project.
+
+Edit the **Project Completion** Markdown field and click **Update**.
 
 ## Testing
 
-To test out the messages you can click the 'Test user' and 'Test project'
+To test out the messages you can click the **Test user** and **Test project**
 buttons at the top right of the dashboard page.

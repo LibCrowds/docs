@@ -18,6 +18,6 @@ and explains how it can be consumed.
 ---
 
 - To find out how the data is structured see the
-[Web Annotations](/data/annotations.md) guide.
+[Data Model](/data/model.md) guide.
 - To find out how to download the data in JSON or CSV formats see the
 [Downloads](/data/downloads.md) guide.

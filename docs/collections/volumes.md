@@ -1,9 +1,7 @@
 Volumes provide the input sources used to build new projects (e.g. a
 IIIF manifest URI). They are also used to group related projects
-within a collection, helping with further functionality such as the
-aggregation of results data.
-
-The available volumes for a collection are managed via this section.
+within a collection, helping with the aggregation of results data. The
+available volumes for a collection are managed via this section.
 
 ??? warning "Administrator rights required"
 
@@ -20,20 +18,20 @@ The available volumes for a collection are managed via this section.
     4. Locate the collection in the table and click **Open**.
     5. Select **Volumes** from main menu.
 
-![A screenshot of a collection's volumes admin page](/assets/img/admin-collection-volumes.png?raw=true)
+![A screenshot of a collection's volumes admin page](/assets/img/collection/volumes.png?raw=true)
 <br><small>*A screenshot of a collection's volumes admin page*</small>
 
 ## Adding a volume
 
-To add a new volume click the **New** button at the top of the volumes table.
-This will display the form shown in the screenshot below.
-
-![A screenshot of the new volume page](/assets/img/admin-collection-volumes-new.png?raw=true)
-<br><small>*A screenshot of the new volume page*</small>
-
 Volumes are added using a name and an input source, both of which must be
 unique (i.e. they don't already exist in the volumes listed for the
 collection).
+
+To add a new volume click the **New** button at the top of the volumes table,
+fill in the form, and click the **Add Volume** button.
+
+![A screenshot of the new volume page](/assets/img/collection/volumes-new.png?raw=true)
+<br><small>*A screenshot of the new volume page*</small>
 
 The format of the input source depends on the type of task presenter chosen
 for the collection.
@@ -71,20 +69,14 @@ A Flickr album URI should look like this:
 
 ## Updating a volume
 
-To update a volume, locate it in the table and click **Update**
+To update a volume, locate it in the table and click **Update**.
 
-![A screenshot of the update volume page](/assets/img/admin-collection-volumes-update.png?raw=true)
+![A screenshot of the update volume page](/assets/img/collection/volumes-update.png?raw=true)
 <br><small>*A screenshot of the update volume page*</small>
 
-A form displaying two tabs will be displayed, one to update the name and
-source and one to add a thumbnail image.
-
-The thumbnail image will be used for all projects subsequently generated
-using the volume.
-
-For more details about the name and source see the
-[Adding a volume](/collections/volumes#adding-a-volume) section above.
-
+A form with two tabs will be displayed, one to update the volume's metadata
+and one to add a thumbnail image. This thumbnail image will be used for all
+projects subsequently generated using the volume.
 
 ## Deleting a volume
 

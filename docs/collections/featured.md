@@ -1,5 +1,5 @@
 To draw attention to particular projects you can feature them on the homepage
-of the collection microsite to which they belong.
+of their collection microsite.
 
 ??? warning "Administrator rights required"
 
@@ -16,9 +16,15 @@ of the collection microsite to which they belong.
     4. Locate the collection in the table and click **Open**.
     5. Select **Featured Projects** from main menu.
 
-![A screenshot of a featured project on a collection microsite homepage](/assets/img/admin-collection-featured.jpg?raw=true)
+![A screenshot of a featured project on a collection microsite homepage](/assets/img/collection/featured.png?raw=true)
 <br><small>*A screenshot of a featured project on a collection microsite homepage*</small>
 
-To feature a project, locate it in the table and click the 'Add to Featured' button.
+## Featuring a project
 
-To unfeature a project, locate it in the table and click the 'Remove from Featured' button.
+To feature a project, locate it in the table and click the **Add to Featured**
+button.
+
+## Unfeaturing a project
+
+To unfeature a project, locate it in the table and click the
+**Remove from Featured** button.

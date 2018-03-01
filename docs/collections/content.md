@@ -1,6 +1,6 @@
-A set of markdown editors are provided here for modifying content for the About,
-Projects and Data pages. Changes are made in real-time, although you may have
-to refresh your browser to see them.
+Content for the About, Take Part and Data pages can be modified here, using
+Markdown. Changes are made in real-time, although you may have to refresh your
+browser to see them.
 
 ??? warning "Administrator rights required"
 
@@ -17,14 +17,26 @@ to refresh your browser to see them.
     4. Locate the collection in the table and click **Open**.
     5. Select **Content** from main menu.
 
-For the About page, navigation items will be generated from each level two
-header, created in Markdown by using the ## tag, for example:
+![A screenshot of a collection microsite's page content admin page](/assets/img/collection/content.png?raw=true)
+<br><small>*A screenshot of a collection microsite's page content admin page*</small>
 
-```
+## Updating the page content
+
+To update the page content, locate the Markdown editor associated with that
+page, make your changes, then click the **Update** button at the bottom of the
+page.
+
+## Adding navigation tags
+
+For the About page, quick navigation links will be generated from each level
+two header used in the page content. These navigation items can be clicked to
+scroll the users window to the top of that section.
+
+For example, the content below would generate a navigation link at the top
+of the page using the text "Contact".
+
+```markdown
 ## Contact
 
 This is the contact details section.
 ```
-
-These navigation items can be clicked to scroll the users window to the top
-of that section.

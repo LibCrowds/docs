@@ -1,5 +1,5 @@
 
-Collection microsites comprise a set of themed pages based around a
+Collection microsites comprise a set of themed pages and present a
 particular set of projects. They can be created by registered users with
 administrator rights.
 
@@ -16,16 +16,18 @@ administrator rights.
     2. Click the **Menu** button at the top of any page.
     5. Select **New Collection**.
 
-![A screenshot of the new collection admin page](/assets/img/admin-collection-new.png?raw=true)
+![A screenshot of the new collection admin page](/assets/img/collection/new.png?raw=true)
 <br><small>*A screenshot of the new collection admin page*</small>
 
 ## Creating a collection
 
-Collections are initially created with just a name and description. Once
-created, you will be given access to all of the other configuration options,
-which can be set before publication.
+Collections are initially created with just a name and a description. Once
+created, you will be given access to all of the other configuration options
+that can be set before publication.
 
 To create a new collection enter a name and description and click **Create**.
 
-See the [Collection Details](/collections/details.md) guide to find out how to
+---
+
+See the [Core Details](/collections/details.md) page to find out how to
 update some of the microsite's core settings.
