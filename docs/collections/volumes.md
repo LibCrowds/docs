@@ -1,7 +1,9 @@
-Volumes provide the input sources used to build new projects (e.g. a
-IIIF manifest URI). They are also used to group related projects
-within a collection, helping with the aggregation of results data. The
-available volumes for a collection are managed via this section.
+The available volumes for a collection are managed via this section.
+
+Volumes provide the input source used to build new projects. For example, a
+IIIF manifest URI from which images are pulled. They are also used to group
+related projects within a collection, helping with the aggregation of results
+data.
 
 ??? warning "Administrator rights required"
 
@@ -23,49 +25,59 @@ available volumes for a collection are managed via this section.
 
 ## Adding a volume
 
-Volumes are added using a name and an input source, both of which must be
-unique (i.e. they don't already exist in the volumes listed for the
-collection).
-
-To add a new volume click the **New** button at the top of the volumes table,
-fill in the form, and click the **Add Volume** button.
+To add a new volume click the **New** button at the top of the volumes table.
 
 ![A screenshot of the new volume page](/assets/img/collection/volumes-new.png?raw=true)
 <br><small>*A screenshot of the new volume page*</small>
 
-The format of the input source depends on the type of task presenter chosen
-for the collection.
+Volumes are added using the following form fields:
 
-#### IIIF Annotation
+- **Name:** The name of the volume.
+- **Short Name:** An identifier used, for example, in the file names of
+volume-level downloads.
+- **Source:** The input source, for example, the location of the images
+(see below).
 
-For collections using the IIIF Annotation task presenter, the input source
-should be a IIIF manifest. These manifests contain the metadata required to
-display content served via the IIIF APIs.
+As we want to avoid defining duplicate volumes, all of the form fields above
+must contain unique values. That is, the details entered don't already exist
+for other volumes listed for the collection.
 
-A manifest URI should look like this:
+The format of the **source** depends on the type of task presenter chosen
+for the collection. This will be indicated on the page as one of the following:
 
-```
-# pattern
-{scheme}://{host}/{prefix}/{identifier}/manifest
+!!! summary "IIIF Annotation"
 
-# example
-http://api.bl.uk/metadata/iiif/ark:/81055/vdc_100022588857.0x000002/manifest.json
-```
+    For collections using the IIIF Annotation task presenter, the source
+    should be a IIIF manifest that contains the metadata required to
+    display content served via the IIIF APIs.
 
-#### Z39.50
+    A manifest URI should look like this:
 
-For collections using the Z39.50 task presenter, the input source should be
-the URI of a Flickr album.
+    ```
+    # pattern
+    {scheme}://{host}/{prefix}/{identifier}/manifest
 
-A Flickr album URI should look like this:
+    # example
+    http://api.bl.uk/metadata/iiif/ark:/81055/vdc_100022588857.0x000002/manifest.json
+    ```
 
-```
-# pattern
-{scheme}://www.flickr.com/photos/{user_id}/albums/{album_id}
+!!! summary "Z39.50"
 
-# example
-{scheme}://www.flickr.com/photos/132066275@N04/albums/72157653533516031
-```
+    For collections using the Z39.50 task presenter, the source should be
+    the URI of a Flickr album.
+
+    A Flickr album URI should look like this:
+
+    ```
+    # pattern
+    {scheme}://www.flickr.com/photos/{user_id}/albums/{album_id}
+
+    # example
+    {scheme}://www.flickr.com/photos/132066275@N04/albums/72157653533516031
+    ```
+
+Once you have completed the form, click the **Add Volume** button. See below
+for details of how to update the volume's metadata or add a thumbnail image.
 
 ## Updating a volume
 
@@ -75,7 +87,7 @@ To update a volume, locate it in the table and click **Update**.
 <br><small>*A screenshot of the update volume page*</small>
 
 A form with two tabs will be displayed, one to update the volume's metadata
-and one to add a thumbnail image. This thumbnail image will be used for all
+and one to add a thumbnail image. The thumbnail image will be used for all
 projects subsequently generated using the volume.
 
 ## Deleting a volume
