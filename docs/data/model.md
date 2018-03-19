@@ -130,6 +130,12 @@ notes field of a IIIF Annotation project.
       "type": "Annotation",
       "motivation": "commenting",
       "created": "2017-09-05T11:07:32.273Z",
+      "creator": {
+        "id": "https://www.libcrowds.com/api/user/1",
+        "type": "Person",
+        "name": "Joe Bloggs"
+        "nickname": "joebloggs"
+      },
       "generated": "2017-09-05T11:07:32.273Z",
       "generator": {
         "id": "https://www.libcrowds.com",
@@ -159,11 +165,58 @@ Annotations.
 | type           | String           | The class for Web Annotations (always 'Annotation')                                                                               |
 | motivation     | String           | The relationship between the Annotation and a Motivation                                                                          |
 | created        | String           | The time at which the Annotation was created                                                                                      |
+| creator        | Object           | The creator of the Annotation                                                                                                     |
 | generated      | String           | The time at which the Annotation serialization was generated                                                                      |
 | generator      | String or Object | The agent responsible for generating the serialization of the Annotation (typically software)                                     |
 | modified       | String           | The time at which the Annotation was modified, after its creation                                                                 |
 | target         | String or Object | The target of the Annotation                                                                                                      |
-| body           | Object           | The relationship between the Annotation and its Body                                                                              |
+| body           | List or Object   | The relationship between the Annotation and its Body                                                                              |
+
+### creator
+
+The creator contains information about the person that created the annotation. This is currently only used for commenting annotations, which are created by a single
+authenticated user.
+
+| Property       | Type             | Description                                                                        |
+|----------------|------------------|------------------------------------------------------------------------------------|
+| id             | String           | An IRI that identifies the person                                                  |
+| type           | String           | The type of the creator (always 'Person')                                          |
+| name           | String           | The full name of the person                                                        |
+| nickname       | String           | The nickname of the person                                                         |
+
+!!! summary "Example of a creator"
+
+    ```json-ld
+    {
+      "id": "https://www.libcrowds.com/api/user/1",
+      "type": "Person",
+      "name": "Joe Bloggs",
+      "nickname": "joebloggs"
+    }
+    ```
+
+### generator
+
+The generator contains information about the software used to generated the
+annotation, which in this case is LibCrowds.
+
+| Property       | Type             | Description                                                                        |
+|----------------|------------------|------------------------------------------------------------------------------------|
+| id             | String           | An IRI that identifies the software (always the main LibCrowds GitHub repository ) |
+| type           | String           | The type of the generator (always 'Software')                                      |
+| name           | String           | The name of the generator (always 'LibCrowds')                                     |
+| homepage       | String           | The base URL that the software was running from when the annotation was generated  |
+
+!!! summary "Example of a generator"
+
+    ```json-ld
+    {
+      "id": "https://github.com/LibCrowds/libcrowds",
+      "type": "Software",
+      "name": "LibCrowds",
+      "homepage": "https://www.libcrowds.com"
+    }
+    ```
 
 ### target
 
@@ -261,28 +314,5 @@ Descriptions are used to describe the target in plain text.
       "purpose": "describing",
       "format": "text/plain",
       "value": "The Merchant of Venice"
-    }
-    ```
-
-### generator
-
-The generator contains information about the software used to generated the
-annotation, which in this case is LibCrowds.
-
-| Property       | Type             | Description                                                                        |
-|----------------|------------------|------------------------------------------------------------------------------------|
-| id             | String           | An IRI that identifies the software (always the main LibCrowds GitHub repository ) |
-| type           | String           | The type of the generator (always 'Software')                                      |
-| name           | String           | The name of the generator (always 'LibCrowds')                                     |
-| homepage       | String           | The base URL that the software was running from when the annotation was generated  |
-
-!!! summary "Example of a generator"
-
-    ```json-ld
-    {
-      "id": "https://github.com/LibCrowds/libcrowds",
-      "type": "Software",
-      "name": "LibCrowds",
-      "homepage": "https://www.libcrowds.com"
     }
     ```
