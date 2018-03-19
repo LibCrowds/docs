@@ -7,7 +7,7 @@ attributes such as user permissions.
     To request administrator rights please get in touch by clicking the email
     icon in the footer of this page.
 
-??? question "How do I open this page?"
+!!! question "How do I open this page?"
 
     Admin rights are required to access this page. If you have admin rights:
 

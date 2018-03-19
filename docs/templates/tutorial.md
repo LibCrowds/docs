@@ -1,7 +1,7 @@
 Tutorials are displayed when a project is first loaded to give volunteers
 some additional guidance about how to contribute.
 
-??? question "How do I open this page?"
+!!! question "How do I open this page?"
 
     1. Sign in to your LibCrowds account.
     2. Click the **Menu** button at the top of any page.

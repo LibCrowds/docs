@@ -7,7 +7,7 @@ this will rarely be necessary).
     To request administrator rights please get in touch by clicking the email
     icon in the footer of this page.
 
-??? question "How do I open this page?"
+!!! question "How do I open this page?"
 
     1. Sign in to your LibCrowds account.
     2. Click the **Menu** button at the top of any page.

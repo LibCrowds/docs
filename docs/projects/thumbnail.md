@@ -3,7 +3,7 @@ projects page of a collection microsite. Thumbnails will be added automatically
 during project creation from whatever volume the project is generated from, but
 they can be changed here.
 
-??? question "How do I open this page?"
+!!! question "How do I open this page?"
 
     1. Sign in to your LibCrowds account.
     2. Click the **Menu** button at the top of any page.
