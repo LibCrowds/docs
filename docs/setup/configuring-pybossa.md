@@ -35,7 +35,7 @@ CATEGORY_INFO_PUBLIC_FIELDS = [
   'celebration',
   'volumes',
   'tags',
-  'templates
+  'templates'
 ]
 
 # Additional user fields
