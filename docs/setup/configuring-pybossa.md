@@ -2,8 +2,11 @@ LibCrowds relies on a PYBOSSA backend that needs to be configured as follows.
 
 ## Required settings
 
-The following settings are all required for the application to run correctly.
-They should be added to PYBOSSA's `settings_local.py` file:
+The settings are all required for the application to run correctly and should
+be added to PYBOSSA's `settings_local.py` file.
+
+Most of these settings can be copied directly but be sure to read them all
+and amend according to your environment where necessary.
 
 ```python
 # Allow requests from LibCrowds
