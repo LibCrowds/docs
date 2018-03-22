@@ -129,6 +129,33 @@ config.facebook = {
 }
 ```
 
+### flarum
+
+Enable Flarum integration by adding the forum base URL, an API key and
+a random string that is used to encrypt passwords.
+
+The [flarum-ext-sso](https://github.com/fabwu/flarum-ext-sso) extension will
+also need to be installed for your Flarum instance. The API key created
+during this installation process should also be used in the configuration
+below.
+
+```js
+config.flarum = {
+  url: 'http://community.example.com'
+  apiKey: '',
+  salt: 'super-secret-string'
+}
+```
+
+This will enable SSO and the ability to link each collection microsite to a
+forum topic.
+
+!!! warning
+
+    Beware that if SSO is enabled, then disabled, user's will not be able to
+    access their forum accounts without resetting their passwords.
+
+
 ### footer
 
 Add an additional list menu to the main footer.
@@ -153,6 +180,7 @@ config.githubUrl = 'https://github.com/github'
 ### mapbox
 
 Use [Mapbox](https://www.mapbox.com/) to present any maps present on the site.
+
 ```js
 config.mapbox = {
   id: 'mapbox.streets',
