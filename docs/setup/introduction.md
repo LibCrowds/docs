@@ -7,6 +7,7 @@ an instance of PYBOSSA and some PYBOSSA plugins.
 !!! info "Requirements"
 
     - PYBOSSA >= v2.9.0
+    - Node.js >= 8.0.0
 
 ---
 
