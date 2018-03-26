@@ -145,7 +145,8 @@ config.flarum = {
   url: 'http://community.example.com',
   sessionCookieDomain: '.example.com',
   apiKey: 'XXX-XXX-XXX',
-  salt: 'super-secret-string'
+  salt: 'super-secret-string',
+  disableEmailConfirmation: true
 }
 ```
 
