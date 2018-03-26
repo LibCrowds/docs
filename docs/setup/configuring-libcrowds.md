@@ -131,19 +131,20 @@ config.facebook = {
 
 ### flarum
 
-Enable [Flarum](http://flarum.org/) integration by adding the forum base `url`,
-an `apiKey` and a random string as the `salt` that is used to encrypt
-passwords.
+Enable [Flarum](http://flarum.org/) integration by adding the base `url` of
+the forum, a master `apiKey`, the `sessionCookieDomain` and a random string as
+the `salt` that is used to encrypt passwords.
 
 The [flarum-ext-sso](https://github.com/fabwu/flarum-ext-sso) extension will
-also need to be installed for your Flarum instance. The API key created
-during this installation process should also be used in the configuration
+also need to be installed for your Flarum instance and the API key created
+during this installation process should be used in the configuration
 below.
 
 ```js
 config.flarum = {
-  url: 'http://community.example.com'
-  apiKey: '',
+  url: 'http://community.example.com',
+  sessionCookieDomain: '.example.com',
+  apiKey: 'XXX-XXX-XXX',
   salt: 'super-secret-string'
 }
 ```
