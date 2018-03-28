@@ -131,24 +131,27 @@ config.facebook = {
 
 ### flarum
 
-Enable Flarum integration by adding the forum base URL, an API key and
-a random string that is used to encrypt passwords.
+Enable [Flarum](http://flarum.org/) integration by adding the base `url` of
+the forum, a master `apiKey`, the `sessionCookieDomain` and a random string as
+the `salt` that is used to encrypt passwords.
 
 The [flarum-ext-sso](https://github.com/fabwu/flarum-ext-sso) extension will
-also need to be installed for your Flarum instance. The API key created
-during this installation process should also be used in the configuration
+also need to be installed for your Flarum instance and the API key created
+during this installation process should be used in the configuration
 below.
 
 ```js
 config.flarum = {
-  url: 'http://community.example.com'
-  apiKey: '',
-  salt: 'super-secret-string'
+  url: 'http://community.example.com',
+  sessionCookieDomain: '.example.com',
+  apiKey: 'XXX-XXX-XXX',
+  salt: 'super-secret-string',
+  disableEmailConfirmation: true
 }
 ```
 
-This will enable SSO and the ability to link each collection microsite to a
-forum topic.
+Adding these settings will enable SSO and add the ability to link each
+collection microsite to a particular forum topic.
 
 !!! warning
 
