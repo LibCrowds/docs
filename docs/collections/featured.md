@@ -1,5 +1,10 @@
-To draw attention to particular projects you can feature them on the homepage
-of their collection microsite.
+Via this page, a set of chosen projects can be featured on the homepage of
+each collection microsite.
+
+If no featured projects are selected, the top three most recently created
+projects will be featured by default. This approach may cause a lack of
+variety in the projects that appear on the homepage but does mean that the
+list of selected projects doesn't have to be constantly updated.
 
 ??? warning "Administrator rights required"
 
@@ -16,8 +21,8 @@ of their collection microsite.
     4. Locate the collection in the table and click **Open**.
     5. Select **Featured Projects** from main menu.
 
-![A screenshot of a featured project on a collection microsite homepage](/assets/img/collection/featured.png?raw=true)
-<br><small>*A screenshot of a featured project on a collection microsite homepage*</small>
+![A screenshot of the featured projects admin page](/assets/img/collection/featured.png?raw=true)
+<br><small>*A screenshot of the featured projects admin page*</small>
 
 ## Featuring a project
 
