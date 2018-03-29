@@ -1,4 +1,6 @@
-Collection microsites that contain no projects can be deleted.
+Collection microsites can be permanently deleted via this page.
+
+Only microsites that contain no projects can be deleted.
 
 ??? warning "Administrator rights required"
 
@@ -20,7 +22,7 @@ Collection microsites that contain no projects can be deleted.
 
 ## Deleting the microsite
 
-To permanently delete a collection microsite click the **Delete** button.
+To permanently delete a collection microsite, click the **Delete** button.
 
 !!! warning
     Deletion is final, there is no undo.
