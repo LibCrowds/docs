@@ -35,3 +35,17 @@ Once the selections have been made, click **Create**.
 !!! tip "Adding tags"
 
     Once the project is created you will be taken to the project's tags page.
+
+## Unavailable volumes
+
+If a volume for a particular template is unavailable it is probably for one
+of the following reasons:
+
+1. It hasn't yet been loaded into the collection.
+2. The template needs to be built from a parent project, which is not yet
+complete.
+3. A project has already been built for that combination of template and
+volume.
+
+For further guidance, you can always contact an administrator by clicking the
+email link at the bottom of the page.
