@@ -1,5 +1,6 @@
-Tutorials are displayed when a project is first loaded to give volunteers
-some additional guidance about how to contribute.
+Tutorials are displayed when a project is first loaded and give volunteers
+some additional guidance about how to contribute. The tutorials for all
+projects generated from a template can be modified via this section.
 
 !!! question "How do I open this page?"
 
@@ -9,16 +10,11 @@ some additional guidance about how to contribute.
     4. Locate the template in the table and click **Open**.
     5. Select **Tutorial** from main menu.
 
-![A screenshot of a project's help modal](/assets/img/admin-project-help.png)
-<br><small>*A screenshot of a project's help modal*</small>
+![A screenshot of a template's tutorial admin page](/assets/img/template/tutorial.png?raw=true)
+<br><small>*A screenshot of a template's tutorial admin page*</small>
 
-## Updating
+## Updating the tutorial
 
-Use the Markdown editor to edit the help content and click the 'Update' button
-to save.
-
-!!! tip
-    Visit the [Project Templates](/templates/introduction.md) section to
-    find out how to update the help text for any future projects generated from
-    templates.
+Modify the tutorial content by using the Markdown editor, then clicking
+**Update**.
 

@@ -12,6 +12,9 @@ the collection, for example, *IIIF* or *Z3950*.
     4. Locate the template in the table and click **Open**.
     5. Select **Task** from main menu.
 
+![A screenshot of a template's task admin page](/assets/img/template/task.png?raw=true)
+<br><small>*A screenshot of a template's task admin page*</small>
+
 ## Configuring IIIF tasks
 
 TODO: write this
