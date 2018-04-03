@@ -1,6 +1,12 @@
 Tags are used to help users more easily location the types of project that
-they're interested in. The available tags for all projects within a collection
-are managed via this section.
+they're interested in. The available tag types for all projects within a
+collection are managed via this section.
+
+The values assigned to each tag type are managed on a per-project basis,
+either when creating a [New Project](/projects/new.md), or via the
+[Project Tags](/projects/tags.md) settings page. For example, if the *Location*
+tag type was added to a collection a project within that collection could then
+assign the value *London*.
 
 ??? warning "Administrator rights required"
 
@@ -29,19 +35,11 @@ below).
 
 ## Creating a tag
 
-To add a new tag click the 'Add a tag type' button at the top of the page. In
-the modal that appears enter a name for the tag type (e.g. Location), choose a
-colour and set an initial list of tags (e.g. London, Plymouth etc.), then
-click 'OK'.
+To add a new tag click the **Add a tag type** button at the top of the page. In
+the modal that appears enter a name for the tag type (e.g. Location) and choose
+a colour, then click **OK**.
 
-![A screenshot of the new tag type modal](/assets/img/admin-collection-tags-new.png?raw=true)
-<br><small>*A screenshot of the new tag type modal*</small>
+## Deleting a tag
 
-## Updating a tag
-
-Tag types can be edited or removed by locating them in the table and clicking
-the 'Edit' or 'Remove' buttons, respectively.
-
-!!! tip
-    See the [Project Tags](/projects/tags.md) guide for details
-    of how to add tags to each project.
+Tag types can be removed by locating them in the table and clicking
+the **Remove** button.

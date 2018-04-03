@@ -20,8 +20,7 @@ collection microsite's main projects page.
 
 ## Updating the tags
 
-You can choose one tag for each tag type. If you need a tag that is not
-currently available please contact an administrator (you can use the email
-link at the bottom of each page).
+Enter a value for each tag type and click the **Update** button.
 
-After choosing your tags, click the **Update** button.
+If you need a tag that is not currently available please contact an
+administrator (you can use the email link at the bottom of the page).
