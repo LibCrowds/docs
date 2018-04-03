@@ -38,11 +38,11 @@ pages:
   - Projects:
     - Introduction: 'projects/introduction.md'
     - New Project: 'projects/new.md'
-    - Core Details: 'projects/details.md'
-    - Thumbnail: 'projects/thumbnail.md'
     - Tags: 'projects/tags.md'
+    - Thumbnail: 'projects/thumbnail.md'
     - Results: 'projects/results.md'
     - Delete: 'projects/delete.md'
+    - Core Details: 'projects/details.md'
     - Collection: 'projects/collection.md'
     - Volume: 'projects/volume.md'
     - Template: 'projects/template.md'
