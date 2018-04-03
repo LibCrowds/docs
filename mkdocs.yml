@@ -53,6 +53,7 @@ pages:
     - Core Details: 'templates/details.md'
     - Task: 'templates/task.md'
     - Redundancy: 'templates/redundancy.md'
+    - Parent: 'templates/parent.md'
     - Analysis: 'templates/analysis.md'
     - Tutorial: 'templates/tutorial.md'
     - Delete: 'templates/delete.md'
