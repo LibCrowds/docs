@@ -20,7 +20,16 @@ collection microsite's main projects page.
 
 ## Updating the tags
 
-Enter a value for each tag type and click the **Update** button.
+A single value can be added for each tag type.
 
-If you need a tag that is not currently available please contact an
+As you type, similar tags that are already in use for projects within the
+collection will be shown. It is preferable to choose existing tags where
+possible, but if no valid option is available you can type the value you need
+into the box and click on the entered value in the dropdown box. This will
+add a new value that will be made searchable via the microsite's main projects
+page.
+
+Once you have selected or entered your tags, click **Update**.
+
+If you need a tag type that is not currently available please contact an
 administrator (you can use the email link at the bottom of the page).
