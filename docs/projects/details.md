@@ -3,6 +3,11 @@ the name, shortname and description of the project. All of these settings will
 be generated during project creation and should not normally need to be
 changed.
 
+??? warning "Administrator rights required"
+
+    To request administrator rights please get in touch by clicking the email
+    icon in the footer of this page.
+
 !!! question "How do I open this page?"
 
     1. Sign in to your LibCrowds account.
