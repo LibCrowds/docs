@@ -56,6 +56,10 @@ chosen; this is covered further below.
 
 To update a volume, locate it in the table and click **Update**.
 
+Note that if projects have already been built using the volume you will only
+be able to update the thumbnail. Otherwise, we would risk breaking functions
+that rely on consistent volume details, such as results aggregation.
+
 ![A screenshot of the update volume page](/assets/img/collection/volumes-update.png?raw=true)
 <br><small>*A screenshot of the update volume page*</small>
 
@@ -64,7 +68,7 @@ one to update the import source and another to update the thumbnail image.
 
 ### Updating the core details
 
-Here you can update the details described in the *Adding a volume* section
+Here you can update the details described in the *Adding a volume* section,
 above.
 
 To update the core details, edit the form and click **Update Details**.

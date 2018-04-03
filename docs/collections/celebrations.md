@@ -1,6 +1,6 @@
 When a project is completed, or a user has contributed to all available tasks
-for that project, animated confetti will fall and a celebration message will
-be displayed. These celebration messages can be edited via this page, using
+for a project, animated confetti will fall and a celebration message will
+be displayed. These celebration messages can be edited via this section, using
 Markdown.
 
 ??? warning "Administrator rights required"
@@ -21,7 +21,7 @@ Markdown.
 ![A screenshot of a collection microsite's celebrations admin page](/assets/img/collection/celebrations.png?raw=true)
 <br><small>*A screenshot of a collection microsite's celebrations admin page*</small>
 
-When a celebration message is shown the user will also be redirected back to
+As the celebration message is shown, the user will also be redirected back to
 collection microsite's main projects page.
 
 ![An animation showing a project completion celebration message](/assets/img/project-celebration.gif?raw=true)

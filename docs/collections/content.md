@@ -1,6 +1,6 @@
-Content for the About, Take Part and Data pages can be modified here, using
-Markdown. Changes are made in real-time, although you may have to refresh your
-browser to see them.
+Content for the *About*, *Take Part* and *Data* pages can be modified here,
+using Markdown. Changes are made in real-time, although you may have to refresh
+your browser to see them.
 
 ??? warning "Administrator rights required"
 
@@ -28,14 +28,16 @@ page.
 
 ## Adding navigation tags
 
-For the About page, quick navigation links will be generated from each level
+For the *About* page, quick navigation links will be generated from each level
 two header used in the page content. These navigation items can be clicked to
 scroll the users window to the top of that section.
 
-For example, the content below would generate a navigation link at the top
-of the page using the text "Contact".
+For example, entering the content below would generate a "Contact" link at the
+top of the *About* page.
 
 ```markdown
+This is some introductory content.
+
 ## Contact
 
 This is the contact details section.

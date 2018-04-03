@@ -1,5 +1,6 @@
 Various task presenter settings can be applied globally to all projects
-within a collection.
+within a collection, such as text for the share modal and some buttons. These
+settings can be configured via this section.
 
 ??? warning "Administrator rights required"
 
@@ -29,9 +30,9 @@ Modify the note button text by using **Submit button** input field.
 
 ## Updating the share modal text
 
-Task presenters contain a button that volunteers can be clicked to show a share
-modal, which contains a link to a version of the content being presented in
-each task (e.g. an image).
+Task presenters contain a button that volunteers can click to show a share
+modal. This modal will contain a link to a shareable version of the content
+being presented for the active task (e.g. the image).
 
-Modify the content above this link by using the **Share text** Markdown editor
-and clicking **Update**.
+The text that appears in the share modal can be modified by using the
+**Share text** Markdown editor.
