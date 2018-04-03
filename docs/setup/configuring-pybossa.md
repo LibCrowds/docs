@@ -113,8 +113,7 @@ ANNOUNCEMENT_USER_ID = 1
 EXTRA_STARTUP_TASKS = {
     'check_for_invalid_templates': True,
     'populate_empty_results': True,
-    'reanalyse_all_results': True,
-    'remove_bad_volumes': True
+    'reanalyse_all_results': True
 }
 
 # Email all comment annotations to administrators
