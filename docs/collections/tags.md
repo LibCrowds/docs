@@ -27,8 +27,7 @@ assign the value *London*.
 <br><small>*A screenshot of the collection tags admin page*</small>
 
 For each tag type created a new filter will be added to
-the collection's main projects page page (shown on the left in the screenshot
-below).
+the collection's main projects page page, as shown below.
 
 ![A screenshot of a collection microsite's main projects page](/assets/img/collection-projects.png?raw=true)
 <br><small>*A screenshot of a collection microsite's main projects page*</small>
