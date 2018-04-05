@@ -22,9 +22,9 @@ Announcements will be displayed via the main navigation bar, as shown below.
 ![A screenshot of a global announcement](/assets/img/example-announcement.png?raw=true)
 <br><small>*A screenshot of a global announcement*</small>
 
-## New announcements
+## Making an announcement
 
-The make an announcment click the **New** button at the top of the page. Enter
+The make an announcement click the **New** button at the top of the page. Enter
 a title, an optional additional description (keep it short) and an internal or
 external URL.
 
@@ -33,8 +33,17 @@ modify the above fields and choose a thumbnail for the announcement.
 
 When you're ready, publish the announcement by clicking the **Publish** toggle.
 
+## Editing an announcement
+
+To edit the content or thumbnail of an announcement, locate it in the table and
+click **Edit**.
+
+## Deleting an announcement
+
+To delete an announcement, locate it in the table and click **Remove**.
+
 ## Admin annoucements
 
-The system will generate automated admin annoucements to draw attention
+The system will generate automated admin announcements to draw attention
 to things that may need to be fixed, such as a project being assigned to an
 invalid template.
