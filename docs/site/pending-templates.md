@@ -22,6 +22,9 @@ reject.
 Click the **Show Details** button to view the proposed changes, which will be
 highlighted in green.
 
+![A screenshot highlighting pending changes for a template](/assets/img/site/pending-template-details.png?raw=true)
+<br><small>*A screenshot highlighting pending changes for a template*</small>
+
 ## Approving
 
 Approved templates can be used to generate projects for a collection
