@@ -42,7 +42,7 @@ A popup will be shown asking for the reason for rejection and what could be
 done before the template is accepted. This message will be sent to the
 creator of that template. Note that the message will be wrapped with some
 standard text. A markdown representation of that message is presented below,
-where the `{{ reason }}` tag is replace with the custom rejection message.
+where the `{{ reason }}` tag is replaced with the custom rejection message.
 
 ```markdown
 Hello {{ user['fullname'] }},
