@@ -15,7 +15,7 @@ TODO: Write this
     2. Click the **Menu** button at the top of any page.
     3. Select **Open Collection**.
     4. Locate the collection in the table and click **Open**.
-    5. Select **Exports** from main menu.
+    5. Select **Exports** from the main menu.
 
 ![A screenshot of the collection exports admin page](/assets/img/collection/exports.png?raw=true)
 <br><small>*A screenshot of the collection exports admin page*</small>

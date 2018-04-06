@@ -12,7 +12,7 @@ attributes such as user permissions.
     Admin rights are required to access this page. If you have admin rights:
 
     1. Sign in to your LibCrowds account.
-    2. Select **User Management** from main menu.
+    2. Select **User Management** from the main menu.
 
 To view and edit data for a particular user, for instance, to set permissions
 or checking by what method they signed up, locate them in the table and click

@@ -12,7 +12,7 @@ reject.
     Admin rights are required to access this page. If you have admin rights:
 
     1. Sign in to your LibCrowds account.
-    2. Select **Pending Templates** from main menu.
+    2. Select **Pending Templates** from the main menu.
 
 ![A screenshot of the site admin pending templates page](/assets/img/site/pending-templates.png?raw=true)
 <br><small>*A screenshot of the site admin pending templates page*</small>

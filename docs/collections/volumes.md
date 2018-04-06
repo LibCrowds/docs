@@ -23,7 +23,7 @@ with the aggregation of results data.
     2. Click the **Menu** button at the top of any page.
     3. Select **Open Collection**.
     4. Locate the collection in the table and click **Open**.
-    5. Select **Volumes** from main menu.
+    5. Select **Volumes** from the main menu.
 
 ![A screenshot of a collection's volumes admin page](/assets/img/collection/volumes.png?raw=true)
 <br><small>*A screenshot of a collection's volumes admin page*</small>

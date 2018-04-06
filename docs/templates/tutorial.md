@@ -8,7 +8,7 @@ projects generated from a template can be modified via this section.
     2. Click the **Menu** button at the top of any page.
     3. Select **Open Template**.
     4. Locate the template in the table and click **Open**.
-    5. Select **Tutorial** from main menu.
+    5. Select **Tutorial** from the main menu.
 
 ![A screenshot of a template's tutorial admin page](/assets/img/template/tutorial.png?raw=true)
 <br><small>*A screenshot of a template's tutorial admin page*</small>

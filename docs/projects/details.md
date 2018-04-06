@@ -14,7 +14,7 @@ changed.
     2. Click the **Menu** button at the top of any page.
     3. Select **Open Project**.
     4. Locate the project in the table and click **Open**.
-    5. Select **Core Details** from main menu.
+    5. Select **Core Details** from the main menu.
 
 ![A screenshot of the project details admin page](/assets/img/project/details.png?raw=true)
 <br><small>*A screenshot of the project details admin page*</small>

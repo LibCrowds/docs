@@ -7,7 +7,7 @@ the name and description of the template.
     2. Click the **Menu** button at the top of any page.
     3. Select **Open Template**.
     4. Locate the template in the table and click **Open**.
-    5. Select **Core Details** from main menu.
+    5. Select **Core Details** from the main menu.
 
 ![A screenshot of the template details admin page](/assets/img/template/details.png?raw=true)
 <br><small>*A screenshot of the template details admin page*</small>

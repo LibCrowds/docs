@@ -15,7 +15,7 @@ Only microsites that contain no projects can be deleted.
     2. Click the **Menu** button at the top of any page.
     3. Select **Open Collection**.
     4. Locate the collection in the table and click **Open**.
-    5. Select **Delete** from main menu.
+    5. Select **Delete** from the main menu.
 
 ![A screenshot of the delete collection admin page](/assets/img/collection/delete.png?raw=true)
 <br><small>*A screenshot of the delete collection admin page*</small>

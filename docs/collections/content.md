@@ -15,7 +15,7 @@ your browser to see them.
     2. Click the **Menu** button at the top of any page.
     3. Select **Open Collection**.
     4. Locate the collection in the table and click **Open**.
-    5. Select **Content** from main menu.
+    5. Select **Content** from the main menu.
 
 ![A screenshot of a collection microsite's page content admin page](/assets/img/collection/content.png?raw=true)
 <br><small>*A screenshot of a collection microsite's page content admin page*</small>

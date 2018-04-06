@@ -10,7 +10,7 @@ the collection, for example, *IIIF* or *Z3950*.
     2. Click the **Menu** button at the top of any page.
     3. Select **Open Template**.
     4. Locate the template in the table and click **Open**.
-    5. Select **Task** from main menu.
+    5. Select **Task** from the main menu.
 
 ![A screenshot of a template's task admin page](/assets/img/template/task.png?raw=true)
 <br><small>*A screenshot of a template's task admin page*</small>
