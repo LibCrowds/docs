@@ -17,7 +17,7 @@ administrator rights and should be used with caution.
     2. Click the **Menu** button at the top of any page.
     3. Select **Open Project**.
     4. Locate the project in the table and click **Open**.
-    5. Select **Volume** from main menu.
+    5. Select **Volume** from the main menu.
 
 ![A screenshot of a project's volume admin page](/assets/img/project/volume.png?raw=true)
 <br><small>*A screenshot of a project's volume admin page*</small>

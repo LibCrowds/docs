@@ -16,7 +16,7 @@ Markdown.
     2. Click the **Menu** button at the top of any page.
     3. Select **Open Collection**.
     4. Locate the collection in the table and click **Open**.
-    5. Select **Celebrations** from main menu.
+    5. Select **Celebrations** from the main menu.
 
 ![A screenshot of a collection microsite's celebrations admin page](/assets/img/collection/celebrations.png?raw=true)
 <br><small>*A screenshot of a collection microsite's celebrations admin page*</small>

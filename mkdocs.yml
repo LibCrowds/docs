@@ -73,6 +73,7 @@ pages:
     - Dashboard: 'site/dashboard.md'
     - User Management: 'site/users.md'
     - Announcements: 'site/announcements.md'
+    - Results: 'site/results.md'
     - Background Jobs: 'site/jobs.md'
     - Pending Templates: 'site/pending-templates.md'
   - Results Analysis: 'analysis.md'

@@ -15,7 +15,7 @@ settings can be configured via this section.
     2. Click the **Menu** button at the top of any page.
     3. Select **Open Collection**.
     4. Locate the collection in the table and click **Open**.
-    5. Select **Task Presenter** from main menu.
+    5. Select **Task Presenter** from the main menu.
 
 ![A screenshot of the collection task presenter admin page](/assets/img/collection/presenter.png?raw=true)
 <br><small>*A screenshot of the collection task presenter admin page*</small>

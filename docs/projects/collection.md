@@ -13,7 +13,7 @@ this will rarely be necessary).
     2. Click the **Menu** button at the top of any page.
     3. Select **Open Project**.
     4. Locate the project in the table and click **Open**.
-    5. Select **Collection** from main menu.
+    5. Select **Collection** from the main menu.
 
 ![A screenshot of a project's collection admin page](/assets/img/project/collection.png?raw=true)
 <br><small>*A screenshot of a project's collection admin page*</small>

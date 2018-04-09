@@ -19,7 +19,7 @@ list of selected projects doesn't have to be constantly updated.
     2. Click the **Menu** button at the top of any page.
     3. Select **Open Collection**.
     4. Locate the collection in the table and click **Open**.
-    5. Select **Featured Projects** from main menu.
+    5. Select **Featured Projects** from the main menu.
 
 ![A screenshot of the featured projects admin page](/assets/img/collection/featured.png?raw=true)
 <br><small>*A screenshot of the featured projects admin page*</small>

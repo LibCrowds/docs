@@ -12,7 +12,7 @@ reject.
     Admin rights are required to access this page. If you have admin rights:
 
     1. Sign in to your LibCrowds account.
-    2. Select **Pending Templates** from main menu.
+    2. Select **Pending Templates** from the main menu.
 
 ![A screenshot of the site admin pending templates page](/assets/img/site/pending-templates.png?raw=true)
 <br><small>*A screenshot of the site admin pending templates page*</small>
@@ -21,6 +21,9 @@ reject.
 
 Click the **Show Details** button to view the proposed changes, which will be
 highlighted in green.
+
+![A screenshot highlighting pending changes for a template](/assets/img/site/pending-template-details.png?raw=true)
+<br><small>*A screenshot highlighting pending changes for a template*</small>
 
 ## Approving
 
@@ -39,7 +42,7 @@ A popup will be shown asking for the reason for rejection and what could be
 done before the template is accepted. This message will be sent to the
 creator of that template. Note that the message will be wrapped with some
 standard text. A markdown representation of that message is presented below,
-where the `{{ reason }}` tag is replace with the custom rejection message.
+where the `{{ reason }}` tag is replaced with the custom rejection message.
 
 ```markdown
 Hello {{ user['fullname'] }},

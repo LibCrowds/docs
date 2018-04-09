@@ -7,7 +7,7 @@ collection that they're interested in.
     2. Click the **Menu** button at the top of any page.
     3. Select **Open Project**.
     4. Locate the project in the table and click **Open**.
-    5. Select **Tags** from main menu.
+    5. Select **Tags** from the main menu.
 
 ![A screenshot of a project's tags admin page](/assets/img/project/tags.png?raw=true)
 <br><small>*A screenshot of a project's tags admin page*</small>

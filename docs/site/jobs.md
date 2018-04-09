@@ -13,7 +13,7 @@ with these tasks (check the failed tasks list).
     Admin rights are required to access this page. If you have admin rights:
 
     1. Sign in to your LibCrowds account.
-    2. Select **Background Jobs** from main menu.
+    2. Select **Background Jobs** from the main menu.
 
 ![A screenshot of the site admin jobs page](/assets/img/site/jobs.png?raw=true)
 <br><small>*A screenshot of the site admin jobs page*</small>

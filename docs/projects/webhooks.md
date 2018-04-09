@@ -15,7 +15,7 @@ rights.
     2. Click the **Menu** button at the top of any page.
     3. Select **Open Project**.
     4. Locate the project in the table and click **Open**.
-    5. Select **Webhooks** from main menu.
+    5. Select **Webhooks** from the main menu.
 
 ![A screenshot of a project's webhooks admin page](/assets/img/project/webhooks.png?raw=true)
 <br><small>*A screenshot of a project's webhooks admin page*</small>

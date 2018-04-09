@@ -9,7 +9,7 @@ they can be changed here.
     2. Click the **Menu** button at the top of any page.
     3. Select **Open Project**.
     4. Locate the project in the table and click **Open**.
-    5. Select **Thumbnail** from main menu.
+    5. Select **Thumbnail** from the main menu.
 
 ![A screenshot of a project's thumbnail admin page](/assets/img/project/thumbnail.png?raw=true)
 <br><small>*A screenshot of a project's thumbnail admin page*</small>

@@ -12,7 +12,7 @@ or external link.
     Admin rights are required to access this page. If you have admin rights:
 
     1. Sign in to your LibCrowds account.
-    2. Select **Announcements** from main menu.
+    2. Select **Announcements** from the main menu.
 
 ![A screenshot of the site admin announcements page](/assets/img/site/announcements.png?raw=true)
 <br><small>*A screenshot of the site admin announcements page*</small>

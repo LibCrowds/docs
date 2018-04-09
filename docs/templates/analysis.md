@@ -14,7 +14,7 @@ For more details of how the results analysis process works, see the
     2. Click the **Menu** button at the top of any page.
     3. Select **Open Template**.
     4. Locate the template in the table and click **Open**.
-    5. Select **Analysis** from main menu.
+    5. Select **Analysis** from the main menu.
 
 ![A screenshot of a template's analysis admin page](/assets/img/template/analysis.png?raw=true)
 <br><small>*A screenshot of a template's analysis admin page*</small>

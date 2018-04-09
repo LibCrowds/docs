@@ -13,7 +13,7 @@ established, or the maximum number of contributions is reached.
     2. Click the **Menu** button at the top of any page.
     3. Select **Open Template**.
     4. Locate the template in the table and click **Open**.
-    5. Select **Redundancy** from main menu.
+    5. Select **Redundancy** from the main menu.
 
 ![A screenshot of a template's redundancy admin page](/assets/img/template/redundancy.png?raw=true)
 <br><small>*A screenshot of a template's redundancy admin page*</small>
