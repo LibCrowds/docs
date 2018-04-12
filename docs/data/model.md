@@ -42,7 +42,7 @@ designed to mark up all of the titles on a page.
     ```json-ld
     {
       "@context": "http://www.w3.org/ns/anno.jsonld",
-      "id": "https://www.libcrowds.com/lc/annotations/ce67281d-5b2a-4bdc-ba33-cb46525d0625",
+      "id": "https://www.libcrowds.com/lc/annotations/wa/ce67281d-5b2a-4bdc-ba33-cb46525d0625",
       "type": "Annotation",
       "motivation": "tagging",
       "created": "2017-08-31T04:25:28.178Z",
@@ -80,7 +80,7 @@ transcribe all of the titles on a page.
     ```json-ld
     {
       "@context": "http://www.w3.org/ns/anno.jsonld",
-      "id": "https://www.libcrowds.com/lc/annotations/7640ddcd-6e48-4a9c-a360-3383032593b6",
+      "id": "https://www.libcrowds.com/lc/annotations/wa/7640ddcd-6e48-4a9c-a360-3383032593b6",
       "type": "Annotation",
       "motivation": "describing",
       "created": "018-02-08T22:15:07.152Z",
@@ -126,7 +126,7 @@ notes field of a IIIF Annotation project.
     ```json-ld
     {
       "@context": "http://www.w3.org/ns/anno.jsonld",
-      "id": "https://www.libcrowds.com/lc/annotations/97b63351-c1a4-456e-8871-b299aa684639",
+      "id": "https://www.libcrowds.com/lc/annotations/wa/97b63351-c1a4-456e-8871-b299aa684639",
       "type": "Annotation",
       "motivation": "commenting",
       "created": "2017-09-05T11:07:32.273Z",
@@ -337,7 +337,7 @@ straightforward generic option for identifying these relationships.
     ```json-ld
     {
       "@context": "http://www.w3.org/ns/anno.jsonld",
-      "id": "https://www.libcrowds.com/lc/annotations/ce67281d-5b2a-4bdc-ba33-cb46525d0625",
+      "id": "https://www.libcrowds.com/lc/annotations/wa/ce67281d-5b2a-4bdc-ba33-cb46525d0625",
       "type": "Annotation",
       "motivation": "tagging",
       "created": "2017-08-31T04:25:28.178Z",
@@ -369,8 +369,8 @@ straightforward generic option for identifying these relationships.
     ```json-ld
     {
       "@context": "http://www.w3.org/ns/anno.jsonld",
-      "id": "https://www.libcrowds.com/lc/annotations/7640ddcd-6e48-4a9c-a360-3383032593b6",
-      "partOf": "https://www.libcrowds.com/lc/annotations/ce67281d-5b2a-4bdc-ba33-cb46525d0625",
+      "id": "https://www.libcrowds.com/lc/annotations/wa/7640ddcd-6e48-4a9c-a360-3383032593b6",
+      "partOf": "https://www.libcrowds.com/lc/annotations/wa/ce67281d-5b2a-4bdc-ba33-cb46525d0625",
       "type": "Annotation",
       "motivation": "describing",
       "created": "018-02-08T22:15:07.152Z",
