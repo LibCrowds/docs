@@ -13,18 +13,18 @@ task, task run and result. This is the raw data used by the platform and may
 contain a lot of nested fields. Therefore, the JSON versions are likely
 to be more usable than the CSV versions.
 
-## Task
+### Tasks
 
 This data is used to configure the task and present it to users. It includes
 links to the original source material, such as the IIIF manifest or Flickr
 album ID.
 
-## Task run
+### Task runs
 
 This is the contribution data provided by volunteers as the answers to each
 task. The `info` field contains any user submitted data.
 
-## Result
+### Results
 
 These are the final results generated once each task is complete and the
 contributions analysed. The `info.annotations` field contains the final
