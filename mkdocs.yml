@@ -81,5 +81,6 @@ pages:
     - Introduction: 'data/introduction.md'
     - Data Model: 'data/model.md'
     - Downloads: 'data/downloads.md'
+    - API: 'data/api.md'
   - FAQ: 'FAQ.md'
   - Glossary: 'glossary.md'
