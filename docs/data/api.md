@@ -9,9 +9,13 @@ TODO: write this!
 
 ## Web Annotations
 
-LibCrowds implements its own basic Annotation Server that complies with the
-[Web Annotation Protocol](https://www.w3.org/TR/annotation-protocol/).
-Annotations can be retrieved via the endpoints listed below.
+LibCrowds implements its own Annotation Server, which enables the reading of
+all annotations generated via the platform. The server cannot be used to
+create, update or delete endpoints, which happens via other means, but it does
+comply fully with the
+[Web Annotation protocol](https://www.w3.org/TR/annotation-protocol/) to ease
+interoperability between systems. The available endpoints are presented
+below.
 
 #### Retrieving a single annotation
 
