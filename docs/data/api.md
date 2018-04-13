@@ -17,10 +17,28 @@ comply fully with the
 interoperability between systems. The available endpoints are presented
 below.
 
-#### Retrieving a single annotation
+#### Get a single annotation
 
 ``` http
 GET https://www.libcrowds.com/lc/annotations/wa/{annotation-id}
 ```
+
+!!! summary "Example response"
+
+    ```json-ld
+    {}
+    ```
+
+#### Get an annotation collection for a volume
+
+``` http
+GET https://www.libcrowds.com/lc/annotations/wa/collection/volume/{volume_id}
+```
+
+!!! summary "Example response"
+
+    ```json-ld
+    {}
+    ```
 
 ## IIIF Annotation Lists
