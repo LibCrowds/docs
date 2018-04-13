@@ -9,10 +9,14 @@ TODO: write this!
 
 ## Web Annotations
 
+LibCrowds implements its own basic Annotation Server that complies with the
+[Web Annotation Protocol](https://www.w3.org/TR/annotation-protocol/).
+Annotations can be retrieved via the endpoints listed below.
+
 #### Retrieving a single annotation
 
 ``` http
-GET http://127.0.0.1:8080/lc/annotations/wa/{annotation-id}
+GET https://www.libcrowds.com/lc/annotations/wa/{annotation-id}
 ```
 
 ## IIIF Annotation Lists
