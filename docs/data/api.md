@@ -26,7 +26,7 @@ GET https://www.libcrowds.com/lc/annotations/wa/{annotation-id}
     Example request:
 
     ``` http
-    http://127.0.0.1:8080/lc/annotations/wa/a6947486-98f1-48c8-a833-bcb0023c25a1
+    https://www.libcrowds.com/lc/annotations/wa/a6947486-98f1-48c8-a833-bcb0023c25a1
     ```
 
     Example response:
@@ -34,7 +34,7 @@ GET https://www.libcrowds.com/lc/annotations/wa/{annotation-id}
     ```json-ld
     {
         "@context": "http://www.w3.org/ns/anno.jsonld",
-        "id": "http://127.0.0.1:8080/lc/annotations/wa/a6947486-98f1-48c8-a833-bcb0023c25a1",
+        "id": "https://www.libcrowds.com/lc/annotations/wa/a6947486-98f1-48c8-a833-bcb0023c25a1",
         "type": "Annotation",
         "body": {
             "type": "TextualBody",
@@ -78,7 +78,7 @@ GET https://www.libcrowds.com/lc/annotations/wa/collection/volume/{volume_id}
     Example request:
 
     ``` http
-    http://127.0.0.1:8080/lc/annotations/wa/a6947486-98f1-48c8-a833-bcb0023c25a1
+    https://www.libcrowds.com/lc/annotations/wa/a6947486-98f1-48c8-a833-bcb0023c25a1
     ```
 
     Example response:
@@ -86,11 +86,11 @@ GET https://www.libcrowds.com/lc/annotations/wa/collection/volume/{volume_id}
     ```json-ld
     {
         "@context": "http://www.w3.org/ns/anno.jsonld",
-        "id": "http://127.0.0.1:8080/lc/annotations/wa/collection/volume/b3735005-1bac-4a27-af08-61b62d708fdb",
+        "id": "https://www.libcrowds.com/lc/annotations/wa/collection/volume/b3735005-1bac-4a27-af08-61b62d708fdb",
         "label": "Theatre Royal, Margate 1796-1797 Annotations",
         ""type": "AnnotationCollection",
         "total": 752,
-        "first": "http://127.0.0.1:8080/lc/annotations/wa/collection/volume/b3735005-1bac-4a27-af08-61b62d708fdb/1",
-        "last": "http://127.0.0.1:8080/lc/annotations/wa/collection/volume/b3735005-1bac-4a27-af08-61b62d708fdb/8"
+        "first": "https://www.libcrowds.com/lc/annotations/wa/collection/volume/b3735005-1bac-4a27-af08-61b62d708fdb/1",
+        "last": "https://www.libcrowds.com/lc/annotations/wa/collection/volume/b3735005-1bac-4a27-af08-61b62d708fdb/8"
     }
     ```
