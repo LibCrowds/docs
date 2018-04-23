@@ -90,7 +90,7 @@ GET https://www.libcrowds.com/lc/annotations/wa/collection/volume/{volume_id}
         "label": "Theatre Royal, Margate 1796-1797 Annotations",
         ""type": "AnnotationCollection",
         "total": 752,
-        "first": "http://127.0.0.1:8080/lc/annotations/wa/collection/volume/b3735005-1bac-4a27-af08-61b62d708fdb/page1",
-        "last": "http://127.0.0.1:8080/lc/annotations/wa/collection/volume/b3735005-1bac-4a27-af08-61b62d708fdb/page8"
+        "first": "http://127.0.0.1:8080/lc/annotations/wa/collection/volume/b3735005-1bac-4a27-af08-61b62d708fdb/1",
+        "last": "http://127.0.0.1:8080/lc/annotations/wa/collection/volume/b3735005-1bac-4a27-af08-61b62d708fdb/8"
     }
     ```
