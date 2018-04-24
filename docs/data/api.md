@@ -85,7 +85,7 @@ Available Parameters:
     Example request:
 
     ``` http
-    https://www.libcrowds.com/lc/annotations/wa/collection/b3735005-1bac-4a27-af08-61b62d708fdb
+    https://www.libcrowds.com/lc/annotations/wa/collection/playbills
     ```
 
     Example response:
@@ -93,12 +93,12 @@ Available Parameters:
     ```json-ld
     {
         "@context": "http://www.w3.org/ns/anno.jsonld",
-        "id": "https://www.libcrowds.com/lc/annotations/wa/volume/b3735005-1bac-4a27-af08-61b62d708fdb",
+        "id": "https://www.libcrowds.com/lc/annotations/wa/collection/playbills",
         "label": "In the Spotlight Annotations",
         "type": "AnnotationCollection",
         "total": 752,
-        "first": "https://www.libcrowds.com/lc/annotations/wa/volume/b3735005-1bac-4a27-af08-61b62d708fdb/1",
-        "last": "https://www.libcrowds.com/lc/annotations/wa/volume/b3735005-1bac-4a27-af08-61b62d708fdb/8"
+        "first": "https://www.libcrowds.com/lc/annotations/wa/collection/playbills/1",
+        "last": "https://www.libcrowds.com/lc/annotations/wa/collection/playbills/8"
     }
     ```
 
