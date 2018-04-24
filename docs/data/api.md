@@ -66,7 +66,43 @@ Available Parameters:
     }
     ```
 
-#### Get an Annotation Collection for a volume
+#### Get all Annotations for a collection
+
+Use the following endpoint to return a summary of all annotations for a
+collection.
+
+``` http
+GET https://www.libcrowds.com/lc/annotations/wa/collection/{short_name}
+```
+
+Available Parameters:
+
+- `motivation`: Filter by motivation (e.g. `?motivation=describing`)
+- `iris`: Return the Annotation IRIs only (e.g. `?iris=1`)
+
+!!! summary "Example"
+
+    Example request:
+
+    ``` http
+    https://www.libcrowds.com/lc/annotations/wa/collection/b3735005-1bac-4a27-af08-61b62d708fdb
+    ```
+
+    Example response:
+
+    ```json-ld
+    {
+        "@context": "http://www.w3.org/ns/anno.jsonld",
+        "id": "https://www.libcrowds.com/lc/annotations/wa/volume/b3735005-1bac-4a27-af08-61b62d708fdb",
+        "label": "In the Spotlight Annotations",
+        "type": "AnnotationCollection",
+        "total": 752,
+        "first": "https://www.libcrowds.com/lc/annotations/wa/volume/b3735005-1bac-4a27-af08-61b62d708fdb/1",
+        "last": "https://www.libcrowds.com/lc/annotations/wa/volume/b3735005-1bac-4a27-af08-61b62d708fdb/8"
+    }
+    ```
+
+#### Get all Annotations for a volume
 
 Use the following endpoint to return a summary of all annotations for a
 volume.
@@ -85,7 +121,7 @@ Available Parameters:
     Example request:
 
     ``` http
-    https://www.libcrowds.com/lc/annotations/wa/a6947486-98f1-48c8-a833-bcb0023c25a1
+    https://www.libcrowds.com/lc/annotations/wa/volume/b3735005-1bac-4a27-af08-61b62d708fdb
     ```
 
     Example response:
