@@ -13,13 +13,18 @@ comply fully with the
 interoperability between systems. The available endpoints are presented
 below.
 
-#### Get a single annotation
+#### Get a single Annotation
 
 Use the following endpoint to retrieve a single annotation.
 
 ``` http
 GET https://www.libcrowds.com/lc/annotations/wa/{annotation-id}
 ```
+
+Available Parameters:
+
+- `motivation`: Filter by motivation (e.g. `?motivation=describing`)
+- `iris`: Return the Annotation IRIs only (e.g. `?iris=1`)
 
 !!! summary "Example"
 
@@ -61,17 +66,19 @@ GET https://www.libcrowds.com/lc/annotations/wa/{annotation-id}
     }
     ```
 
-#### Get an annotation collection for a volume
+#### Get an Annotation Collection for a volume
 
 Use the following endpoint to return a summary of all annotations for a
 volume.
 
-The `motivation` parameter can be used to filter by motivation
-(e.g. `?motivation=describing`).
-
 ``` http
 GET https://www.libcrowds.com/lc/annotations/wa/collection/volume/{volume_id}
 ```
+
+Available Parameters:
+
+- `motivation`: Filter by motivation (e.g. `?motivation=describing`)
+- `iris`: Return the Annotation IRIs only (e.g. `?iris=1`)
 
 !!! summary "Example"
 
