@@ -66,42 +66,6 @@ Available Parameters:
     }
     ```
 
-#### Get all Annotations for a collection
-
-Use the following endpoint to return a summary of all annotations for a
-collection.
-
-``` http
-GET https://www.libcrowds.com/lc/annotations/wa/collection/{short_name}
-```
-
-Available Parameters:
-
-- `motivation`: Filter by motivation (e.g. `?motivation=describing`)
-- `iris`: Return the Annotation IRIs only (e.g. `?iris=1`)
-
-!!! summary "Example"
-
-    Example request:
-
-    ``` http
-    https://www.libcrowds.com/lc/annotations/wa/collection/playbills
-    ```
-
-    Example response:
-
-    ```json-ld
-    {
-        "@context": "http://www.w3.org/ns/anno.jsonld",
-        "id": "https://www.libcrowds.com/lc/annotations/wa/collection/playbills",
-        "label": "In the Spotlight Annotations",
-        "type": "AnnotationCollection",
-        "total": 752,
-        "first": "https://www.libcrowds.com/lc/annotations/wa/collection/playbills/1",
-        "last": "https://www.libcrowds.com/lc/annotations/wa/collection/playbills/8"
-    }
-    ```
-
 #### Get all Annotations for a volume
 
 Use the following endpoint to return a summary of all annotations for a
