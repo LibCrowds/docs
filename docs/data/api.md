@@ -88,7 +88,7 @@ GET https://www.libcrowds.com/lc/annotations/wa/collection/volume/{volume_id}
         "@context": "http://www.w3.org/ns/anno.jsonld",
         "id": "https://www.libcrowds.com/lc/annotations/wa/collection/volume/b3735005-1bac-4a27-af08-61b62d708fdb",
         "label": "Theatre Royal, Margate 1796-1797 Annotations",
-        ""type": "AnnotationCollection",
+        "type": "AnnotationCollection",
         "total": 752,
         "first": "https://www.libcrowds.com/lc/annotations/wa/collection/volume/b3735005-1bac-4a27-af08-61b62d708fdb/1",
         "last": "https://www.libcrowds.com/lc/annotations/wa/collection/volume/b3735005-1bac-4a27-af08-61b62d708fdb/8"
