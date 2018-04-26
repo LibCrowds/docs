@@ -21,11 +21,6 @@ Use the following endpoint to retrieve a single annotation.
 GET https://www.libcrowds.com/lc/annotations/wa/{annotation-id}
 ```
 
-Available Parameters:
-
-- `motivation`: Filter by motivation (e.g. `?motivation=describing`)
-- `iris`: Return the Annotation IRIs only (e.g. `?iris=1`)
-
 !!! summary "Example"
 
     Example request:
@@ -66,26 +61,21 @@ Available Parameters:
     }
     ```
 
-#### Get all Annotations for a volume
+#### Get an Annotation Collection
 
 Use the following endpoint to return a summary of all annotations for a
-volume.
+collection.
 
 ``` http
-GET https://www.libcrowds.com/lc/annotations/wa/volume/{volume_id}
+GET https://www.libcrowds.com/lc/annotations/wa/collection/{collection_id}
 ```
-
-Available Parameters:
-
-- `motivation`: Filter by motivation (e.g. `?motivation=describing`)
-- `iris`: Return the Annotation IRIs only (e.g. `?iris=1`)
 
 !!! summary "Example"
 
     Example request:
 
     ``` http
-    https://www.libcrowds.com/lc/annotations/wa/volume/b3735005-1bac-4a27-af08-61b62d708fdb
+    https://www.libcrowds.com/lc/annotations/wa/collection/22
     ```
 
     Example response:
@@ -93,11 +83,117 @@ Available Parameters:
     ```json-ld
     {
         "@context": "http://www.w3.org/ns/anno.jsonld",
-        "id": "https://www.libcrowds.com/lc/annotations/wa/volume/b3735005-1bac-4a27-af08-61b62d708fdb",
-        "label": "Theatre Royal, Margate 1796-1797 Annotations",
+        "id": "https://www.libcrowds.com/lc/annotations/wa/collection/22",
+        "label": "In the Spotlight Annotations",
         "type": "AnnotationCollection",
         "total": 752,
-        "first": "https://www.libcrowds.com/lc/annotations/wa/volume/b3735005-1bac-4a27-af08-61b62d708fdb/1",
-        "last": "https://www.libcrowds.com/lc/annotations/wa/volume/b3735005-1bac-4a27-af08-61b62d708fdb/8"
+        "first": "https://www.libcrowds.com/lc/annotations/wa/collection/22/1",
+        "last": "https://www.libcrowds.com/lc/annotations/wa/collection/22/8"
     }
     ```
+
+!!! tip "Query Parameters"
+
+    See [Annotation Queries](/data/api.md#annotation-queries) for
+    details of the available query parameters for this endpoint.
+
+#### Get an Annotation Page
+
+Use the following endpoint to return a page of Annotations for a collection.
+
+``` http
+GET https://www.libcrowds.com/lc/annotations/wa/collection/{collection_id}/{page}
+```
+
+!!! summary "Example"
+
+    Example request:
+
+    ``` http
+    https://www.libcrowds.com/lc/annotations/wa/collection/22/1
+    ```
+
+    Example response:
+
+    ```json-ld
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "type": "AnnotationPage",
+      "id": "http://127.0.0.1:8080/lc/annotations/wa/collection/22/1",
+      "items": [
+        {
+          "@context": "http://www.w3.org/ns/anno.jsonld",
+          "id": "http://127.0.0.1:8080/lc/annotations/5947918d-0f9b-4e13-8382-e8c94e173722",
+          "type": "Annotation",
+          "body": [
+            {
+              "type": "TextualBody",
+              "purpose": "tagging",
+              "value": "genre"
+            },
+            {
+              "type": "TextualBody",
+              "purpose": "describing",
+              "value": "Nautical Drama",
+              "format": "text/plain"
+            }
+          ],
+          "motivation": "describing",
+          "target": "https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100022589096.0x0002cf",
+          "created": "2018-01-23T21:34:50.667Z",
+          "modified": "2018-02-14T01:15:06.845152",
+          "generated": "2018-01-23T21:34:50.667Z"
+        },
+        ...
+      ],
+      "next": "http://127.0.0.1:8080/lc/annotations/wa/collection/22/2",
+      "startIndex": 0,
+      "partOf": {
+        "total": 2860,
+        "id": "http://127.0.0.1:8080/lc/annotations/wa/collection/22",
+        "label": "In the Spotlight Annotations"
+      }
+    }
+    ```
+
+!!! tip "Query Parameters"
+
+    See [Web Annotation Queries](/data/api.md#web-annotation-queries) for
+    details of the available query parameters for this endpoint.
+
+### Annotation Queries
+
+The query parameters available for Annotation Collection or Annotation Page
+endpoints are described below.
+
+#### iris
+
+Return the Annotation IRIs only, rather than the full Annotations.
+
+#### orderby
+
+Order the results by the value of an Annotation attribute, the default is
+`created`.
+
+#### limit
+
+Limit the results on each page by, the default is `100`.
+
+#### query
+
+Search for Annotations that contain a given value.
+
+For example, to return Annotations with the commenting motivation we could use:
+
+```
+query={"motivation":"commenting"}
+```
+
+Or, to return Annotations with the genre tag we could use:
+
+```
+query={"body":[{"purpose":"tagging","value":"genre"}]}
+```
+
+See the [Data Model](/data/model.md) for details of how the Annotations are
+structured.
