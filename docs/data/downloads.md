@@ -6,51 +6,27 @@ Note that everything contained in these datasets is also available via the
 [API](/data/api.md). Depending on the objective, the API may provide a more
 suitable method of access.
 
-## Collection downloads
+## Annotation downloads
 
-Collection-level downloads contain the final annotations, following any
-automated analysis processes. The downloads are seperated by motivation.
+These datasets contain the final Annotations that are produced during the
+[results analysis](/analysis.md) processes. The datasets are seperated by
+motivation, as follows:
 
-### Describing
+- **Describing:** The user-submitted transcriptions.
+- **Tagging:** The regions marked up by users.
+- **Commenting:** The comments or notes submitted by users.
 
-These are the user-submitted transcriptions. Note that the flattened
-CSV version will contain the transcribed values only, whereas the JSON
-version contains additional information, as shown in the
-[data model](/data/model.md).
-
-### Tagging
-
-These are the marked up regions selected by users. Note that the flattened
-CSV version will contain the coordinates only, whereas the JSON version
-contains additional information, as shown in the [data model](/data/model.md).
-
-### Commenting
-
-These are the comments or notes submitted by users for all tasks. Note that the
-flattened CSV version will contain the comment values only, whereas the JSON
-version contains additional information, as shown in the
-[data model](/data/model.md).
+See the [data model](/data/model.md) for details of how the Annotations are
+structured.
 
 ## Project downloads
 
-There are three types of downloadable dataset available at the project level,
-task, task run and result. This is the raw data used by the platform and may
-contain a lot of nested fields. Therefore, the JSON versions are likely
-to be more usable than the CSV versions.
+This is the raw data used by or generated via the platform. As this data may
+contain a lot of nested fields the JSON versions are likely to be more usable
+than the CSV versions. There are three types of dataset available for each
+project:
 
-### Tasks
-
-This data is used to configure the task and present it to users. It includes
-links to the original source material, such as the IIIF manifest or Flickr
-album ID.
-
-### Task runs
-
-This is the contribution data provided by volunteers as the answers to each
-task. The `info` field contains any user submitted data.
-
-### Results
-
-These are the final results generated once each task is complete and the
-contributions analysed. The `info.annotations` field contains the final
-annotations.
+- **Tasks:** The data used to configure tasks and present them to users.
+- **Contributions:** The user-submitted data provided as answers to each task.
+- **Results:** The final results produced during the
+[results analysis](/analysis.md) processes.
