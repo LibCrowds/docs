@@ -149,9 +149,9 @@ GET https://www.libcrowds.com/lc/annotations/wa/collection/{collection_id}/{page
       "next": "http://127.0.0.1:8080/lc/annotations/wa/collection/22/2",
       "startIndex": 0,
       "partOf": {
-        "total": 2860,
         "id": "http://127.0.0.1:8080/lc/annotations/wa/collection/22",
-        "label": "In the Spotlight Annotations"
+        "label": "In the Spotlight Annotations",
+        "total": 2860
       }
     }
     ```
