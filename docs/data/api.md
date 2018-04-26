@@ -179,20 +179,20 @@ Order the results by the value of an Annotation attribute, the default is
 
 Limit the results on each page by, the default is `100`.
 
-#### query
+#### contains
 
 Search for Annotations that contain a given value.
 
 For example, to return Annotations with the commenting motivation we could use:
 
 ```
-query={"motivation":"commenting"}
+contains={"motivation":"commenting"}
 ```
 
 Or, to return Annotations with the genre tag we could use:
 
 ```
-query={"body":[{"purpose":"tagging","value":"genre"}]}
+contains={"body":[{"purpose":"tagging","value":"genre"}]}
 ```
 
 See the [Data Model](/data/model.md) for details of how the Annotations are
