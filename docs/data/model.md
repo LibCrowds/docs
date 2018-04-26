@@ -317,18 +317,24 @@ Descriptions are used to describe the target in plain text.
     }
     ```
 
+#### Linking
+
+| Property       | Type             | Description                                          |
+|----------------|------------------|------------------------------------------------------|
+| type           | String           | The type of the resource (always 'SpecificResource') |
+| purpose        | String           | The reason for the inclusion (always 'classifying')  |
+| source         | String           | A URI identifying the specific resource              |
+
 ## Parent-child relationships
 
 Some LibCrowds projects can be built with a parent-child relationship. For
-example, the results of a *tagging* project can be used to generate tasks for
-a *describing* project. In this case, a `partOf` key will be added to any
-annotations generated from the child project, with the value being the `id` of
-the parent annotation from which the task was build.
+example, the results of a IIIF *tagging* project can be used to generate tasks
+for a IIIF *describing* project.
 
-While using `partOf` here might not always be semantically accurate (the child
-tag might not really be a part of the parent tag), this is the most
-straightforward generic option for identifying these relationships.
-
+A body will be added to all child annotations with the
+[`linking`](/data/model.md#linking) purpose. The value of this body will be
+the `id` of the parent annotation from which the task was built. This helps
+with later identifying the relationships between entities.
 
 !!! summary "Example parent-child relationship"
 
@@ -370,7 +376,6 @@ straightforward generic option for identifying these relationships.
     {
       "@context": "http://www.w3.org/ns/anno.jsonld",
       "id": "https://www.libcrowds.com/lc/annotations/wa/7640ddcd-6e48-4a9c-a360-3383032593b6",
-      "partOf": "https://www.libcrowds.com/lc/annotations/wa/ce67281d-5b2a-4bdc-ba33-cb46525d0625",
       "type": "Annotation",
       "motivation": "describing",
       "created": "018-02-08T22:15:07.152Z",
@@ -392,6 +397,11 @@ straightforward generic option for identifying these relationships.
           "purpose": "describing",
           "value": "King Lear",
           "format": "text/plain"
+        },
+        {
+          "source": "https://www.libcrowds.com/lc/annotations/wa/ce67281d-5b2a-4bdc-ba33-cb46525d0625",
+          "type": "SpecificResource",
+          "purpose": "linking"
         }
       ],
       "target": {
