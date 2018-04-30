@@ -128,3 +128,23 @@ comments are associated with the image as a whole rather than a specific field.
 
 Comments are not modified during the analysis process. A commenting annotation
 is added to the final result for each comment found.
+
+## Exclusion
+
+The automated analysis process will not be triggered for a result if any of
+the scenarios below apply.
+
+### 1. The result has a child
+
+Some LibCrowds projects can be generated with a
+[parent-child relationship](/templates/parent.md). If the analysis is triggered
+for any results where a child task has been built from that result nothing will
+be updated. This is because doing so could break the links between any child
+and parent annotations.
+
+### 2. The result has been modified manually
+
+If a result has been modified manually, since creation, it will no longer be
+updated by the automated results analysis process. This really only applies
+if the results analysis is run again over the entire collection, such as from
+the [Admin Results](/admin/results.md) page.
