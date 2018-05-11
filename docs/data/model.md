@@ -42,7 +42,7 @@ designed to mark up all of the titles on a page.
     ```json-ld
     {
       "@context": "http://www.w3.org/ns/anno.jsonld",
-      "id": "https://www.libcrowds.com/lc/annotations/ce67281d-5b2a-4bdc-ba33-cb46525d0625",
+      "id": "https://www.libcrowds.com/lc/annotations/wa/ce67281d-5b2a-4bdc-ba33-cb46525d0625",
       "type": "Annotation",
       "motivation": "tagging",
       "created": "2017-08-31T04:25:28.178Z",
@@ -80,7 +80,7 @@ transcribe all of the titles on a page.
     ```json-ld
     {
       "@context": "http://www.w3.org/ns/anno.jsonld",
-      "id": "https://www.libcrowds.com/lc/annotations/7640ddcd-6e48-4a9c-a360-3383032593b6",
+      "id": "https://www.libcrowds.com/lc/annotations/wa/7640ddcd-6e48-4a9c-a360-3383032593b6",
       "type": "Annotation",
       "motivation": "describing",
       "created": "018-02-08T22:15:07.152Z",
@@ -126,7 +126,7 @@ notes field of a IIIF Annotation project.
     ```json-ld
     {
       "@context": "http://www.w3.org/ns/anno.jsonld",
-      "id": "https://www.libcrowds.com/lc/annotations/97b63351-c1a4-456e-8871-b299aa684639",
+      "id": "https://www.libcrowds.com/lc/annotations/wa/97b63351-c1a4-456e-8871-b299aa684639",
       "type": "Annotation",
       "motivation": "commenting",
       "created": "2017-09-05T11:07:32.273Z",
@@ -202,7 +202,7 @@ annotation, which in this case is LibCrowds.
 
 | Property       | Type             | Description                                                                        |
 |----------------|------------------|------------------------------------------------------------------------------------|
-| id             | String           | An IRI that identifies the software (always the main LibCrowds GitHub repository ) |
+| id             | String           | An IRI that identifies the software (always main LibCrowds GitHub repository )     |
 | type           | String           | The type of the generator (always 'Software')                                      |
 | name           | String           | The name of the generator (always 'LibCrowds')                                     |
 | homepage       | String           | The base URL that the software was running from when the annotation was generated  |
@@ -314,5 +314,103 @@ Descriptions are used to describe the target in plain text.
       "purpose": "describing",
       "format": "text/plain",
       "value": "The Merchant of Venice"
+    }
+    ```
+
+#### Linking
+
+| Property       | Type             | Description                                          |
+|----------------|------------------|------------------------------------------------------|
+| type           | String           | The type of the resource (always 'SpecificResource') |
+| purpose        | String           | The reason for the inclusion (always 'classifying')  |
+| source         | String           | A URI identifying the specific resource              |
+
+## Parent-child relationships
+
+Some LibCrowds projects can be built with a parent-child relationship. For
+example, the results of a IIIF *tagging* project can be used to generate tasks
+for a IIIF *describing* project.
+
+A body will be added to all child annotations with the
+[`linking`](/data/model.md#linking) purpose. The value of this body will be
+the `id` of the parent annotation from which the task was built. This helps
+with later identifying the relationships between entities.
+
+!!! summary "Example parent-child relationship"
+
+    An annotation from parent project:
+
+    ```json-ld
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "https://www.libcrowds.com/lc/annotations/wa/ce67281d-5b2a-4bdc-ba33-cb46525d0625",
+      "type": "Annotation",
+      "motivation": "tagging",
+      "created": "2017-08-31T04:25:28.178Z",
+      "generated": "2017-08-31T04:25:28.178Z",
+      "generator": {
+        "id": "https://www.libcrowds.com",
+        "type": "Software",
+        "name": "LibCrowds",
+        "homepage": "https://www.libcrowds.com"
+      },
+      "body": {
+        "type": "TextualBody",
+        "purpose": "tagging",
+        "value": "title"
+      },
+      "target": {
+        "source": "https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100022589158.0x00007f",
+        "selector": {
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "type": "FragmentSelector",
+          "value": "?xywh=245,1172,1789,270"
+        }
+      }
+    }
+    ```
+
+    An annotation from child project:
+
+    ```json-ld
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "https://www.libcrowds.com/lc/annotations/wa/7640ddcd-6e48-4a9c-a360-3383032593b6",
+      "type": "Annotation",
+      "motivation": "describing",
+      "created": "018-02-08T22:15:07.152Z",
+      "generated": "018-02-08T22:15:07.152Z",
+      "generator": {
+        "id": "https://www.libcrowds.com",
+        "type": "Software",
+        "name": "LibCrowds",
+        "homepage": "https://www.libcrowds.com"
+      },
+      "body": [
+        {
+          "type": "TextualBody",
+          "purpose": "tagging",
+          "value": "title"
+        }
+        {
+          "type": "TextualBody",
+          "purpose": "describing",
+          "value": "King Lear",
+          "format": "text/plain"
+        },
+        {
+          "source": "https://www.libcrowds.com/lc/annotations/wa/ce67281d-5b2a-4bdc-ba33-cb46525d0625",
+          "type": "SpecificResource",
+          "purpose": "linking"
+        }
+      ],
+      "target": {
+        "source": "https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100022589158.0x00007f",
+        "selector": {
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "type": "FragmentSelector",
+          "value": "?xywh=245,1172,1789,270"
+        }
+      }
     }
     ```

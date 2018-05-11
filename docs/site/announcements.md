@@ -41,9 +41,3 @@ click **Edit**.
 ## Deleting an announcement
 
 To delete an announcement, locate it in the table and click **Remove**.
-
-## Admin annoucements
-
-The system will generate automated admin announcements to draw attention
-to things that may need to be fixed, such as a project being assigned to an
-invalid template.

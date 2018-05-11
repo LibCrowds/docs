@@ -3,6 +3,10 @@ their unanalysed results. It can be used to monitor the outcome of the
 automated [results analysis](/analysis.md) process, or to manually trigger
 that process for a particular collection.
 
+Note that there are certain scenarios where results will be excluded from the
+processes below, see [Results Analysis: Exclusion](/analysis.md#exclusion)
+for details.
+
 ??? warning "Administrator rights required"
 
     To request administrator rights please get in touch by clicking the email
@@ -38,6 +42,3 @@ process has undergone major changes since your results were last processed.
 
 To trigger the analysis process for all results, click the **Analyse All**
 button.
-
-Note that this will not update results that have been modified manually, such
-as via the review interface.

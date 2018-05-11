@@ -93,31 +93,6 @@ Z3950_DATABASES = {
     See the [PYBOSSA documentation](http://docs.pybossa.com) for details of all
     other available settings.
 
-## Optional settings
-
-The settings below can be added to PYBOSSA's `settings_local.py` file to help
-with various administration tasks, such as checking for invalid templates, or
-triggering analysis of all empty results.
-
-These settings are optional as they will modify the database and there are
-instances when that is undesirable, such as when migrating to a new version
-of the application. However, unless you have a specific reason for excluding
-them, it is recommended that they are also added to PYBOSSA's
-`settings_local.py` file.
-
-```python
-# The user ID used to make automated announcements
-ANNOUNCEMENT_USER_ID = 1
-
-# Extra tasks to run when the application is started or restarted
-EXTRA_STARTUP_TASKS = {
-    'check_for_invalid_templates': True
-}
-
-# Email all comment annotations to administrators
-EMAIL_COMMENT_ANNOTATIONS = True
-```
-
 If you're following on from the [Local Installation](/setup/introduction.md)
 or [Deployment](/setup/deployment.md) guides,
 you should now have a fully operational LibCrowds instance.
