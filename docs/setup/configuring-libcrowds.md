@@ -203,6 +203,15 @@ config.sentry = {
 }
 ```
 
+### tagsServer
+
+Enable user tagging system by providing a link to a server that complies with
+the [Web Annotation Protocol](https://www.w3.org/TR/annotation-protocol/#annotation-retrieval).
+
+```js
+config.tagsServer = 'http://127.0.0.1:3000'
+```
+
 ### twitter
 
 Adds a twitter link to the main footer and enhances the platforms Twitter cards
