@@ -32,9 +32,10 @@ template, then select a volume.
 
 Once the selections have been made, click **Create**.
 
-!!! tip "Adding tags"
+!!! tip "Adding filters"
 
-    Once the project is created you will be taken to the project's tags page.
+    Once the project is created you will be taken to the project filters page
+    where you select filters to make the project easier to find.
 
 ## Unavailable volumes
 

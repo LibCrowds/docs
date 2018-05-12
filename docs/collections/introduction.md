@@ -11,7 +11,7 @@ rights.
 Collection microsites are configured via a series of forms, available to all
 LibCrowds administrators. These forms include options to change the page
 content, name, description, tagline, logo, task presenter, data reuse license,
-tags, project templates and more. This section of the documentation contains
+project templates and more. This section of the documentation contains
 details of all available settings.
 
 ---

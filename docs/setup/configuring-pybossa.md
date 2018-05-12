@@ -21,7 +21,7 @@ CATEGORY_INFO_PUBLIC_FIELDS = [
   'published',
   'celebration',
   'volumes',
-  'tags',
+  'project_filters',
   'templates'
 ]
 
@@ -33,7 +33,7 @@ USER_INFO_PUBLIC_FIELDS = [
 
 # Additional project fields
 PROJECT_INFO_PUBLIC_FIELDS = [
-  'tags',
+  'filters',
   'template_id',
   'volume_id'
 ]

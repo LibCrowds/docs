@@ -4,9 +4,9 @@ collection are managed via this section.
 
 The values assigned to each tag type are managed on a per-project basis,
 either when creating a [New Project](/projects/new.md), or via the
-[Project Tags](/projects/tags.md) settings page. For example, if the *Location*
-tag type was added to a collection a project within that collection could then
-assign the value *London*.
+[Project Filters](/projects/filters.md) settings page. For example, if the
+*Location* tag type was added to a collection a project within that collection
+could then assign the value *London*.
 
 ??? warning "Administrator rights required"
 
@@ -21,24 +21,24 @@ assign the value *London*.
     2. Click the **Menu** button at the top of any page.
     3. Select **Open Collection**.
     4. Locate the collection in the table and click **Open**.
-    5. Select **Tags** from the main menu.
+    5. Select **Project Filters** from the main menu.
 
-![A screenshot of the collection tags admin page](/assets/img/collection/tags.png?raw=true)
-<br><small>*A screenshot of the collection tags admin page*</small>
+![A screenshot of the project filters admin page](/assets/img/collection/filters.png?raw=true)
+<br><small>*A screenshot of the project filters admin page*</small>
 
-For each tag type created a new filter will be added to
-the collection's main projects page page, as shown below.
+Each filter will be added to the collection's main projects page page, as
+shown below.
 
 ![A screenshot of a collection microsite's main projects page](/assets/img/collection-projects.png?raw=true)
 <br><small>*A screenshot of a collection microsite's main projects page*</small>
 
-## Creating a tag
+## Creating a filter
 
-To add a new tag click the **Add a tag type** button at the top of the page. In
-the modal that appears enter a name for the tag type (e.g. Location) and choose
-a colour, then click **OK**.
+To add a new filter click the **Add a filter** button at the top of the page.
+In the modal that appears enter a name for the filter (e.g. Location) and
+choose a colour, then click **OK**.
 
-## Deleting a tag
+## Deleting a filter
 
-Tag types can be removed by locating them in the table and clicking
+Filters can be removed by locating them in the table and clicking
 the **Remove** button.

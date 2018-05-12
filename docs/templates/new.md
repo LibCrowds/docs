@@ -19,7 +19,7 @@ Create a template by choosing a collection, a name and a description, then
 clicking **Create**.
 
 After creation you will be given access to futher options to help design
-the task, add tags, a tutorial and set the rules for results analysis.
+the task, set filters, a tutorial and set the rules for results analysis.
 
 ---
 

@@ -38,7 +38,7 @@ pages:
   - Projects:
     - Introduction: 'projects/introduction.md'
     - New Project: 'projects/new.md'
-    - Tags: 'projects/tags.md'
+    - Filters: 'projects/filters.md'
     - Thumbnail: 'projects/thumbnail.md'
     - Results: 'projects/results.md'
     - Delete: 'projects/delete.md'
@@ -63,7 +63,7 @@ pages:
     - Core Details: 'collections/details.md'
     - Page Content: 'collections/content.md'
     - Celebrations: 'collections/celebrations.md'
-    - Tags: 'collections/tags.md'
+    - Project Filters: 'collections/filters.md'
     - Volumes: 'collections/volumes.md'
     - Featured Projects: 'collections/featured.md'
     - Task Presenter: 'collections/presenter.md'
