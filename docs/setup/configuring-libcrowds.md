@@ -12,6 +12,25 @@ The following settings are all required for the application to run correctly.
 They are given defaults in the settings template but should be edited
 accordingly.
 
+### annotationServer
+
+A server that complies with the
+[Web Annotation Protocol](https://www.w3.org/TR/annotation-protocol) is
+required to handle the storage and retrieval of user tags and results data.
+
+LibCrowds has been built for use with the
+[Explicates](https://github.com/alexandermendes/explicates) server, which
+complies with the standard protocol but also has the additional search
+functionality required for this application.
+
+See [Setup](setup/introduction.md) section contains details on setting up an
+appropriate annotations  server, the base URL of which should then be added as
+below.
+
+```js
+config.annotationServer = 'http://127.0.0.1:3000'
+```
+
 ### brand
 
 The name of the platform.
@@ -201,15 +220,6 @@ config.sentry = {
   private_key: '',
   project_id: ''
 }
-```
-
-### tagsServer
-
-Enable user tagging system by providing a link to a server that complies with
-the [Web Annotation Protocol](https://www.w3.org/TR/annotation-protocol/#annotation-retrieval).
-
-```js
-config.tagsServer = 'http://127.0.0.1:3000'
 ```
 
 ### twitter
