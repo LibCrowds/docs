@@ -5,13 +5,46 @@ contributions for a task have been analysed.
 
 ## Web Annotations
 
-LibCrowds implements its own Annotation Server, which enables the reading of
-all annotations generated via the platform. The server cannot be used to
-create, update or delete endpoints, which happens via other means, but it does
-comply fully with the
-[Web Annotation protocol](https://www.w3.org/TR/annotation-protocol/) to ease
-interoperability between systems. The available endpoints are presented
-below.
+LibCrowds implements its own Annotation Server, via which all annotations
+generated through the platform can be retrieved programatically. By storing
+the results of each task as Web Annotations and making them available via a
+server that complies with the
+[Web Annotation Protocol](https://www.w3.org/TR/annotation-protocol/) we make
+the efforts of our volunteers more easily shareable between platforms and
+enable further research by programatic means. For instance, the function below
+shows how we can retrieve and process a set of current annotations using
+Python.
+
+```python
+import requests
+
+def get_annotations(url):
+    r = requests.get(url)
+    page = r.json()
+    annotations = page['items']
+    # Do interesting stuff with annotations
+    next_page = page.get('next')
+    if next_page:
+        get_annotations(next_page)
+
+get_annotations('https://annotations.libcrowds.com/container-key/?page=0')
+```
+
+Importantly, this data will always be live, so as soon as a task is completed
+and the contributions analysed the result will be available via this API.
+
+The available public endpoints are described below. Note that only GET
+requests will be accepted by the annotations server, all other requests are
+restricted.
+
+!!! tip "Data Model"
+
+    The structure of the Annotations referenced below is described in our
+    [Data Model](/data/model.md).
+
+### Container Discovery
+
+TODO
 
 #### Get a single Annotation
 
