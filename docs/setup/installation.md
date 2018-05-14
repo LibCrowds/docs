@@ -59,6 +59,55 @@ PYBOSSA should now be running (with the default theme) at
     vagrant plugin install vagrant-proxyconf
     ```
 
+## Download and run Explicates
+
+A server that complies with the
+[Web Annotation Protocol](https://www.w3.org/TR/annotation-protocol) is
+required to handle the storage and retrieval of user tags and results data.
+
+LibCrowds has been built for use with the
+[Explicates](https://github.com/alexandermendes/explicates) server, which
+complies with the standard protocol and has the additional search
+functionality required for this application.
+
+Once the above software is succesfully installed, open up a terminal and clone
+PYBOSSA to your local machine:
+
+```bash
+git clone https://github.com/alexandermendes/explicates.git
+```
+
+Setup the Explicates development environment:
+
+```bash
+cd explicates
+vagrant up
+```
+
+Run the Explicates server:
+
+```bash
+vagrant ssh
+python run.py
+```
+
+Explicates should now be running at
+[http://127.0.0.1:3000](http://127.0.0.1:3000)
+
+??? tip "Tip: Installing behind a web proxy"
+    If you're installing from behind a web proxy then you will probably run
+    into issues when attempting to start Vagrant, in which case you can try
+    running these commands from the `pybossa` directory:
+
+    ```bash
+    # set environment variables using the command for your OS (Windows example shown)
+    set VAGRANT_HTTP_PROXY=http://username:password@proxy_server:proxy_port
+    set VAGRANT_HTTPS_PROXY=https://username:password@proxy_server:proxy_port
+
+    # install the vagrant-proxyconf plugin
+    vagrant plugin install vagrant-proxyconf
+    ```
+
 ## Download and run LibCrowds
 
 The same process is followed to setup the LibCrowds development environment:

@@ -20,15 +20,15 @@ required to handle the storage and retrieval of user tags and results data.
 
 LibCrowds has been built for use with the
 [Explicates](https://github.com/alexandermendes/explicates) server, which
-complies with the standard protocol but also has the additional search
+complies with the standard protocol and has the additional search
 functionality required for this application.
 
-See [Setup](setup/introduction.md) section contains details on setting up an
-appropriate annotations  server, the base URL of which should then be added as
-below.
+The [Setup](setup/introduction.md) section contains details on setting up an
+Annotation server, the base URL of which should then be added to the local
+settings file, as below.
 
 ```js
-config.annotations = {
+config.explicates = {
   baseURL: 'http://127.0.0.1:3000'
 }
 ```
