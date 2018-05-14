@@ -12,7 +12,7 @@ The following settings are all required for the application to run correctly.
 They are given defaults in the settings template but should be edited
 accordingly.
 
-### annotationServer
+### annotations
 
 A server that complies with the
 [Web Annotation Protocol](https://www.w3.org/TR/annotation-protocol) is
@@ -28,7 +28,9 @@ appropriate annotations  server, the base URL of which should then be added as
 below.
 
 ```js
-config.annotationServer = 'http://127.0.0.1:3000'
+config.annotations = {
+  baseURL: 'http://127.0.0.1:3000'
+}
 ```
 
 ### brand
