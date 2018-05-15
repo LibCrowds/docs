@@ -57,5 +57,5 @@ It will now be possible for Annotations to be stored for the given purpose.
 
     Once projects are underway and Annotations are being stored the
     AnnotationCollection IRIs generated on this page should not normally be
-    changed, especially without not first migrating the data in the original
+    changed, especially without first migrating the data in the original
     AnnotationCollection.
