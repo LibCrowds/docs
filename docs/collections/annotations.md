@@ -51,6 +51,8 @@ AnnotationCollection and link it to the collection microsite. The URI for the
 new Annotation will appear in the read-only form field for the selected
 purpose.
 
+It will now be possible for Annotations to be stored for the given purpose.
+
 !!! warning "Settings"
 
     Once projects are underway and Annotations are being stored the
