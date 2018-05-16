@@ -1,7 +1,7 @@
-The final results for all LibCrowds projects are generated to comply with the
-[Web Annotation Data Model](https://www.w3.org/TR/annotation-model/).Web
+The final results for all LibCrowds are stored as Web Annotations. Web
 Annotations became a W3C standard on the 23rd February, 2017. The
-standard provides the following abstract:
+[Web Annotation Data Model](https://www.w3.org/TR/annotation-model/) provides
+the following abstract:
 
 > Annotations are typically used to convey information about a resource or
 associations between resources. Simple examples include a comment or tag on
@@ -20,29 +20,35 @@ these use cases, and the vocabulary of terms that represents it.
 
 By using this structure for our final results we aim to make the crowdsourced
 data generated via the platform more easily reusable online and provide a way
-for researchers to answer specific questions via programmatic means.
+for researchers to answer specific questions via programmatic means (see the
+[API](/data/api.md) section for details).
 
-## Types of annotation
+As we as the final results data, we use Web Annotations to store additional
+user-generated data, such as image tags. The various types of annotation are
+described further below.
 
-Web Annotations use [JSON-LD](https://www.w3.org/TR/json-ld/), a
-JSON-based format to serialize Linked Data.
+## Result Annotations
+
+These annotations are created once a task is completed and all related
+contributions analysed (see the [Results Analysis](/analysis.md) section for
+details).
 
 Each annotation contains a motivation, which provides an indication of why
-it was created. The LibCrowds platform currently produces annotations with
-three motivations: tagging, describing and commenting.
+it was created. The LibCrowds platform currently produces result annotations
+with three motivations: tagging, describing and commenting.
 
 ### Tagging
 
-Tagging annotations are used to associate a tag with a specific target. For
-example, this type of annotation would be used in a IIIF Annotation project
-designed to mark up all of the titles on a page.
+Tagging annotations are used to associate a tag with a specific target, such
+as a region of an image. For example, this type of annotation would be used in
+a IIIF Annotation project designed to mark up all of the titles on a page.
 
 !!! summary "Example tagging annotation"
 
     ```json-ld
     {
       "@context": "http://www.w3.org/ns/anno.jsonld",
-      "id": "https://www.libcrowds.com/lc/annotations/wa/ce67281d-5b2a-4bdc-ba33-cb46525d0625",
+      "id": "https://annotations.libcrowds.com/annotations/playbills-results/ce67281d-5b2a-4bdc-ba33-cb46525d0625",
       "type": "Annotation",
       "motivation": "tagging",
       "created": "2017-08-31T04:25:28.178Z",
@@ -71,16 +77,16 @@ designed to mark up all of the titles on a page.
 
 ### Describing
 
-Describing annotations are used for user-submitted transcriptions. For example,
-this type of annotation would be used in a IIIF Annotation project designed to
-transcribe all of the titles on a page.
+Describing annotations are used for any user input that can be stored as text,
+such as transcriptions. For example, this type of annotation would be used in
+a IIIF Annotation project designed to transcribe all of the titles on a page.
 
 !!! summary "Example describing annotation"
 
     ```json-ld
     {
       "@context": "http://www.w3.org/ns/anno.jsonld",
-      "id": "https://www.libcrowds.com/lc/annotations/wa/7640ddcd-6e48-4a9c-a360-3383032593b6",
+      "id": "https://annotations.libcrowds.com/annotations/playbills-results/7640ddcd-6e48-4a9c-a360-3383032593b6",
       "type": "Annotation",
       "motivation": "describing",
       "created": "018-02-08T22:15:07.152Z",
@@ -126,7 +132,7 @@ notes field of a IIIF Annotation project.
     ```json-ld
     {
       "@context": "http://www.w3.org/ns/anno.jsonld",
-      "id": "https://www.libcrowds.com/lc/annotations/wa/97b63351-c1a4-456e-8871-b299aa684639",
+      "id": "https://annotations.libcrowds.com/annotations/playbills-results/97b63351-c1a4-456e-8871-b299aa684639",
       "type": "Annotation",
       "motivation": "commenting",
       "created": "2017-09-05T11:07:32.273Z",
@@ -152,6 +158,55 @@ notes field of a IIIF Annotation project.
       "target": "https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100022589158.0x000094"
     }
     ```
+
+## Image Tag Annotations
+
+As the title suggests, image tag annotations are used to associated a tag with
+an image. All image tag annotations are generated with the tagging motivation.
+
+### Tagging
+
+Tagging annotations are used to associate a tag with an image. They contain
+enough data for them to later be used to build an image album, or potentially
+a IIIF manifest. The target's `source` contains a the image URI and the
+target's `scope` conatains the IIIF manifest URI, if available.
+
+!!! summary "Example tagging annotation"
+
+    ```json-ld
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "https://annotations.libcrowds.com/annotations/playbills-image-tags/ce67281d-5b2a-4bdc-ba33-cb46525d0625",
+      "type": "Annotation",
+      "motivation": "tagging",
+      "created": "2017-08-31T04:25:28.178Z",
+      "creator": {
+        "id": "https://www.libcrowds.com/api/user/1",
+        "type": "Person",
+        "name": "Joe Bloggs",
+        "nickname": "joebloggs"
+      },
+      "generated": "2017-08-31T04:25:28.178Z",
+      "generator": {
+        "id": "https://www.libcrowds.com",
+        "type": "Software",
+        "name": "LibCrowds",
+        "homepage": "https://www.libcrowds.com"
+      },
+      "body": {
+        "type": "TextualBody",
+        "purpose": "tagging",
+        "value": "foo"
+      },
+      "target": {
+        "scope": "https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100022589060.0x000002/manifest.json",
+        "source": {
+          "id": "https://api.bl.uk/image/iiif/ark:/81055/vdc_100022589059.0x00004b/full/max/0/default.jpg"
+        }
+      },
+    }
+    ```
+
 
 ## Full model
 
@@ -221,17 +276,18 @@ annotation, which in this case is LibCrowds.
 ### target
 
 The target identifies the resource being annotated. For instance, this may
-be an image, in which case the target will be a URL, or a specific region
-of an image, in which case the target will be an object with the properties
-below.
+be an image, in which case the target will be a URL. Or, the target may be a
+specific region of an image, in which case the target will be an object with
+the properties below.
 
 | Property            | Type             | Description                                                                                                                       |
 |---------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| source              | String           | The URL of the resource being annotated                                                                                                              |
+| source              | String or Object | The URL of the resource being annotated                                                                                           |
 | selector            | Object           | The relationship between the resource and a selector                                                                              |
 | selector.type       | String           | The class of the selector (always 'FragmentSelector')                                                                             |
-| selector.conformsTo | String           | The fragment selector syntax IRI (always [http://www.w3.org/TR/media-frags/](http://www.w3.org/TR/media-frags/))                |
+| selector.conformsTo | String           | The fragment selector syntax IRI (always [http://www.w3.org/TR/media-frags/](http://www.w3.org/TR/media-frags/))                  |
 | selector.value      | String           | The contents of the fragment component                                                                                            |
+| scope               | String           | A resource that provides the scope for the context of an Annotation                                                               |
 
 !!! summary "Example of a media fragment target"
 
