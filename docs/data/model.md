@@ -168,8 +168,13 @@ an image. All image tag annotations are generated with the tagging motivation.
 
 Tagging annotations are used to associate a tag with an image. They contain
 enough data for them to later be used to build an image album, or potentially
-a IIIF manifest. The target's `source` contains a the image URI and the
-target's `scope` conatains the IIIF manifest URI, if available.
+a IIIF manifest.
+
+The target's `source` contains a the image URI and the target's `scope`
+contains the IIIF manifest URI, if available. If a IIIF manifest URI was not
+available at the time of tagging (e.g. if the image being tagged was from
+another source, such as Flickr) then the target will contain only the URI
+of the image.
 
 !!! summary "Example tagging annotation"
 
