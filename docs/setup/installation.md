@@ -45,7 +45,7 @@ python run.py
 PYBOSSA should now be running (with the default theme) at
 [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
-??? tip "Tip: Installing behind a web proxy"
+??? tip "Installing behind a web proxy"
     If you're installing from behind a web proxy then you will probably run
     into issues when attempting to start Vagrant, in which case you can try
     running these commands from the `pybossa` directory:
@@ -71,7 +71,7 @@ complies with the standard protocol and has the additional search
 functionality required for this application.
 
 Once the above software is succesfully installed, open up a terminal and clone
-PYBOSSA to your local machine:
+Explicates to your local machine:
 
 ```bash
 git clone https://github.com/alexandermendes/explicates.git
@@ -94,7 +94,7 @@ python run.py
 Explicates should now be running at
 [http://127.0.0.1:3000](http://127.0.0.1:3000)
 
-??? tip "Tip: Installing behind a web proxy"
+??? tip "Installing behind a web proxy"
     If you're installing from behind a web proxy then you will probably run
     into issues when attempting to start Vagrant, in which case you can try
     running these commands from the `pybossa` directory:

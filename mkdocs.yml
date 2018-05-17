@@ -34,6 +34,7 @@ pages:
     - Plugins: 'setup/plugins.md'
     - Configuring PYBOSSA: 'setup/configuring-pybossa.md'
     - Configuring LibCrowds: 'setup/configuring-libcrowds.md'
+    - Configuring Explicates: 'setup/configuring-explicates.md'
     - Testing: 'setup/testing.md'
   - Projects:
     - Introduction: 'projects/introduction.md'

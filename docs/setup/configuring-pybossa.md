@@ -93,11 +93,11 @@ Z3950_DATABASES = {
     See the [PYBOSSA documentation](http://docs.pybossa.com) for details of all
     other available settings.
 
+---
+
 If you're following on from the [Local Installation](/setup/introduction.md)
 or [Deployment](/setup/deployment.md) guides,
 you should now have a fully operational LibCrowds instance.
-
----
 
 To explore the core LibCrowds settings, see
 [Configuring LibCrowds](/setup/configuring-libcrowds.md).
