@@ -28,5 +28,11 @@ setting will affect the microsite.
 ## Publishing the collection
 
 Published collections will be added to the LibCrowds homepage and be visible
-to all users. To publish (or unpublish) a collection, click the **Published**
+to all users.
+
+Before publishing a collection, please ensure that you have created a
+suitable set of AnnotationCollections via the
+[Annotations](/collection/annotations.md) page.
+
+To publish (or unpublish) a collection, click the **Published**
 toggle at the top of the page.
