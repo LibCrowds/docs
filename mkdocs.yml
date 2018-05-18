@@ -1,3 +1,6 @@
+# WARNING: Be careful when modifying this file as links to these pages are
+# made from https://github.com/LibCrowds/libcrowds/
+
 site_name: 'LibCrowds Documentation'
 theme:
   name: 'material'
