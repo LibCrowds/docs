@@ -101,13 +101,30 @@ This will enable
 [event tracking](https://developers.google.com/analytics/devguides/collection/analyticsjs/events)
 for the following events:
 
-| Category      | Action          | Label                                    | Description                 |
-|---------------|-----------------|------------------------------------------|-----------------------------|
-| Downloads     | {type}_{format} | Project name or AnnotationCollection IRI | Data file is downloaded     |
-| Statistics    | view            | Project name                             | Project statistics viewed   |
-| Contributions | {project name}  | Collection name                          | Answer submitted            |
-| Sorts         | {sort value}    | Collection name                          | Main projects list sorted   |
-| Filters       | {filter value}  | Collection name                          | Main projects list filtered |
+| Category        | Action          | Label                                    | Description                 |
+|-----------------|-----------------|------------------------------------------|-----------------------------|
+| Downloads       | {type}_{format} | Project name or AnnotationCollection IRI | Data file is downloaded     |
+| Statistics      | view            | Project name                             | Project statistics viewed   |
+| Contributions   | {project name}  | Collection name                          | Answer submitted            |
+| Sorts           | {sort value}    | Collection name                          | Main projects list sorted   |
+| Filters         | {filter value}  | Collection name                          | Main projects list filtered |
+| Project Toolbar | {name}_shown    | Collection name                          | Project modal shown         |
+
+/**
+     * Show a modal, also tracking the event.
+     */
+    showModal (name) {
+      if (this.$ga) {
+        this.$ga.event({
+          eventCategory: 'Project Toolbar',
+          eventAction: `${name}_shown`,
+          eventLabel: this.currentCollection.name,
+          eventValue: 1
+        })
+      }
+      this.$refs[name].show()
+    },
+
 
 Tracking these events can help to determine the content that your users are most
 interested in. For example, monitoring the filters most used for a microsite can
