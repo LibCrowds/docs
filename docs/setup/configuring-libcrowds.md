@@ -110,21 +110,6 @@ for the following events:
 | Filters         | {filter value}  | Collection name                          | Main projects list filtered |
 | Project Toolbar | {name}_shown    | Collection name                          | Project modal shown         |
 
-/**
-     * Show a modal, also tracking the event.
-     */
-    showModal (name) {
-      if (this.$ga) {
-        this.$ga.event({
-          eventCategory: 'Project Toolbar',
-          eventAction: `${name}_shown`,
-          eventLabel: this.currentCollection.name,
-          eventValue: 1
-        })
-      }
-      this.$refs[name].show()
-    },
-
 
 Tracking these events can help to determine the content that your users are most
 interested in. For example, monitoring the filters most used for a microsite can
