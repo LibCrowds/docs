@@ -1,6 +1,5 @@
-Task-related data can be downloaded via the Data page of each collection
-microsite. Downloads are available in JSON and CSV formats and contain varying
-levels of detail, as described below.
+All task-related data can be downloaded via the Data page of each collection
+microsite. The available download types are described below.
 
 Note that everything contained in these datasets is also available via the
 [API](/data/api.md). Depending on the objective, the API may provide a more
@@ -21,10 +20,10 @@ structured.
 
 ## Project downloads
 
-This is the raw data used by or generated via the platform. As this data may
-contain a lot of nested fields the JSON versions are likely to be more usable
-than the CSV versions. There are three types of dataset available for each
-project:
+This is the raw data used by or generated via the platform. The downloads are
+available in JSON and CSV formats. However, as this data may contain a lot of
+nested fields the JSON versions are likely to be more usable. There are three
+types of dataset available for each project:
 
 - **Tasks:** The data used to configure tasks and present them to users.
 - **Contributions:** The user-submitted data provided as answers to each task.
