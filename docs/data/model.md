@@ -193,7 +193,7 @@ helps with later identifying the relationships between entities.
     ```json-ld
     {
       "@context": "http://www.w3.org/ns/anno.jsonld",
-      "id": "https://www.libcrowds.com/lc/annotations/wa/5cc3ac3b-2653-416d-aa31-255722019763",
+      "id": "https://annotations.libcrowds.com/playbills-results/5cc3ac3b-2653-416d-aa31-255722019763",
       "type": "Annotation",
       "motivation": "linking",
       "created": "2017-08-31T04:25:28.178Z",
@@ -210,8 +210,8 @@ helps with later identifying the relationships between entities.
           "type": "Software"
         }
       ],
-      "body": "https://www.libcrowds.com/lc/annotations/wa/7640ddcd-6e48-4a9c-a360-3383032593b6",
-      "target": "https://www.libcrowds.com/lc/annotations/wa/ce67281d-5b2a-4bdc-ba33-cb46525d0625"
+      "body": "https://annotations.libcrowds.com/playbills-results/7640ddcd-6e48-4a9c-a360-3383032593b6",
+      "target": "https://annotations.libcrowds.com/playbills-results/ce67281d-5b2a-4bdc-ba33-cb46525d0625"
     }
     ```
 
