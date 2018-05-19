@@ -34,8 +34,8 @@ contributions analysed (see the [Results Analysis](/analysis.md) section for
 details).
 
 Each annotation contains a motivation, which provides an indication of why
-it was created. The LibCrowds platform currently produces result annotations
-with three motivations: tagging, describing and commenting.
+it was created. The types of result Annotations produced by LibCrowds are
+described below.
 
 ### Tagging
 
@@ -174,6 +174,44 @@ notes field of a IIIF Annotation project.
         "format": "text/plain"
       },
       "target": "https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100022589158.0x000094"
+    }
+    ```
+
+### Linking
+
+Some LibCrowds projects can be built with a parent-child relationship. For
+example, the results of a IIIF *tagging* project can be used to generate tasks
+for a IIIF *describing* project.
+
+For these cases, a linking Annotation will be generated with the IRI of the
+parent Annotation as the target and the IRI of the child Annotation as the
+body. The generator also links to the child result, as this is the result. This
+helps with later identifying the relationships between entities.
+
+!!! summary "Example linking annotation"
+
+    ```json-ld
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "id": "https://www.libcrowds.com/lc/annotations/wa/5cc3ac3b-2653-416d-aa31-255722019763",
+      "type": "Annotation",
+      "motivation": "linking",
+      "created": "2017-08-31T04:25:28.178Z",
+      "generated": "2017-08-31T04:25:28.178Z",
+      "generator": [
+        {
+          "id": "https://github.com/LibCrowds/libcrowds",
+          "type": "Software",
+          "name": "LibCrowds",
+          "homepage": "https://www.libcrowds.com"
+        },
+        {
+          "id": "https://backend.libcrowds.com/api/result/43",
+          "type": "Software"
+        }
+      ],
+      "body": "https://www.libcrowds.com/lc/annotations/wa/7640ddcd-6e48-4a9c-a360-3383032593b6",
+      "target": "https://www.libcrowds.com/lc/annotations/wa/ce67281d-5b2a-4bdc-ba33-cb46525d0625"
     }
     ```
 
@@ -401,115 +439,5 @@ Descriptions are used to describe the target in plain text.
       "purpose": "describing",
       "format": "text/plain",
       "value": "The Merchant of Venice"
-    }
-    ```
-
-#### Linking
-
-| Property       | Type             | Description                                          |
-|----------------|------------------|------------------------------------------------------|
-| type           | String           | The type of the resource (always 'SpecificResource') |
-| purpose        | String           | The reason for the inclusion (always 'classifying')  |
-| source         | String           | A URI identifying the specific resource              |
-
-## Parent-child relationships
-
-Some LibCrowds projects can be built with a parent-child relationship. For
-example, the results of a IIIF *tagging* project can be used to generate tasks
-for a IIIF *describing* project.
-
-A body will be added to all child annotations with the
-[`linking`](/data/model.md#linking) purpose. The value of this body will be
-the `id` of the parent annotation from which the task was built. This helps
-with later identifying the relationships between entities.
-
-!!! summary "Example parent-child relationship"
-
-    An annotation from parent project:
-
-    ```json-ld
-    {
-      "@context": "http://www.w3.org/ns/anno.jsonld",
-      "id": "https://www.libcrowds.com/lc/annotations/wa/ce67281d-5b2a-4bdc-ba33-cb46525d0625",
-      "type": "Annotation",
-      "motivation": "tagging",
-      "created": "2017-08-31T04:25:28.178Z",
-      "generated": "2017-08-31T04:25:28.178Z",
-      "generator": [
-        {
-          "id": "https://github.com/LibCrowds/libcrowds",
-          "type": "Software",
-          "name": "LibCrowds",
-          "homepage": "https://www.libcrowds.com"
-        },
-        {
-          "id": "https://backend.libcrowds.com/api/result/42",
-          "type": "Software"
-        }
-      ],
-      "body": {
-        "type": "TextualBody",
-        "purpose": "tagging",
-        "value": "title"
-      },
-      "target": {
-        "source": "https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100022589158.0x00007f",
-        "selector": {
-          "conformsTo": "http://www.w3.org/TR/media-frags/",
-          "type": "FragmentSelector",
-          "value": "?xywh=245,1172,1789,270"
-        }
-      }
-    }
-    ```
-
-    An annotation from child project:
-
-    ```json-ld
-    {
-      "@context": "http://www.w3.org/ns/anno.jsonld",
-      "id": "https://www.libcrowds.com/lc/annotations/wa/7640ddcd-6e48-4a9c-a360-3383032593b6",
-      "type": "Annotation",
-      "motivation": "describing",
-      "created": "018-02-08T22:15:07.152Z",
-      "generated": "018-02-08T22:15:07.152Z",
-      "generator": [
-        {
-          "id": "https://github.com/LibCrowds/libcrowds",
-          "type": "Software",
-          "name": "LibCrowds",
-          "homepage": "https://www.libcrowds.com"
-        },
-        {
-          "id": "https://backend.libcrowds.com/api/result/43",
-          "type": "Software"
-        }
-      ],
-      "body": [
-        {
-          "type": "TextualBody",
-          "purpose": "tagging",
-          "value": "title"
-        }
-        {
-          "type": "TextualBody",
-          "purpose": "describing",
-          "value": "King Lear",
-          "format": "text/plain"
-        },
-        {
-          "source": "https://www.libcrowds.com/lc/annotations/wa/ce67281d-5b2a-4bdc-ba33-cb46525d0625",
-          "type": "SpecificResource",
-          "purpose": "linking"
-        }
-      ],
-      "target": {
-        "source": "https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100022589158.0x00007f",
-        "selector": {
-          "conformsTo": "http://www.w3.org/TR/media-frags/",
-          "type": "FragmentSelector",
-          "value": "?xywh=245,1172,1789,270"
-        }
-      }
     }
     ```
