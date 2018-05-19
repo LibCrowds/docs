@@ -53,12 +53,18 @@ a IIIF Annotation project designed to mark up all of the titles on a page.
       "motivation": "tagging",
       "created": "2017-08-31T04:25:28.178Z",
       "generated": "2017-08-31T04:25:28.178Z",
-      "generator": {
-        "id": "https://www.libcrowds.com",
-        "type": "Software",
-        "name": "LibCrowds",
-        "homepage": "https://www.libcrowds.com"
-      },
+      "generator": [
+        {
+          "id": "https://github.com/LibCrowds/libcrowds",
+          "type": "Software",
+          "name": "LibCrowds",
+          "homepage": "https://www.libcrowds.com"
+        },
+        {
+          "id": "https://backend.libcrowds.com/api/result/42",
+          "type": "Software"
+        }
+      ],
       "body": {
         "type": "TextualBody",
         "purpose": "tagging",
@@ -91,12 +97,18 @@ a IIIF Annotation project designed to transcribe all of the titles on a page.
       "motivation": "describing",
       "created": "018-02-08T22:15:07.152Z",
       "generated": "018-02-08T22:15:07.152Z",
-      "generator": {
-        "id": "https://www.libcrowds.com",
-        "type": "Software",
-        "name": "LibCrowds",
-        "homepage": "https://www.libcrowds.com"
-      },
+      "generator": [
+        {
+          "id": "https://github.com/LibCrowds/libcrowds",
+          "type": "Software",
+          "name": "LibCrowds",
+          "homepage": "https://www.libcrowds.com"
+        },
+        {
+          "id": "https://backend.libcrowds.com/api/result/42",
+          "type": "Software"
+        }
+      ],
       "body": [
         {
           "type": "TextualBody",
@@ -139,16 +151,22 @@ notes field of a IIIF Annotation project.
       "creator": {
         "id": "https://www.libcrowds.com/api/user/1",
         "type": "Person",
-        "name": "Joe Bloggs"
+        "name": "Joe Bloggs",
         "nickname": "joebloggs"
       },
       "generated": "2017-09-05T11:07:32.273Z",
-      "generator": {
-        "id": "https://www.libcrowds.com",
-        "type": "Software",
-        "name": "LibCrowds",
-        "homepage": "https://www.libcrowds.com"
-      },
+      "generator": [
+        {
+          "id": "https://github.com/LibCrowds/libcrowds",
+          "type": "Software",
+          "name": "LibCrowds",
+          "homepage": "https://www.libcrowds.com"
+        },
+        {
+          "id": "https://backend.libcrowds.com/api/result/42",
+          "type": "Software"
+        }
+      ],
       "body": {
         "type": "TextualBody",
         "purpose": "commenting",
@@ -258,7 +276,9 @@ authenticated user.
 ### generator
 
 The generator contains information about the software used to generated the
-annotation, which in this case is LibCrowds.
+annotation, which in this case is LibCrowds. For results Annotations, a
+second generator is added to identify the result to which the Annotation is
+linked.
 
 | Property       | Type             | Description                                                                        |
 |----------------|------------------|------------------------------------------------------------------------------------|
@@ -270,12 +290,18 @@ annotation, which in this case is LibCrowds.
 !!! summary "Example of a generator"
 
     ```json-ld
-    {
-      "id": "https://github.com/LibCrowds/libcrowds",
-      "type": "Software",
-      "name": "LibCrowds",
-      "homepage": "https://www.libcrowds.com"
-    }
+    [
+      {
+        "id": "https://github.com/LibCrowds/libcrowds",
+        "type": "Software",
+        "name": "LibCrowds",
+        "homepage": "https://www.libcrowds.com"
+      },
+      {
+        "id": "https://backend.libcrowds.com/api/result/42",
+        "type": "Software"
+      }
+    ]
     ```
 
 ### target
@@ -409,12 +435,18 @@ with later identifying the relationships between entities.
       "motivation": "tagging",
       "created": "2017-08-31T04:25:28.178Z",
       "generated": "2017-08-31T04:25:28.178Z",
-      "generator": {
-        "id": "https://www.libcrowds.com",
-        "type": "Software",
-        "name": "LibCrowds",
-        "homepage": "https://www.libcrowds.com"
-      },
+      "generator": [
+        {
+          "id": "https://github.com/LibCrowds/libcrowds",
+          "type": "Software",
+          "name": "LibCrowds",
+          "homepage": "https://www.libcrowds.com"
+        },
+        {
+          "id": "https://backend.libcrowds.com/api/result/42",
+          "type": "Software"
+        }
+      ],
       "body": {
         "type": "TextualBody",
         "purpose": "tagging",
@@ -441,12 +473,18 @@ with later identifying the relationships between entities.
       "motivation": "describing",
       "created": "018-02-08T22:15:07.152Z",
       "generated": "018-02-08T22:15:07.152Z",
-      "generator": {
-        "id": "https://www.libcrowds.com",
-        "type": "Software",
-        "name": "LibCrowds",
-        "homepage": "https://www.libcrowds.com"
-      },
+      "generator": [
+        {
+          "id": "https://github.com/LibCrowds/libcrowds",
+          "type": "Software",
+          "name": "LibCrowds",
+          "homepage": "https://www.libcrowds.com"
+        },
+        {
+          "id": "https://backend.libcrowds.com/api/result/43",
+          "type": "Software"
+        }
+      ],
       "body": [
         {
           "type": "TextualBody",
