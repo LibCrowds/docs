@@ -23,7 +23,7 @@ LibCrowds has been built for use with the
 complies with the standard protocol and has the additional search
 functionality required for this application.
 
-The [Setup](setup/introduction.md) section contains details on setting up an
+The [Setup](/setup/introduction.md) section contains details on setting up an
 Annotation server, the base URL of which should then be added to the local
 settings file, as below.
 

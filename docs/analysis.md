@@ -147,4 +147,4 @@ and parent annotations.
 If a result has been modified manually, since creation, it will no longer be
 updated by the automated results analysis process. This really only applies
 if the results analysis is run again over the entire collection, such as from
-the [Admin Results](/admin/results.md) page.
+the [Admin Results](/site/results.md) page.
