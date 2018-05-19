@@ -441,3 +441,8 @@ Descriptions are used to describe the target in plain text.
       "value": "The Merchant of Venice"
     }
     ```
+
+---
+
+For details on how to query the Annotations see the
+[API documentation](/data/api.md).
