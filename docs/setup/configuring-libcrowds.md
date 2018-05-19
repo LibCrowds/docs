@@ -129,8 +129,14 @@ Provide a URL to the platform's documentation that will be linked to from the
 main footer and all admin dashboard pages.
 
 ```js
-config.docs: 'http://docs.example.com'
+config.docs: 'http://docs.libcrowds.com'
 ```
+
+If you want to use your own documentation site, please include the page
+structure found in the original documentation's
+[mkdocs.yml](https://github.com/LibCrowds/docs/blob/master/mkdocs.yml) file.
+This is beacuse many of these paths are linked to from specific LibCrowds
+admin pages.
 
 ### email
 
