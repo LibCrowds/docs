@@ -1,8 +1,12 @@
 LibCrowds is fundamentally a [Vue.js](https://vuejs.org/) Server-Side Rendered
-(SSR) UI that incorporates various custom plugins and communicates with a
-[PYBOSSA](https://github.com/Scifabric/pybossa) backend. Therefore, to get
-up and running we need to install, configure and run an instance of LibCrowds,
-an instance of PYBOSSA and some PYBOSSA plugins.
+UI, where the backend comprises various custom plugins, an instance of
+[PYBOSSA](https://github.com/Scifabric/pybossa) and a server that complies with
+the [Web Annotation Protocol](https://www.w3.org/TR/annotation-protocol/).
+
+Therefore, to get up and running we need to install, configure and run an
+instance of LibCrowds, an instance of PYBOSSA, some PYBOSSA plugins and a
+Web Annotation server. The following pages will take you through everything
+you need to get a up and running locally, or to deploy to a production server.
 
 !!! info "Requirements"
 
