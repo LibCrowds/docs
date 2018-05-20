@@ -22,7 +22,8 @@ CATEGORY_INFO_PUBLIC_FIELDS = [
   'celebration',
   'volumes',
   'project_filters',
-  'templates'
+  'templates',
+  'annotations
 ]
 
 # Additional user fields
@@ -87,6 +88,9 @@ Z3950_DATABASES = {
         'port': '7090'
     }
 }
+
+# The base URL of your Explicates annoation server
+WEB_ANNOTATION_BASE_URL = 'http://127.0.0.1:3000'
 ```
 
 !!! tip
