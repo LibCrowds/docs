@@ -185,8 +185,8 @@ for a IIIF *describing* project.
 
 For these cases, a linking Annotation will be generated with the IRI of the
 parent Annotation as the target and the IRI of the child Annotation as the
-body. The generator also links to the child result, as this is the result. This
-helps with later identifying the relationships between entities.
+body. The generator also links to the child result. This helps with later
+identifying the relationships between entities.
 
 !!! summary "Example linking annotation"
 
