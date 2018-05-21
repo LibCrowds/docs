@@ -177,44 +177,6 @@ notes field of a IIIF Annotation project.
     }
     ```
 
-### Linking
-
-Some LibCrowds projects can be built with a parent-child relationship. For
-example, the results of a IIIF *tagging* project can be used to generate tasks
-for a IIIF *describing* project.
-
-For these cases, a linking Annotation will be generated with the IRI of the
-parent Annotation as the target and the IRI of the child Annotation as the
-body. The generator also links to the child result. This helps with later
-identifying the relationships between entities.
-
-!!! summary "Example linking annotation"
-
-    ```json-ld
-    {
-      "@context": "http://www.w3.org/ns/anno.jsonld",
-      "id": "https://annotations.libcrowds.com/playbills-results/5cc3ac3b-2653-416d-aa31-255722019763",
-      "type": "Annotation",
-      "motivation": "linking",
-      "created": "2017-08-31T04:25:28.178Z",
-      "generated": "2017-08-31T04:25:28.178Z",
-      "generator": [
-        {
-          "id": "https://github.com/LibCrowds/libcrowds",
-          "type": "Software",
-          "name": "LibCrowds",
-          "homepage": "https://www.libcrowds.com"
-        },
-        {
-          "id": "https://backend.libcrowds.com/api/result/43",
-          "type": "Software"
-        }
-      ],
-      "body": "https://annotations.libcrowds.com/playbills-results/7640ddcd-6e48-4a9c-a360-3383032593b6",
-      "target": "https://annotations.libcrowds.com/playbills-results/ce67281d-5b2a-4bdc-ba33-cb46525d0625"
-    }
-    ```
-
 ## Image Tag Annotations
 
 As the title suggests, image tag annotations are used to associated a tag with
