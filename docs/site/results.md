@@ -29,23 +29,32 @@ a button to guide you to **Setup Results Annotations** for the collection.
 
 ## Analysing empty results
 
-By default, results are generated with no content. It is only when the results
-analysis process runs that all associated contributions are checked and the
-results updated accordingly. If migrating from an old version of the software,
+Once a task is complete, it is only when the results analysis process runs
+that all associated contributions are checked and the final result annotations
+generated. If you are migrating from an old version of the software,
 or if the backend server has failed at a critical moment, you may end up with
 results for which the analysis process was not completed.
 
-To trigger the analysis process for all empty results, click the
-**Analyse Empty** button alongside the relevant collection.
+To trigger the analysis process for all unanalysed results, click the
+**Analyse Empty** button. This function will not destroy any current
+Annotations. It will only process the results to which no Annotations are
+currently linked.
 
 ## Analysing all results
 
-There may occasions where you want to trigger the analysis process
-for all results associated with a collection. For instance, if you are
-migrating all of your data to a new annotation server.
+There may be occasions where you want to trigger the analysis process to be
+re-run for all results associated with a collection. For instance, if you
+need to migrate all of your data to a new annotation server and do not need
+to maintain the current Annotation IDs for any reason.
 
 To trigger the analysis process for all results, click the **Analyse All**
-button alongside the relevant collection.
+button.
+
+!!! warning "WARNING"
+
+    This function is destructive, it will destroy all current Annotations and
+    recreate them with new IDs. If for any reason you need to refer back to
+    the current Annotations by ID then this function should not be run.
 
 ## Downloading results
 
