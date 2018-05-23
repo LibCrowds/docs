@@ -209,17 +209,6 @@ Add a GitHub link to the main footer.
 config.githubUrl = 'https://github.com/github'
 ```
 
-### mapbox
-
-Use [Mapbox](https://www.mapbox.com/) to present any maps present on the site.
-
-```js
-config.mapbox = {
-  id: 'mapbox.streets',
-  publicApiToken: 'token'
-}
-```
-
 ### sentry
 
 Enable [Sentry](https://sentry.io/) error tracking.
