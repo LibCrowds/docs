@@ -67,6 +67,7 @@ pages:
     - Core Details: 'collections/details.md'
     - Page Content: 'collections/content.md'
     - Annotations: 'collections/annotations.md'
+    - Forum Integration: 'collections/forum.md'
     - Celebrations: 'collections/celebrations.md'
     - Project Filters: 'collections/filters.md'
     - Volumes: 'collections/volumes.md'
