@@ -23,13 +23,14 @@ Projects are generated from templates that contain information used to
 configure the task and determine how the results are analysed.
 
 Creating these templates is probably the most complex stage of the process.
-However, once created, a template can be used to more easily generate multiple
-projects of the same type. To follow on with the example above, a template
-designed to capture information about ticket prices could be reused to generate
-many projects, for a selection of volumes, without having to configure the task
-every time.
+Updating a template will effect all projects that use it Therefore, the
+creation and management of templates requires administrator rights.
 
-Once approved, templates are available for use by all registered users.
+Once created, a template can be used to generate multiple projects of the
+same type. To follow on with the example above, a template designed to
+capture information about ticket prices could be reused to generate
+many projects, for a selection of volumes, without having to configure the
+task every time.
 
 ## How are volumes defined?
 
