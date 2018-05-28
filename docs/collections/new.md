@@ -14,7 +14,8 @@ rights.
 
     1. Sign in to your LibCrowds account.
     2. Click the **Menu** button at the top of any page.
-    5. Select **New Collection**.
+    3. Select **Collections** from the Admin section.
+    4. Click the **New** button at the top of the page.
 
 ![A screenshot of the new collection admin page](/assets/img/collection/new.png?raw=true)
 <br><small>*A screenshot of the new collection admin page*</small>

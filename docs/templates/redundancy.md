@@ -7,6 +7,11 @@ contributions must match, before a final result is created, then contributions
 will continue to be collected until that minimum number of matches is
 established, or the maximum number of contributions is reached.
 
+??? warning "Administrator rights required"
+
+    To request administrator rights please get in touch by clicking the email
+    icon in the footer of this page.
+
 !!! question "How do I open this page?"
 
     1. Sign in to your LibCrowds account.

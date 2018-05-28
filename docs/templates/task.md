@@ -4,6 +4,11 @@ how results are collected. The task can be configured via this section.
 The options shown will vary depending on the type of task presenter chosen for
 the collection, for example, *IIIF* or *Z3950*.
 
+??? warning "Administrator rights required"
+
+    To request administrator rights please get in touch by clicking the email
+    icon in the footer of this page.
+
 !!! question "How do I open this page?"
 
     1. Sign in to your LibCrowds account.

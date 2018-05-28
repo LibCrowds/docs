@@ -4,6 +4,11 @@ generate projects.
 Each template can be used to generate a project for all available volumes for
 a collection microsite, without having to redefine the settings each time.
 
+??? warning "Administrator rights required"
+
+    To request administrator rights please get in touch by clicking the email
+    icon in the footer of this page.
+
 !!! question "How do I open this page?"
 
     1. Sign in to your LibCrowds account.

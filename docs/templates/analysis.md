@@ -8,6 +8,11 @@ applied. This rules can be configured via this section.
 For more details of how the results analysis process works, see the
 [Results Analysis](/analysis.md) section.
 
+??? warning "Administrator rights required"
+
+    To request administrator rights please get in touch by clicking the email
+    icon in the footer of this page.
+
 !!! question "How do I open this page?"
 
     1. Sign in to your LibCrowds account.
