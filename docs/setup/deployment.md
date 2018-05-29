@@ -126,6 +126,7 @@ Remove the default server configuration:
 
 ```bash
 sudo rm -r /etc/nginx/sites-available/default
+sudo rm -r /etc/nginx/sites-enabled/default
 ```
 
 Edit a new server configuration file:
