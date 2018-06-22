@@ -106,7 +106,6 @@ for the following events:
 | Downloads       | {type}_{format} | Project name or AnnotationCollection IRI | Data file is downloaded     |
 | Statistics      | view            | Project name                             | Project statistics viewed   |
 | Contributions   | {project name}  | Collection name                          | Answer submitted            |
-| Sorts           | {sort value}    | Collection name                          | Main projects list sorted   |
 | Filters         | {filter value}  | Collection name                          | Main projects list filtered |
 | Project Toolbar | {name}_shown    | Collection name                          | Project modal shown         |
 
@@ -219,6 +218,20 @@ config.sentry = {
   private_key: '',
   project_id: ''
 }
+```
+
+### social
+
+A list of [social profile](https://developers.google.com/search/docs/data-types/social-profile)
+links to add to the site's structured metadata.
+
+```js
+config.social = [
+  'http://www.facebook.com/your-profile',
+  'http://instagram.com/yourProfile',
+  'http://www.linkedin.com/in/yourprofile',
+  'http://plus.google.com/your_profile'
+]
 ```
 
 ### twitter
