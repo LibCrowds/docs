@@ -4,10 +4,12 @@ Project templates provide all of the configuration details for a particular
 task. For example, a template might be created to transcribe all of the titles
 shown in an image.
 
-Volumes provide the input source for a project (e.g. the images). The available
-volumes for each collection are maintained by LibCrowds administrators.
+Volumes provide the input source for a project (e.g. the images).
 One project can be built for each combination of template and volume.
 Only the available volumes for the selected template will be shown.
+
+The available templates and volumes for each collection are maintained by
+LibCrowds administrators.
 
 !!! question "How do I open this page?"
 

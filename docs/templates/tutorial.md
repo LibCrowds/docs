@@ -2,6 +2,11 @@ Tutorials are displayed when a project is first loaded and give volunteers
 some additional guidance about how to contribute. The tutorials for all
 projects generated from a template can be modified via this section.
 
+??? warning "Administrator rights required"
+
+    To request administrator rights please get in touch by clicking the email
+    icon in the footer of this page.
+
 !!! question "How do I open this page?"
 
     1. Sign in to your LibCrowds account.

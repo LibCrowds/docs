@@ -11,7 +11,7 @@ This section contains the core settings for a collection microsite.
 
     1. Sign in to your LibCrowds account.
     2. Click the **Menu** button at the top of any page.
-    3. Select **Open Collection**.
+    3. Select **Collections** from the Admin section.
     4. Locate the collection in the table and click **Open**.
     5. Select **Core Details** from the main menu.
 

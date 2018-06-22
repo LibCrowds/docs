@@ -126,6 +126,7 @@ Remove the default server configuration:
 
 ```bash
 sudo rm -r /etc/nginx/sites-available/default
+sudo rm -r /etc/nginx/sites-enabled/default
 ```
 
 Edit a new server configuration file:
@@ -300,10 +301,10 @@ cp settings.py.tmpl settings.py
 
 !!! warning "Important"
 
-  You will need to edit the `SERVER_NAME` setting now to point to the location
-  of your server (e.g. annotations.example.com). It is required to build
-  IDs outside of the request context and this is first done when the database
-  is created below.
+    You will need to edit the `SERVER_NAME` setting now to point to the location
+    of your server (e.g. annotations.example.com). It is required to build
+    IDs outside of the request context and this is first done when the database
+    is created below.
 
 Copy the alembic configuration template:
 
@@ -331,8 +332,8 @@ Enter the password `tester` when prompted.
 
 !!! info
 
-   If you choose a different password you should also edit the database
-   path in `settings.py` and `alembic.ini`.
+    If you choose a different password you should also edit the database
+    path in `settings.py` and `alembic.ini`.
 
 Create the database:
 

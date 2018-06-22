@@ -1,5 +1,10 @@
 It is possible to delete templates that have not yet been approved.
 
+??? warning "Administrator rights required"
+
+    To request administrator rights please get in touch by clicking the email
+    icon in the footer of this page.
+
 !!! question "How do I open this page?"
 
     1. Sign in to your LibCrowds account.

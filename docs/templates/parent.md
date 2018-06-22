@@ -8,6 +8,11 @@ titles in a set of images and another to transcribe them. In this case, the
 marking up project would be the parent and the transcription project would be
 the child.
 
+??? warning "Administrator rights required"
+
+    To request administrator rights please get in touch by clicking the email
+    icon in the footer of this page.
+
 !!! question "How do I open this page?"
 
     1. Sign in to your LibCrowds account.

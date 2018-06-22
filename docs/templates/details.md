@@ -1,6 +1,11 @@
 Core details for the template can be updated via this section. This includes
 the name and description of the template.
 
+??? warning "Administrator rights required"
+
+    To request administrator rights please get in touch by clicking the email
+    icon in the footer of this page.
+
 !!! question "How do I open this page?"
 
     1. Sign in to your LibCrowds account.
