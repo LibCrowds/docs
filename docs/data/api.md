@@ -148,7 +148,7 @@ GET https://annotations.libcrowds.com/annotations/<collection_id>/
                 "type": "Software"
               },
               {
-                "id": "https://backend.libcrowds.com/api/result/82346",
+                "id": "https://backend.libcrowds.com/api/task/82346",
                 "type": "Software"
               }
             ],
@@ -216,7 +216,7 @@ GET https://annotations.libcrowds.com/annotations/<collection_id>/?page=0
               "type": "Software"
             },
             {
-              "id": "https://backend.libcrowds.com/api/result/82346",
+              "id": "https://backend.libcrowds.com/api/task/82346",
               "type": "Software"
             }
           ],
@@ -291,7 +291,7 @@ GET https://annotations.libcrowds.com/annotations/<collection_id>/<annotation_id
           "type": "Software"
         },
         {
-          "id": "https://backend.libcrowds.com/api/result/82346",
+          "id": "https://backend.libcrowds.com/api/task/82346",
           "type": "Software"
         }
       ],

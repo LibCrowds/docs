@@ -61,7 +61,7 @@ a IIIF Annotation project designed to mark up all of the titles on a page.
           "homepage": "https://www.libcrowds.com"
         },
         {
-          "id": "https://backend.libcrowds.com/api/result/42",
+          "id": "https://backend.libcrowds.com/api/task/42",
           "type": "Software"
         }
       ],
@@ -105,7 +105,7 @@ a IIIF Annotation project designed to transcribe all of the titles on a page.
           "homepage": "https://www.libcrowds.com"
         },
         {
-          "id": "https://backend.libcrowds.com/api/result/42",
+          "id": "https://backend.libcrowds.com/api/task/42",
           "type": "Software"
         }
       ],
@@ -163,7 +163,7 @@ notes field of a IIIF Annotation project.
           "homepage": "https://www.libcrowds.com"
         },
         {
-          "id": "https://backend.libcrowds.com/api/result/42",
+          "id": "https://backend.libcrowds.com/api/task/42",
           "type": "Software"
         }
       ],
@@ -298,7 +298,7 @@ linked.
         "homepage": "https://www.libcrowds.com"
       },
       {
-        "id": "https://backend.libcrowds.com/api/result/42",
+        "id": "https://backend.libcrowds.com/api/task/42",
         "type": "Software"
       }
     ]
