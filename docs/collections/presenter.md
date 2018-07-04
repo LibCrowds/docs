@@ -1,10 +1,6 @@
 Various task presenter settings can be applied globally to all projects
-within a collection, via this page. Importantly, this is where the task
+within a collection via this page. Importantly, this is where the task
 presenter to be used for the microsite is set (e.g. IIIF Annotation or Z39.50).
-You can also choose
-
-such as text for the share modal and some buttons. These
-settings can be configured via this section.
 
 ??? warning "Administrator rights required"
 
@@ -43,6 +39,12 @@ by editing the **Note button** input field, then clicking **Update**.
 
 All task presenters contain a button to submit a task and move to the next. The
 text for this button can be configured by editing the **Submit button** input
+field, then clicking **Update**.
+
+## Updating the reject button text
+
+All task presenters contain a button to reject a task and move to the next. The
+text for this button can be configured by editing the **Reject button** input
 field, then clicking **Update**.
 
 ## Updating the share modal text
