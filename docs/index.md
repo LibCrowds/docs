@@ -1,7 +1,5 @@
 # LibCrowds Documentation
 
-[![DOI](https://zenodo.org/badge/92406558.svg)](https://zenodo.org/badge/latestdoi/92406558)
-
 [LibCrowds](https://www.libcrowds.com) is a platform for hosting experimental
 crowdsourcing projects aimed at collecting metadata for digitised content.
 
@@ -19,3 +17,7 @@ Check out the [New Project](/projects/new.md) guide.
 See the [Collections](/collections/introduction.md) section.
 - Installing an instance of LibCrowds?
 See the [Setup](/setup/introduction.md) section.
+
+---
+
+[![DOI](https://zenodo.org/badge/92406558.svg)](https://zenodo.org/badge/latestdoi/92406558)
