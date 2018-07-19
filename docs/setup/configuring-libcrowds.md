@@ -208,6 +208,14 @@ Add a GitHub link to the main footer.
 config.githubUrl = 'https://github.com/github'
 ```
 
+### https
+
+Force HTTPS for all external requests.
+
+```js
+config.https = true
+```
+
 ### sentry
 
 Enable [Sentry](https://sentry.io/) error tracking.
