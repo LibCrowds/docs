@@ -69,6 +69,7 @@ pages:
     - Annotations: 'collections/annotations.md'
     - Forum Integration: 'collections/forum.md'
     - Celebrations: 'collections/celebrations.md'
+    - Item Tags: 'collections/tags.md'
     - Project Filters: 'collections/filters.md'
     - Volumes: 'collections/volumes.md'
     - Featured Projects: 'collections/featured.md'
