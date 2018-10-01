@@ -21,6 +21,9 @@ configure each task, whereas the contribution datasets contain the information
 submitted as answers to those tasks. See the [Downloads](/data/downloads.md)
 section for more details.
 
+## Python examples in Jupyter Notebooks
+These Notebooks provide another way to [explore and create simple visualisations of
+LibCrowds data](https://github.com/LibCrowds/notebooks).
 
 ## API
 
