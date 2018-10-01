@@ -14,7 +14,7 @@ the [Data Model](/data/model.md) section for more details.
 
 ## Downloads
 
-All task and contribution data is made avialable for direct download in CSV
+All task and contribution data is made available for direct download in CSV
 and JSON formats. The structure of each dataset varies according to its
 purpose. For example, the task datasets contain information required to
 configure each task, whereas the contribution datasets contain the information
