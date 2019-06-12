@@ -12,11 +12,11 @@ related projects can be configured, each with their own set of themed pages.
 To get started, you might find some of these links useful:
 
 - Want to create a project?
-Check out the [New Project](/projects/new.md) guide.
+Check out the [New Project](/projects/new) guide.
 - Need to modify a collection microsite?
-See the [Collections](/collections/introduction.md) section.
+See the [Collections](/collections/introduction) section.
 - Installing an instance of LibCrowds?
-See the [Setup](/setup/introduction.md) section.
+See the [Setup](/setup/introduction) section.
 
 ---
 

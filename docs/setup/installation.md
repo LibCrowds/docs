@@ -1,7 +1,7 @@
 This section explains how to download and install and instance of
 LibCrowds locally, for testing or development. If you are interested in
 deploying LibCrowds to a live server, see the
-[Deployment](/setup/deployment.md) guide.
+[Deployment](/setup/deployment) guide.
 
 ## Install VirtualBox, Vagrant and git
 
@@ -158,4 +158,4 @@ with each other, nor have we installed the required plugins.
 
 ---
 
-The next step is to install the required [Plugins](/setup/plugins.md).
+The next step is to install the required [Plugins](/setup/plugins).

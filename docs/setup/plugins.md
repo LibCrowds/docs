@@ -96,4 +96,4 @@ The plugins will be available after you restart the server.
 
 ---
 
-The next step is [Configuring PYBOSSA](/setup/configuring-pybossa.md).
+The next step is [Configuring PYBOSSA](/setup/configuring-pybossa).

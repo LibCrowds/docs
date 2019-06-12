@@ -23,7 +23,7 @@ CATEGORY_INFO_PUBLIC_FIELDS = [
   'volumes',
   'project_filters',
   'templates',
-  'annotations
+  'annotations'
 ]
 
 # Additional user fields
@@ -99,9 +99,9 @@ WEB_ANNOTATION_BASE_URL = 'http://127.0.0.1:3000'
 
 ---
 
-If you're following on from the [Local Installation](/setup/introduction.md)
-or [Deployment](/setup/deployment.md) guides,
+If you're following on from the [Local Installation](/setup/introduction)
+or [Deployment](/setup/deployment) guides,
 you should now have a fully operational LibCrowds instance.
 
 To explore the core LibCrowds settings, see
-[Configuring LibCrowds](/setup/configuring-libcrowds.md).
+[Configuring LibCrowds](/setup/configuring-libcrowds).

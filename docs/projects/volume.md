@@ -28,4 +28,4 @@ Update the project's volume by locating it in the table and clicking the
 **Select** or **Deselect** buttons.
 
 Note that the available volumes for a collection are
-[set by administrators](/collections/volumes.md).
+[set by administrators](/collections/volumes).

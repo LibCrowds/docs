@@ -17,4 +17,4 @@ details of all available settings.
 ---
 
 To find out how to create a collection microsite, see the
-[New Collection](/collections/new.md) guide.
+[New Collection](/collections/new) guide.

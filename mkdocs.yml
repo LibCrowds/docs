@@ -28,7 +28,7 @@ markdown_extensions:
 google_analytics:
   - 'UA-59584422-5'
   - 'auto'
-pages:
+nav:
   - Introduction: 'index.md'
   - Setup:
     - Introduction: 'setup/introduction.md'
@@ -52,15 +52,15 @@ pages:
     - Template: 'projects/template.md'
     - Webhooks: 'projects/webhooks.md'
   - Templates:
-    - Introduction: 'templates/introduction.md'
-    - New Template: 'templates/new.md'
-    - Core Details: 'templates/details.md'
-    - Task: 'templates/task.md'
-    - Redundancy: 'templates/redundancy.md'
-    - Parent: 'templates/parent.md'
-    - Analysis: 'templates/analysis.md'
-    - Tutorial: 'templates/tutorial.md'
-    - Delete: 'templates/delete.md'
+    - Introduction: 'lctemplates/introduction.md'
+    - New Template: 'lctemplates/new.md'
+    - Core Details: 'lctemplates/details.md'
+    - Task: 'lctemplates/task.md'
+    - Redundancy: 'lctemplates/redundancy.md'
+    - Parent: 'lctemplates/parent.md'
+    - Analysis: 'lctemplates/analysis.md'
+    - Tutorial: 'lctemplates/tutorial.md'
+    - Delete: 'lctemplates/delete.md'
   - Collection Admin:
     - Introduction: 'collections/introduction.md'
     - New Collection: 'collections/new.md'
@@ -89,3 +89,4 @@ pages:
     - Downloads: 'data/downloads.md'
     - API: 'data/api.md'
   - Glossary: 'glossary.md'
+  - Z39.50: 'z3950.md'
