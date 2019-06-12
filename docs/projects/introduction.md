@@ -47,6 +47,6 @@ project from a template.
 
 - If a template is not available for the type of
 project you want to create, visit the
-[Templates](/templates/introduction) section.
+[Templates](/lctemplates/introduction) section.
 
 
