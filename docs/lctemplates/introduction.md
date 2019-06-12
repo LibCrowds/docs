@@ -8,5 +8,5 @@ Templates can be created by LibCrowds administrators.
 
 ---
 
-See the [New Template](/templates/new) guide to find out how to create a
+See the [New Template](/lctemplates/new) guide to find out how to create a
 template.

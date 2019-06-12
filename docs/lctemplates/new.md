@@ -28,5 +28,5 @@ the task, set filters, a tutorial and set the rules for results analysis.
 
 ---
 
-See the [Task](/templates/task.md) section for guidance on how to configure
+See the [Task](/lctemplates/task.md) section for guidance on how to configure
 the template's task.
