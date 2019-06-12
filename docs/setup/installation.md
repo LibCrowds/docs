@@ -119,14 +119,14 @@ git clone https://github.com/LibCrowds/libcrowds.git
 Setup the LibCrowds development environment:
 
 ```bash
-cd pybossa
-vagrant up
+cd libcrowds
+cp local.config.js.tmpl local.config.js
+npm install
 ```
 
 Run the LibCrowds server:
 
 ```bash
-vagrant ssh
 npm run dev
 ```
 

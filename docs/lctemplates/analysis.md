@@ -6,7 +6,7 @@ Before the contributions are compared a set of normalisation rules can be
 applied. This rules can be configured via this section.
 
 For more details of how the results analysis process works, see the
-[Results Analysis](/analysis.md) section.
+[Results Analysis](/analysis) section.
 
 ??? warning "Administrator rights required"
 
