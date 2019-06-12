@@ -88,5 +88,5 @@ nav:
     - Data Model: 'data/model.md'
     - Downloads: 'data/downloads.md'
     - API: 'data/api.md'
-  - Glossary: 'glossary.md'
   - Z39.50: 'z3950.md'
+  - Glossary: 'glossary.md'
