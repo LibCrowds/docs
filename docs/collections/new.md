@@ -31,5 +31,5 @@ To create a new collection enter a name and description, then click **Create**.
 
 ---
 
-See the [Core Details](/collections/details.md) page to find out how to
+See the [Core Details](/collections/details) page to find out how to
 update some of the collection microsite's core settings.

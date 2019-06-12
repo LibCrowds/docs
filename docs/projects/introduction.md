@@ -42,7 +42,7 @@ LibCrowds administrators.
 
 ---
 
-- See the [New Project](/projects/new.md) guide to find out how to generate a
+- See the [New Project](/projects/new) guide to find out how to generate a
 project from a template.
 
 - If a template is not available for the type of

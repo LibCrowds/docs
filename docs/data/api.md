@@ -16,7 +16,7 @@ contributions analysed the result will be available via this API.
 !!! tip "Data Model"
 
     The structure of the Annotations referenced below is described in our
-    [Data Model](/data/model.md).
+    [Data Model](/data/model).
 
 The Annotation Server used by LibCrowds is called
 [Explicates](https://github.com/alexandermendes/explicates). The server
@@ -244,7 +244,7 @@ GET https://annotations.libcrowds.com/annotations/<collection_id>/?page=0
 ## Annotations
 
 Each Annotation has a Body, which is a comment or other descriptive resource, and a Target that
-the Body is somehow "about". See the [Data Model](/data/model.md) for further details.
+the Body is somehow "about". See the [Data Model](/data/model) for further details.
 
 ### Get an Annotation
 

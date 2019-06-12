@@ -4,7 +4,7 @@ along with buttons to export as JSON, or manually trigger the results analysis
 process for a particular collection.
 
 Note that there are certain scenarios where results will be excluded from the
-processes below, see [Results Analysis: Exclusion](/analysis.md#exclusion)
+processes below, see [Results Analysis: Exclusion](/analysis#exclusion)
 for details.
 
 ??? warning "Administrator rights required"

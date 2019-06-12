@@ -32,7 +32,7 @@ to all users.
 
 Before publishing a collection, please ensure that you have created a
 suitable set of AnnotationCollections via the
-[Annotations](/collections/annotations.md) page.
+[Annotations](/collections/annotations) page.
 
 To publish (or unpublish) a collection, click the **Published**
 toggle at the top of the page.

@@ -1,6 +1,6 @@
 The results page lists all of the raw results data that has been
 generated for a project. It can be used to monitor the outcome of the
-automated [results analysis](/analysis.md) process, or to trigger
+automated [results analysis](/analysis) process, or to trigger
 analysis for particular sets of tasks.
 
 !!! question "How do I open this page?"

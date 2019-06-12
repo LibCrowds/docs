@@ -16,6 +16,6 @@ you need to get a up and running locally, or to deploy to a production server.
 ---
 
 - To find out how to get LibCrowds up and running locally
-see the [Local Installation](/setup/installation.md) guide.
-- See the [Deployment](/setup/deployment.md) guide for guidance on deploying
+see the [Local Installation](/setup/installation) guide.
+- See the [Deployment](/setup/deployment) guide for guidance on deploying
 to a production server.

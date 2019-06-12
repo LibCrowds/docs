@@ -21,7 +21,7 @@ these use cases, and the vocabulary of terms that represents it.
 By using this structure for our final results we aim to make the crowdsourced
 data generated via the platform more easily reusable online and provide a way
 for researchers to answer specific questions via programmatic means (see the
-[API](/data/api.md) section for details).
+[API](/data/api) section for details).
 
 As we as the final results data, we use Web Annotations to store additional
 user-generated data, such as image tags. The various types of annotation are
@@ -30,7 +30,7 @@ described further below.
 ## Result Annotations
 
 These annotations are created once a task is completed and all related
-contributions analysed (see the [Results Analysis](/analysis.md) section for
+contributions analysed (see the [Results Analysis](/analysis) section for
 details).
 
 Each annotation contains a motivation, which provides an indication of why
@@ -407,4 +407,4 @@ Descriptions are used to describe the target in plain text.
 ---
 
 For details on how to query the Annotations see the
-[API documentation](/data/api.md).
+[API documentation](/data/api).

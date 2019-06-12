@@ -14,7 +14,7 @@ The final results for all LibCrowds projects are stored as lists of annotations
 serialised according to the [Web Annotation](https://www.w3.org/annotation/)
 data model. Web Annotations are a W3C standard used to make data more easily
 reusable online. For information about the data and how it can be reused see
-the [Data section](/data/introduction.md).
+the [Data section](/data/introduction).
 
 ## Normalisation
 
@@ -22,7 +22,7 @@ Each project template provides custom normalisation options that are applied
 during the results analysis process. These options include case-conversion,
 trimming of punctuation and formatting dates consistently. Details of the
 available normalisation rules are given in the
-[Templates Analysis Rules](/templates/analysis.md) guide.
+[Templates Analysis Rules](/templates/analysis) guide.
 
 ## Task redundancy
 
@@ -39,7 +39,7 @@ task will be increased until the maximum is reached, after which no answer
 will be stored.
 
 Guidance on how to set the minimum and maximum contributions for a set
-of projects is given in the [Templates Core Details](/templates/details.md)
+of projects is given in the [Templates Core Details](/templates/details)
 guide.
 
 ## Example scenarios
@@ -137,7 +137,7 @@ the scenarios below apply.
 ### 1. The result has a child
 
 Some LibCrowds projects can be generated with a
-[parent-child relationship](/templates/parent.md). If the analysis is triggered
+[parent-child relationship](/templates/parent). If the analysis is triggered
 for any results where a child task has been built from that result nothing will
 be updated. This is because doing so could break the links between any child
 and parent annotations.
@@ -147,4 +147,4 @@ and parent annotations.
 If a result has been modified manually, since creation, it will no longer be
 updated by the automated results analysis process. This really only applies
 if the results analysis is run again over the entire collection, such as from
-the [Admin Results](/site/results.md) page.
+the [Admin Results](/site/results) page.

@@ -95,7 +95,7 @@ npm install
 ```
 
 Copy the configuration template (see
-[Configuring LibCrowds](/setup/configuring-libcrowds.md) for details
+[Configuring LibCrowds](/setup/configuring-libcrowds) for details
 of how to edit this file):
 
 ```bash
@@ -292,7 +292,7 @@ pip install -r requirements.txt
 ```
 
 Copy the configuration template (see
-[Configuring Explicates](/setup/configuring-explicates.md) for details
+[Configuring Explicates](/setup/configuring-explicates) for details
 of how to edit this file):
 
 ```bash
@@ -570,4 +570,4 @@ Your certificate should now be checked for renewal daily.
 ---
 
 The next step is to install the required LibCrowds
-[Plugins](/setup/plugins.md).
+[Plugins](/setup/plugins).

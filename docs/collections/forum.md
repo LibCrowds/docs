@@ -36,5 +36,5 @@ have to refresh your browser to see these changes.
 
     Note that this feature relies on the forum settings being added to the
     application's
-    [main configuration file](/setup/configuring-libcrowds.md#flarum).
+    [main configuration file](/setup/configuring-libcrowds#flarum).
 

@@ -3,8 +3,8 @@ they're interested in. The available tag types for all projects within a
 collection are managed via this section.
 
 The values assigned to each tag type are managed on a per-project basis,
-either when creating a [New Project](/projects/new.md), or via the
-[Project Filters](/projects/filters.md) settings page. For example, if the
+either when creating a [New Project](/projects/new), or via the
+[Project Filters](/projects/filters) settings page. For example, if the
 *Location* tag type was added to a collection a project within that collection
 could then assign the value *London*.
 
