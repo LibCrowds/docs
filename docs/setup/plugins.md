@@ -94,6 +94,49 @@ cp -r pybossa-lc/pybossa_lc pybossa_lc
 
 The plugins will be available after you restart the server.
 
+!!! warning "Important"
+
+    Some plugins import Flask modules in a deprecated manner, causing warnings when launching the server.
+	The issue is related to several calls in the `__init__.py` files in PyBossa plugins that import Flask submodules in a deprecated manner. These warnings should be patched in a future update, but a temporary fix is obtained with the following:
+
+	Flask extension import statements such as
+	```
+	import flask.ext.plugins
+	```
+	should be replaced with
+	```
+	import flask_plugins
+	```
+	Affected files include:
+	```
+	pybossa/plugins/pybossa_lc/__init__.py
+	pybossa/plugins/pybossa_lc_email/__init__.py
+	pybossa/plugins/pybossa_z3950/__init__.py
+	pybossa/plugins/pybossa_lc/api/projects.py
+	pybossa/plugins/pybossa_lc/api/categories.py
+	pybossa/plugins/pybossa_lc/api/admin.py
+	```
+
+	Additionally, the following warning may be observed when calling `python run.py`:
+	```
+	WARNING: Couldn't create 'PyZ3950.PyZ3950_parsetab'. [Errno 20] Not a directory: '/home/vagrant/pybossa-env/lib/python2.7/site-packages/mollyZ3950-2.04_molly1-py2.7-linux-x86_64.egg/PyZ3950/PyZ3950_parsetab.py'
+	<type 'exceptions.ImportError'>
+	('No module named ext.z3950',)
+	No module named ext.z3950
+	Z39.50 plugin disabled
+	```
+	Again, a temporary fix for this is obtained with the following:
+	```
+	pip uninstall mollyZ3950
+	wget https://files.pythonhosted.org/packages/6a/34/8176b841926a2add20524a9f74c307ac5fe6e33e9f4af12a58e6f7223982/mollyZ3950-2.04-molly1.tar.gz
+	pip install mollyZ3950-2.04-molly1.tar.gz
+	pip uninstall Flask-Z3950
+	pip install Flask-Z3950
+	```
+	in combination with changing `flask.ext.*` for `flask_*` in
+	```
+	/home/vagrant/pybossa-env/lib/python2.7/site-packages/flask_z3950/view.py
+	```
 ---
 
 The next step is [Configuring PYBOSSA](/setup/configuring-pybossa).

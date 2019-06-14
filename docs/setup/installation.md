@@ -68,13 +68,13 @@ required to handle the storage and retrieval of user tags and results data.
 LibCrowds has been built for use with the
 [Explicates](https://github.com/alexandermendes/explicates) server, which
 complies with the standard protocol and has the additional search
-functionality required for this application.
+functionality required for this application. Currently, a fork of this package is recommended which fixes a bug in the local installation setup script.
 
 Once the above software is succesfully installed, open up a terminal and clone
-Explicates to your local machine:
+the forked version of Explicates to your local machine:
 
 ```bash
-git clone https://github.com/alexandermendes/explicates.git
+git clone https://github.com/harryjmoss/explicates.git
 ```
 
 Setup the Explicates development environment:
