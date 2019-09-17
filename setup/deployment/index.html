@@ -1,0 +1,1895 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
+    
+    
+      
+        <title>Deployment - LibCrowds Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../assets/style/extra.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-59584422-5", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#domains" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="LibCrowds Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              LibCrowds Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Deployment
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/LibCrowds/libcrowds/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    LibCrowds/libcrowds
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="LibCrowds Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    LibCrowds Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/LibCrowds/libcrowds/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    LibCrowds/libcrowds
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Setup
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Setup
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../installation/" title="Local Installation" class="md-nav__link">
+      Local Installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Deployment
+      </label>
+    
+    <a href="./" title="Deployment" class="md-nav__link md-nav__link--active">
+      Deployment
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#domains" class="md-nav__link">
+    Domains
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pybossa" class="md-nav__link">
+    PYBOSSA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#libcrowds" class="md-nav__link">
+    LibCrowds
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-nodejs-and-npm" class="md-nav__link">
+    Install Node.js and npm
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-git" class="md-nav__link">
+    Install git
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download-and-build-libcrowds" class="md-nav__link">
+    Download and build LibCrowds
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-nginx" class="md-nav__link">
+    Setting up NGINX
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-supervisor" class="md-nav__link">
+    Setting Up Supervisor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explicates" class="md-nav__link">
+    Explicates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-python" class="md-nav__link">
+    Install Python
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-git_1" class="md-nav__link">
+    Install git
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download-and-build-explicates" class="md-nav__link">
+    Download and build Explicates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seting-up-the-database" class="md-nav__link">
+    Seting up the database
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-nginx_1" class="md-nav__link">
+    Setting up NGINX
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-uwsgi" class="md-nav__link">
+    Setting up uWSGI
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-supervisor_1" class="md-nav__link">
+    Setting Up Supervisor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security" class="md-nav__link">
+    Security
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#firewall" class="md-nav__link">
+    Firewall
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secure-sockets-layer-ssl" class="md-nav__link">
+    Secure Sockets Layer (SSL)
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../plugins/" title="Plugins" class="md-nav__link">
+      Plugins
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../configuring-pybossa/" title="Configuring PYBOSSA" class="md-nav__link">
+      Configuring PYBOSSA
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../configuring-libcrowds/" title="Configuring LibCrowds" class="md-nav__link">
+      Configuring LibCrowds
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../configuring-explicates/" title="Configuring Explicates" class="md-nav__link">
+      Configuring Explicates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../testing/" title="Testing" class="md-nav__link">
+      Testing
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Projects
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Projects
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../projects/introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../projects/new/" title="New Project" class="md-nav__link">
+      New Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../projects/filters/" title="Filters" class="md-nav__link">
+      Filters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../projects/thumbnail/" title="Thumbnail" class="md-nav__link">
+      Thumbnail
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../projects/results/" title="Results" class="md-nav__link">
+      Results
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../projects/delete/" title="Delete" class="md-nav__link">
+      Delete
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../projects/details/" title="Core Details" class="md-nav__link">
+      Core Details
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../projects/collection/" title="Collection" class="md-nav__link">
+      Collection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../projects/volume/" title="Volume" class="md-nav__link">
+      Volume
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../projects/template/" title="Template" class="md-nav__link">
+      Template
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../projects/webhooks/" title="Webhooks" class="md-nav__link">
+      Webhooks
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Templates
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Templates
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../lctemplates/introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../lctemplates/new/" title="New Template" class="md-nav__link">
+      New Template
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../lctemplates/details/" title="Core Details" class="md-nav__link">
+      Core Details
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../lctemplates/task/" title="Task" class="md-nav__link">
+      Task
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../lctemplates/redundancy/" title="Redundancy" class="md-nav__link">
+      Redundancy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../lctemplates/parent/" title="Parent" class="md-nav__link">
+      Parent
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../lctemplates/analysis/" title="Analysis" class="md-nav__link">
+      Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../lctemplates/tutorial/" title="Tutorial" class="md-nav__link">
+      Tutorial
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../lctemplates/delete/" title="Delete" class="md-nav__link">
+      Delete
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Collection Admin
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Collection Admin
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../collections/introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../collections/new/" title="New Collection" class="md-nav__link">
+      New Collection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../collections/details/" title="Core Details" class="md-nav__link">
+      Core Details
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../collections/content/" title="Page Content" class="md-nav__link">
+      Page Content
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../collections/annotations/" title="Annotations" class="md-nav__link">
+      Annotations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../collections/forum/" title="Forum Integration" class="md-nav__link">
+      Forum Integration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../collections/celebrations/" title="Celebrations" class="md-nav__link">
+      Celebrations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../collections/tags/" title="Item Tags" class="md-nav__link">
+      Item Tags
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../collections/filters/" title="Project Filters" class="md-nav__link">
+      Project Filters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../collections/volumes/" title="Volumes" class="md-nav__link">
+      Volumes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../collections/featured/" title="Featured Projects" class="md-nav__link">
+      Featured Projects
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../collections/presenter/" title="Task Presenter" class="md-nav__link">
+      Task Presenter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../collections/delete/" title="Delete" class="md-nav__link">
+      Delete
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Site Admin
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Site Admin
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../site/dashboard/" title="Dashboard" class="md-nav__link">
+      Dashboard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../site/user-management/" title="User Management" class="md-nav__link">
+      User Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../site/announcements/" title="Announcements" class="md-nav__link">
+      Announcements
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../site/results/" title="Results" class="md-nav__link">
+      Results
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../site/jobs/" title="Background Jobs" class="md-nav__link">
+      Background Jobs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../site/pending-templates/" title="Pending Templates" class="md-nav__link">
+      Pending Templates
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../analysis/" title="Results Analysis" class="md-nav__link">
+      Results Analysis
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Data
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Data
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../data/introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../data/model/" title="Data Model" class="md-nav__link">
+      Data Model
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../data/downloads/" title="Downloads" class="md-nav__link">
+      Downloads
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../data/api/" title="API" class="md-nav__link">
+      API
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../z3950/" title="Z39.50" class="md-nav__link">
+      Z39.50
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../glossary/" title="Glossary" class="md-nav__link">
+      Glossary
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#domains" class="md-nav__link">
+    Domains
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pybossa" class="md-nav__link">
+    PYBOSSA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#libcrowds" class="md-nav__link">
+    LibCrowds
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-nodejs-and-npm" class="md-nav__link">
+    Install Node.js and npm
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-git" class="md-nav__link">
+    Install git
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download-and-build-libcrowds" class="md-nav__link">
+    Download and build LibCrowds
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-nginx" class="md-nav__link">
+    Setting up NGINX
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-supervisor" class="md-nav__link">
+    Setting Up Supervisor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explicates" class="md-nav__link">
+    Explicates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-python" class="md-nav__link">
+    Install Python
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-git_1" class="md-nav__link">
+    Install git
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download-and-build-explicates" class="md-nav__link">
+    Download and build Explicates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seting-up-the-database" class="md-nav__link">
+    Seting up the database
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-nginx_1" class="md-nav__link">
+    Setting up NGINX
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-uwsgi" class="md-nav__link">
+    Setting up uWSGI
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-supervisor_1" class="md-nav__link">
+    Setting Up Supervisor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security" class="md-nav__link">
+    Security
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#firewall" class="md-nav__link">
+    Firewall
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secure-sockets-layer-ssl" class="md-nav__link">
+    Secure Sockets Layer (SSL)
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/LibCrowds/libcrowds/edit/master/docs/setup/deployment.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Deployment</h1>
+                
+                <p>This guide explains how to deploy an instance of LibCrowds to a set of
+servers with NGINX and supervisor.</p>
+<p>Three servers are required, one for LibCrowds, one for PYBOSSA and one
+for Explicates. The following page describes how to get all three set up.</p>
+<h2 id="domains">Domains<a class="headerlink" href="#domains" title="Permanent link">&para;</a></h2>
+<p>Before we begin, it is important to note that both LibCrowds and PYBOSSA
+should be served from the same domain.</p>
+<p>This is because LibCrowds uses SSR, so the PYBOSSA session cookie needs to be
+shared with the LibCrowds server (rather than the client) and this will only
+work properly if both applications are served from the same domain. Subdomains
+are fine, so you can still run your applications on different servers.</p>
+<p>If you don't do this, the application will still run but, as it will not be
+possible to fully render certain pages on the server, you will see some
+strange behaviour with users appearing to not be signed in when the
+application first loads. You might also notice errors when attempting to
+navigate directly to restricted pages (such as the various administration
+dashboards).</p>
+<p>With that in mind, let's setup our servers.</p>
+<h2 id="pybossa">PYBOSSA<a class="headerlink" href="#pybossa" title="Permanent link">&para;</a></h2>
+<p>Rather than replicating what has already been written, for details of how to
+deploy PYBOSSA see the <a href="http://docs.pybossa.com">PYBOSSA documentation</a>.</p>
+<h2 id="libcrowds">LibCrowds<a class="headerlink" href="#libcrowds" title="Permanent link">&para;</a></h2>
+<p>Starting with a fresh Ubuntu 16.04 server, run through the procedures below.</p>
+<h2 id="install-nodejs-and-npm">Install Node.js and npm<a class="headerlink" href="#install-nodejs-and-npm" title="Permanent link">&para;</a></h2>
+<p>LibCrowds requires <a href="https://nodejs.org">Node.js</a> &gt;= 8.0.0 to run.</p>
+<p>Update and upgrade the package index:</p>
+<div class="codehilite"><pre><span></span>sudo apt-get update
+sudo apt-get upgrade
+</pre></div>
+
+<p>Go to your home directory and retrieve the installation script:</p>
+<div class="codehilite"><pre><span></span><span class="nb">cd</span> ~
+curl -sL https://deb.nodesource.com/setup_8.x -o nodesource_setup.sh
+</pre></div>
+
+<p>Run the script:</p>
+<div class="codehilite"><pre><span></span>sudo bash nodesource_setup.sh
+</pre></div>
+
+<p>Install Node.js and the <code>build-essential</code> package:</p>
+<div class="codehilite"><pre><span></span>sudo apt-get install nodejs
+sudo apt-get install build-essential
+</pre></div>
+
+<h2 id="install-git">Install git<a class="headerlink" href="#install-git" title="Permanent link">&para;</a></h2>
+<p>LibCrowds is distributed under version control using
+<a href="https://git-scm.com/">git</a>, install it by running:</p>
+<div class="codehilite"><pre><span></span>sudo apt-get install git-core
+</pre></div>
+
+<h2 id="download-and-build-libcrowds">Download and build LibCrowds<a class="headerlink" href="#download-and-build-libcrowds" title="Permanent link">&para;</a></h2>
+<p>Run the following commands to clone the LibCrowds repository into
+<code>/var/www/libcrowds</code>:</p>
+<div class="codehilite"><pre><span></span>mkdir /var/www
+git clone https://github.com/LibCrowds/libcrowds /var/www/libcrowds
+</pre></div>
+
+<p>Enter the directory:</p>
+<div class="codehilite"><pre><span></span><span class="nb">cd</span> /var/www/libcrowds
+</pre></div>
+
+<p>Install LibCrowds' dependencies:</p>
+<div class="codehilite"><pre><span></span>npm install
+</pre></div>
+
+<p>Copy the configuration template (see
+<a href="/setup/configuring-libcrowds">Configuring LibCrowds</a> for details
+of how to edit this file):</p>
+<div class="codehilite"><pre><span></span>cp local.config.js.tmpl local.config.js
+</pre></div>
+
+<p>Build the application:</p>
+<div class="codehilite"><pre><span></span>npm run build
+</pre></div>
+
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If the installation or build process is getting killed before finishing
+it is possible that your server does not have enough memory. You
+may want to consider upgrading the server or adding some swap space.</p>
+</div>
+<h2 id="setting-up-nginx">Setting up NGINX<a class="headerlink" href="#setting-up-nginx" title="Permanent link">&para;</a></h2>
+<p>To serve the site using <a href="https://www.nginx.com/resources/wiki/">NGINX</a>,
+first install it:</p>
+<div class="codehilite"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="k">get</span> <span class="n">install</span> <span class="n">nginx</span>
+</pre></div>
+
+<p>Remove the default server configuration:</p>
+<div class="codehilite"><pre><span></span>sudo rm -r /etc/nginx/sites-available/default
+sudo rm -r /etc/nginx/sites-enabled/default
+</pre></div>
+
+<p>Edit a new server configuration file:</p>
+<div class="codehilite"><pre><span></span>vim /etc/nginx/sites-available/libcrowds
+</pre></div>
+
+<p>Copy in the following and save the file:</p>
+<div class="codehilite"><pre><span></span><span class="k">map</span> <span class="nv">$sent_http_content_type</span> <span class="nv">$expires</span> <span class="p">{</span>
+    <span class="kn">&quot;text/html&quot;</span>                 <span class="s">epoch</span><span class="p">;</span>
+    <span class="kn">&quot;text/html</span><span class="p">;</span> <span class="kn">charset=utf-8&quot;</span>  <span class="s">epoch</span><span class="p">;</span>
+    <span class="kn">default</span> <span class="no">off</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">server</span> <span class="p">{</span>
+  <span class="kn">listen</span> <span class="mi">80</span> <span class="s">default_server</span><span class="p">;</span>
+  <span class="kn">listen</span> <span class="s">[::]:80</span> <span class="s">default_server</span><span class="p">;</span>
+
+  <span class="kn">client_body_buffer_size</span> <span class="s">10K</span><span class="p">;</span>
+  <span class="kn">client_header_buffer_size</span> <span class="mi">1k</span><span class="p">;</span>
+  <span class="kn">client_max_body_size</span> <span class="mi">10m</span><span class="p">;</span>
+  <span class="kn">large_client_header_buffers</span> <span class="mi">2</span> <span class="mi">1k</span><span class="p">;</span>
+
+  <span class="kn">gzip</span>             <span class="no">on</span><span class="p">;</span>
+  <span class="kn">gzip_comp_level</span>  <span class="mi">2</span><span class="p">;</span>
+  <span class="kn">gzip_types</span>       <span class="s">text/plain</span> <span class="s">application/xml</span> <span class="s">text/css</span> <span class="s">application/javascript</span><span class="p">;</span>
+  <span class="kn">gzip_min_length</span>  <span class="mi">1000</span><span class="p">;</span>
+  <span class="kn">gzip_proxied</span>     <span class="s">expired</span> <span class="s">no-cache</span> <span class="s">no-store</span> <span class="s">private</span> <span class="s">auth</span><span class="p">;</span>
+
+  <span class="kn">location</span> <span class="s">/</span> <span class="p">{</span>
+    <span class="kn">expires</span> <span class="nv">$expires</span><span class="p">;</span>
+    <span class="kn">proxy_redirect</span>                      <span class="no">off</span><span class="p">;</span>
+    <span class="kn">proxy_set_header</span> <span class="s">Host</span>               <span class="nv">$host</span><span class="p">;</span>
+    <span class="kn">proxy_set_header</span> <span class="s">X-Real-IP</span>          <span class="nv">$remote_addr</span><span class="p">;</span>
+    <span class="kn">proxy_set_header</span> <span class="s">X-Forwarded-For</span>    <span class="nv">$proxy_add_x_forwarded_for</span><span class="p">;</span>
+    <span class="kn">proxy_set_header</span> <span class="s">X-Forwarded-Proto</span>  <span class="nv">$scheme</span><span class="p">;</span>
+    <span class="kn">proxy_read_timeout</span>                  <span class="mi">1m</span><span class="p">;</span>
+    <span class="kn">proxy_connect_timeout</span>               <span class="mi">1m</span><span class="p">;</span>
+    <span class="kn">proxy_pass</span>                          <span class="s">http://127.0.0.1:8080</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>Enable the LibCrowds configuration:</p>
+<div class="codehilite"><pre><span></span>ln -s /etc/nginx/sites-available/libcrowds /etc/nginx/sites-enabled/libcrowds
+</pre></div>
+
+<p>Restart the server:</p>
+<div class="codehilite"><pre><span></span>sudo service nginx restart
+</pre></div>
+
+<h2 id="setting-up-supervisor">Setting Up Supervisor<a class="headerlink" href="#setting-up-supervisor" title="Permanent link">&para;</a></h2>
+<p>Supervisor is used to run LibCrowds in the background and restart it when the
+server boots up.</p>
+<div class="codehilite"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="k">get</span> <span class="n">install</span> <span class="n">supervisor</span>
+</pre></div>
+
+<p>Edit a new Supervisor program configuration:</p>
+<div class="codehilite"><pre><span></span>vim /etc/supervisor/conf.d/libcrowds.conf
+</pre></div>
+
+<p>Copy in the following and save the file:</p>
+<div class="codehilite"><pre><span></span><span class="k">[program:libcrowds]</span>
+<span class="na">directory</span><span class="o">=</span><span class="s">/var/www/libcrowds</span>
+<span class="na">command</span><span class="o">=</span><span class="s">npm run start</span>
+<span class="na">autostart</span><span class="o">=</span><span class="s">true</span>
+<span class="na">autorestart</span><span class="o">=</span><span class="s">true</span>
+<span class="na">log_stdout</span><span class="o">=</span><span class="s">true</span>
+<span class="na">log_stderr</span><span class="o">=</span><span class="s">true</span>
+<span class="na">logfile</span><span class="o">=</span><span class="s">/var/log/libcrowds.log</span>
+<span class="na">logfile_maxbytes</span><span class="o">=</span><span class="s">10MB</span>
+<span class="na">logfile_backups</span><span class="o">=</span><span class="s">2</span>
+</pre></div>
+
+<p>Restart supervisor:</p>
+<div class="codehilite"><pre><span></span>sudo service supervisor stop
+sudo service supervisor start
+</pre></div>
+
+<p>Your LibCrowds server should now be running at
+<a href="http://your.domain.com">http://your.domain.com</a>. However, we still need to
+configure the Annotations server.</p>
+<h2 id="explicates">Explicates<a class="headerlink" href="#explicates" title="Permanent link">&para;</a></h2>
+<p>Starting with a fresh Ubuntu 16.04 server, run through the procedures below.</p>
+<h2 id="install-python">Install Python<a class="headerlink" href="#install-python" title="Permanent link">&para;</a></h2>
+<p>Explicates requires <a href="https://www.python.org/">Python</a> &gt;= 2.7 to run.</p>
+<p>Update and upgrade the package index:</p>
+<div class="codehilite"><pre><span></span>sudo apt-get update
+sudo apt-get upgrade
+</pre></div>
+
+<p>Install Python:</p>
+<div class="codehilite"><pre><span></span>sudo apt install python
+</pre></div>
+
+<p>Install some additional dependencies:</p>
+<div class="codehilite"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">python</span><span class="o">-</span><span class="n">virtualenv</span> <span class="n">python</span><span class="o">-</span><span class="n">dev</span> <span class="n">python</span><span class="o">-</span><span class="n">setuptools</span> <span class="n">python</span><span class="o">-</span><span class="n">pip</span>
+</pre></div>
+
+<h2 id="install-git_1">Install git<a class="headerlink" href="#install-git_1" title="Permanent link">&para;</a></h2>
+<p>Explicates is distributed under version control using
+<a href="https://git-scm.com/">git</a>, install it by running:</p>
+<div class="codehilite"><pre><span></span>sudo apt-get install git-core
+</pre></div>
+
+<h2 id="download-and-build-explicates">Download and build Explicates<a class="headerlink" href="#download-and-build-explicates" title="Permanent link">&para;</a></h2>
+<p>Run the following commands to clone the Explicates repository into
+<code>/var/www/explicates</code>:</p>
+<div class="codehilite"><pre><span></span>mkdir /var/www
+git clone https://github.com/alexandermendes/explicates /var/www/explicates
+</pre></div>
+
+<p>Enter the directory:</p>
+<div class="codehilite"><pre><span></span><span class="nb">cd</span> /var/www/explicates
+</pre></div>
+
+<p>Create and enter a virtual environment:</p>
+<div class="codehilite"><pre><span></span>virtualenv env
+<span class="nb">source</span> env/bin/activate
+</pre></div>
+
+<p>Install Explicates:</p>
+<div class="codehilite"><pre><span></span>pip install -r requirements.txt
+</pre></div>
+
+<p>Copy the configuration template (see
+<a href="/setup/configuring-explicates">Configuring Explicates</a> for details
+of how to edit this file):</p>
+<div class="codehilite"><pre><span></span>cp settings.py.tmpl settings.py
+</pre></div>
+
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>You will need to edit the <code>SERVER_NAME</code> setting now to point to the location
+of your server (e.g. annotations.example.com). It is required to build
+IDs outside of the request context and this is first done when the database
+is created below.</p>
+</div>
+<p>Copy the alembic configuration template:</p>
+<div class="codehilite"><pre><span></span>cp alembic.ini.tmpl alembic.ini
+</pre></div>
+
+<h2 id="seting-up-the-database">Seting up the database<a class="headerlink" href="#seting-up-the-database" title="Permanent link">&para;</a></h2>
+<p>Explicates is backed by a <a href="https://www.postgresql.org/">PostgreSQL</a> database.</p>
+<p>Install dependencies:</p>
+<div class="codehilite"><pre><span></span>sudo apt-get install postgresql postgresql-server-dev-all python-psycopg2 libpq-dev
+</pre></div>
+
+<p>Add a database user:</p>
+<div class="codehilite"><pre><span></span>sudo -u postgres createuser -d -P explicates
+</pre></div>
+
+<p>Enter the password <code>tester</code> when prompted.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>If you choose a different password you should also edit the database
+path in <code>settings.py</code> and <code>alembic.ini</code>.</p>
+</div>
+<p>Create the database:</p>
+<div class="codehilite"><pre><span></span>sudo -u postgres createdb explicates -O explicates
+</pre></div>
+
+<p>Populate the database:</p>
+<div class="codehilite"><pre><span></span>python /var/www/explicates/bin/db_create.py
+</pre></div>
+
+<p>To check that everything has gone OK so far, you should now be able to
+type <code>python run.py</code> and see some messages that let you know the develpoment
+server is running (then press CTRL+C to quit).</p>
+<h2 id="setting-up-nginx_1">Setting up NGINX<a class="headerlink" href="#setting-up-nginx_1" title="Permanent link">&para;</a></h2>
+<p>To setup <a href="https://www.nginx.com/resources/wiki/">NGINX</a>, first install it:</p>
+<div class="codehilite"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="k">get</span> <span class="n">install</span> <span class="n">nginx</span>
+</pre></div>
+
+<p>Remove the default server configuration:</p>
+<div class="codehilite"><pre><span></span>sudo rm -r /etc/nginx/sites-available/default
+</pre></div>
+
+<p>Edit a new server configuration file:</p>
+<div class="codehilite"><pre><span></span>vim /etc/nginx/sites-available/explicates
+</pre></div>
+
+<p>Copy in the following and save the file:</p>
+<div class="codehilite"><pre><span></span><span class="k">server</span> <span class="p">{</span>
+  <span class="kn">listen</span> <span class="mi">80</span> <span class="s">default_server</span><span class="p">;</span>
+  <span class="kn">listen</span> <span class="s">[::]:80</span> <span class="s">default_server</span><span class="p">;</span>
+
+  <span class="c1"># Change this to match your domain</span>
+  <span class="kn">server_name</span> <span class="s">annotations.example.com</span><span class="p">;</span>
+
+  <span class="kn">client_body_buffer_size</span> <span class="s">10K</span><span class="p">;</span>
+  <span class="kn">client_header_buffer_size</span> <span class="mi">1k</span><span class="p">;</span>
+  <span class="kn">client_max_body_size</span> <span class="mi">10m</span><span class="p">;</span>
+  <span class="kn">large_client_header_buffers</span> <span class="mi">2</span> <span class="mi">1k</span><span class="p">;</span>
+
+  <span class="kn">gzip</span>             <span class="no">on</span><span class="p">;</span>
+  <span class="kn">gzip_comp_level</span>  <span class="mi">2</span><span class="p">;</span>
+  <span class="kn">gzip_types</span>       <span class="s">text/plain</span> <span class="s">application/json</span> <span class="s">application/ld+json</span><span class="p">;</span>
+  <span class="kn">gzip_min_length</span>  <span class="mi">1000</span><span class="p">;</span>
+  <span class="kn">gzip_proxied</span>     <span class="s">expired</span> <span class="s">no-cache</span> <span class="s">no-store</span> <span class="s">private</span> <span class="s">auth</span><span class="p">;</span>
+
+  <span class="kn">location</span> <span class="s">/</span> <span class="p">{</span>
+    <span class="kn">expires</span> <span class="s">-1</span><span class="p">;</span>
+    <span class="kn">include</span> <span class="s">uwsgi_params</span><span class="p">;</span>
+    <span class="kn">uwsgi_pass</span> <span class="s">unix:/tmp/explicates.sock</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>Enable the Explicates configuration:</p>
+<div class="codehilite"><pre><span></span>ln -s /etc/nginx/sites-available/explicates /etc/nginx/sites-enabled/explicates
+</pre></div>
+
+<p>Restart the NGINX server:</p>
+<div class="codehilite"><pre><span></span>sudo service nginx restart
+</pre></div>
+
+<h2 id="setting-up-uwsgi">Setting up uWSGI<a class="headerlink" href="#setting-up-uwsgi" title="Permanent link">&para;</a></h2>
+<p>To setup <a href="https://uwsgi-docs.readthedocs.io/en/latest/">uWSGI</a>, first install it:</p>
+<div class="codehilite"><pre><span></span>pip install -U uwsgi
+</pre></div>
+
+<p>Edit a new server configuration file:</p>
+<div class="codehilite"><pre><span></span>vim /var/www/explicates/explicates.ini
+</pre></div>
+
+<p>Copy in the following and save the file:</p>
+<div class="codehilite"><pre><span></span><span class="o">[</span>uwsgi<span class="o">]</span>
+<span class="nv">socket</span> <span class="o">=</span> /tmp/explicates.sock
+chmod-socket <span class="o">=</span> <span class="m">666</span>
+<span class="nv">chdir</span> <span class="o">=</span> /var/www/explicates
+<span class="nv">pythonpath</span> <span class="o">=</span> ..
+<span class="nv">virtualenv</span> <span class="o">=</span> /var/www/explicates/env
+<span class="nv">module</span> <span class="o">=</span> run:app
+cpu-affinity <span class="o">=</span> <span class="m">1</span>
+<span class="nv">processes</span> <span class="o">=</span> <span class="m">2</span>
+<span class="nv">threads</span> <span class="o">=</span> <span class="m">2</span>
+buffer-size <span class="o">=</span> <span class="m">65535</span>
+</pre></div>
+
+<h2 id="setting-up-supervisor_1">Setting Up Supervisor<a class="headerlink" href="#setting-up-supervisor_1" title="Permanent link">&para;</a></h2>
+<p>Supervisor is used to run Explicates in the background and restart it when the
+server boots up.</p>
+<div class="codehilite"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="k">get</span> <span class="n">install</span> <span class="n">supervisor</span>
+</pre></div>
+
+<p>Edit a new Supervisor program configuration:</p>
+<div class="codehilite"><pre><span></span>vim /etc/supervisor/conf.d/explicates.conf
+</pre></div>
+
+<p>Copy in the following and save the file:</p>
+<div class="codehilite"><pre><span></span><span class="k">[program:explicates]</span>
+<span class="na">command</span><span class="o">=</span><span class="s">/var/www/explicates/env/bin/uwsgi /var/www/explicates/explicates.ini</span>
+<span class="na">directory</span><span class="o">=</span><span class="s">/var/www/explicates</span>
+<span class="na">autostart</span><span class="o">=</span><span class="s">true</span>
+<span class="na">autorestart</span><span class="o">=</span><span class="s">true</span>
+<span class="na">log_stdout</span><span class="o">=</span><span class="s">true</span>
+<span class="na">log_stderr</span><span class="o">=</span><span class="s">true</span>
+<span class="na">logfile</span><span class="o">=</span><span class="s">/var/log/explicates.log</span>
+<span class="na">logfile_maxbytes</span><span class="o">=</span><span class="s">10MB</span>
+<span class="na">logfile_backups</span><span class="o">=</span><span class="s">2</span>
+</pre></div>
+
+<p>Restart supervisor:</p>
+<div class="codehilite"><pre><span></span>sudo service supervisor stop
+sudo service supervisor start
+</pre></div>
+
+<p>Your Annotation server should now be running at
+<a href="http://your.domain.com">http://your.domain.com</a>.</p>
+<h2 id="security">Security<a class="headerlink" href="#security" title="Permanent link">&para;</a></h2>
+<p>There are lots of potential steps that you could take to secure your servers.
+Running through all of the options here is outside the scope of this guide,
+but here are some quick wins for the LibCrowds and Explicates servers
+(details might need to be modified a bit for the PYBOSSA server).</p>
+<h3 id="firewall">Firewall<a class="headerlink" href="#firewall" title="Permanent link">&para;</a></h3>
+<p>UFW, or Uncomplicated Firewall, is an easy way to manage a frontend firewall.</p>
+<p>Install it:</p>
+<div class="codehilite"><pre><span></span>sudo apt-get install ufw
+</pre></div>
+
+<p>Deny incoming and allow outgoing by default:</p>
+<div class="codehilite"><pre><span></span>sudo ufw default deny incoming
+sudo ufw default allow outgoing
+</pre></div>
+
+<p>Allow connections:</p>
+<div class="codehilite"><pre><span></span>sudo ufw allow ssh
+sudo ufw allow <span class="m">22</span>/tcp
+</pre></div>
+
+<p>Check the rules:</p>
+<div class="codehilite"><pre><span></span>ufw status
+</pre></div>
+
+<p>You should see the following output:</p>
+<div class="codehilite"><pre><span></span>To                         Action      From
+--                         ------      ----
+<span class="m">22</span>                         ALLOW       Anywhere
+<span class="m">80</span>                         ALLOW       Anywhere
+<span class="m">443</span>                        ALLOW       Anywhere
+<span class="m">22</span> <span class="o">(</span>v6<span class="o">)</span>                    ALLOW       Anywhere <span class="o">(</span>v6<span class="o">)</span>
+<span class="m">80</span> <span class="o">(</span>v6<span class="o">)</span>                    ALLOW       Anywhere <span class="o">(</span>v6<span class="o">)</span>
+<span class="m">443</span> <span class="o">(</span>v6<span class="o">)</span>                   ALLOW       Anywhere <span class="o">(</span>v6<span class="o">)</span>
+</pre></div>
+
+<p>If the rules do indeed appear as above, enable the firewall:</p>
+<div class="codehilite"><pre><span></span>sudo ufw <span class="nb">enable</span>
+</pre></div>
+
+<h2 id="secure-sockets-layer-ssl">Secure Sockets Layer (SSL)<a class="headerlink" href="#secure-sockets-layer-ssl" title="Permanent link">&para;</a></h2>
+<p><a href="https://letsencrypt.org">Let's Encrypt</a> provide free SSL certificates. Use
+the <a href="https://certbot.eff.org/">Certbot</a> client to set them up for your
+operating system.</p>
+<p>After following the Certbot guide, above, you can setup a scheduled task
+to automatically renew the certificates.</p>
+<p>Edit a new daily task:</p>
+<div class="codehilite"><pre><span></span>vim /etc/cron.daily/certrenew
+</pre></div>
+
+<p>Copy in the following and save the file:</p>
+<div class="codehilite"><pre><span></span><span class="n">certbot</span> <span class="n">renew</span>
+</pre></div>
+
+<p>Make the file executable:</p>
+<div class="codehilite"><pre><span></span>chmod +x /etc/cron.daily/certrenew
+</pre></div>
+
+<p>Your certificate should now be checked for renewal daily.</p>
+<hr />
+<p>The next step is to install the required LibCrowds
+<a href="/setup/plugins">Plugins</a>.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../installation/" title="Local Installation" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Local Installation
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../plugins/" title="Plugins" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Plugins
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/LibCrowds" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/LibCrowds" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="mailto:digitalresearch@bl.uk" class="md-footer-social__link fa fa-envelope"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.c648116f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>
