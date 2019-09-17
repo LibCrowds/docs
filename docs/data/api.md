@@ -4,7 +4,7 @@ data model. Web Annotations are a W3C standard used to make data more easily
 reusable online.
 
 To manage these Annotations, LibCrowds implements its own Annotation Server. As
-well as the final results data this server is used to store supplementry
+well as the final results data this server is used to store supplementary
 information, such as user-generated image tags.
 
 By storing our data as Web Annotations and making it available via a
